@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>Any knowledges about software fundamental &amp; technics</description>
+    <link>
+    https://lulubeanana17.github.io</link>
+    
+      
+      <item>
+        <title>front-end-control-statement</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Sep 2021 04:40:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/frontend-control-statement</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/frontend-control-statement</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>front-end-basic</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 15 Sep 2021 04:40:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/frontend-basic</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/frontend-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>back-end-basic</title>
+        
+          <description>&lt;p&gt;This is the first post.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 15 Sep 2021 04:40:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/backend-basic</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/backend-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>front-end-basic</title>
+        
+          <description>&lt;p&gt;This is the first post.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 15 Sep 2021 04:40:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/frontend-basic</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/frontend-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Gettysburg Address</title>
+        
+          <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 19 Nov 1863 23:18:00 +1300</pubDate>
+        <link>
+        https://lulubeanana17.github.io/gettysburg-address</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/gettysburg-address</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
