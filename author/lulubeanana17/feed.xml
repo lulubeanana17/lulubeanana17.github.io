@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-16T23:22:07+12:00</updated>
+  <updated>2021-09-17T10:34:38+12:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -60,7 +60,7 @@
       
 
       
-        <category term="python" />
+        <category term="front-end" />
       
 
       
@@ -100,7 +100,7 @@
       
 
       
-        <category term="python" />
+        <category term="front-end" />
       
 
       
@@ -134,41 +134,7 @@
       
 
       
-        <category term="jekyll" />
-      
-
-      
-        <summary type="html">This is the first post.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">front-end-basic</title>
-      <link href="https://lulubeanana17.github.io/frontend-basic" rel="alternate" type="text/html" title="front-end-basic" />
-      <published>2021-09-15T04:40:00+12:00</published>
-      <updated>2021-09-15T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/frontend-basic</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-basic">&lt;p&gt;This is the first post.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="python" />
+        <category term="back-end" />
       
 
       
