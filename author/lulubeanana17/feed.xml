@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-17T11:07:48+12:00</updated>
+  <updated>2021-09-17T15:37:47+12:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -32,18 +32,26 @@
 
   
     <entry>
-      <title type="html">front-end-control-statement</title>
-      <link href="https://lulubeanana17.github.io/frontend-control-statement" rel="alternate" type="text/html" title="front-end-control-statement" />
+      <title type="html">Browser operating principle</title>
+      <link href="https://lulubeanana17.github.io/frontend-basic" rel="alternate" type="text/html" title="Browser operating principle" />
       <published>2021-09-16T04:40:00+12:00</published>
       <updated>2021-09-16T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/frontend-control-statement</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-control-statement">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;&lt;/p&gt;
+      <id>https://lulubeanana17.github.io/frontend-basic</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This is the first post.&lt;/p&gt;</content>
+&lt;p&gt;Uur website consists of front-end and back-end. Front-end is about design aspect, which is made by html, css, and javascript or other frameworks. Also, back-end is about a structure that is invisible (like a pipeline behind a wall), it manages the website’s data.&lt;/p&gt;
+
+&lt;p&gt;The website is based on browser, it supports internet environment to users. For example, we can say the browsers are expo stadium and the websites are booths for any kind of purpose.&lt;/p&gt;
+
+&lt;p&gt;Every website owners have the websites’ original file, it only can make any change to actual website showing on internet when the original files are changed and pushed to server.&lt;/p&gt;
+
+&lt;p&gt;The browsers (chrome, safari ..etc) play a client role that is like expo stadium. When users surt on the internet through a browser and find a website (or called a booth) that he/she want to have a look. When they click the website, the browser (called a client) request a server that stores the website’s file, get the copy, and show it to the user. Moreover, the copied files can be scalable and changable because it is just copy.&lt;/p&gt;
+
+&lt;p&gt;Additionally, most website owners rent the server for deploying their website, because it costs a lot of money to execute their own server by themselves.&lt;/p&gt;</content>
 
       
       
@@ -72,18 +80,22 @@
     </entry>
   
     <entry>
-      <title type="html">front-end-basic</title>
-      <link href="https://lulubeanana17.github.io/frontend-basic" rel="alternate" type="text/html" title="front-end-basic" />
+      <title type="html">the difference between front-end and back-end</title>
+      <link href="https://lulubeanana17.github.io/frontend-control-statement" rel="alternate" type="text/html" title="the difference between front-end and back-end" />
       <published>2021-09-15T04:40:00+12:00</published>
       <updated>2021-09-15T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/frontend-basic</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;&lt;/p&gt;
+      <id>https://lulubeanana17.github.io/frontend-control-statement</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-control-statement">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This is the first post.&lt;/p&gt;</content>
+&lt;p&gt;A website itself is made of front-end part and back-end part. Front-end part is visual thing, they show UI, a design that they did.&lt;/p&gt;
+
+&lt;p&gt;In front-end, there are roughly three languages in (honestly even though html and css are not programming language). HTML is a structure of the website, also it is called bones in human body. CSS is a design aspect, it adds design aspects to the well-made html structure, it shows them better. Lastly, Javascript can make them have a movement, it creates moving features in their website. In Javascript section, they have Vanila.JS which is a pure Javascript, and also have some frameworks, such as React, Vue ..etc, when they work in an easier way.&lt;/p&gt;
+
+&lt;p&gt;In back-end, they manage the behind of websites, it is invisible. It can be said as Staffs working in any kind of show behind the curtain. They roughly have database, cloud, and back-end software which is node.js, .NET ..etc. Database can be operated by mongodb, mysql ..etc. they control the database for any data input through their website. Cloud can make our environment on virtual, we can upload or download without a geographical limitation. It has AWS, Azure ..etc.&lt;/p&gt;</content>
 
       
       
