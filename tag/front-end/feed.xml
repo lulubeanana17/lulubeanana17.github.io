@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-17T15:37:47+12:00</updated>
+  <updated>2021-09-17T15:50:40+12:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -37,19 +37,19 @@
       <published>2021-09-16T04:40:00+12:00</published>
       <updated>2021-09-16T04:40:00+12:00</updated>
       <id>https://lulubeanana17.github.io/frontend-basic</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;&lt;/p&gt;
+      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-basic">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ul&gt;--&gt;
 
-&lt;p&gt;Uur website consists of front-end and back-end. Front-end is about design aspect, which is made by html, css, and javascript or other frameworks. Also, back-end is about a structure that is invisible (like a pipeline behind a wall), it manages the website’s data.&lt;/p&gt;
+&lt;p&gt;Our website consists of front-end and back-end. Front-end is about design aspect, which is made by html, css, and javascript or other frameworks. Back-end is about a structure that is invisible (like a pipeline behind a wall), it manages the website’s data.&lt;/p&gt;
 
-&lt;p&gt;The website is based on browser, it supports internet environment to users. For example, we can say the browsers are expo stadium and the websites are booths for any kind of purpose.&lt;/p&gt;
+&lt;p&gt;The website is based on a browser, which supports internet environment to users. For example, we can say the browsers are expo stadium and the websites are booths in there for any kind of purpose.&lt;/p&gt;
 
 &lt;p&gt;Every website owners have the websites’ original file, it only can make any change to actual website showing on internet when the original files are changed and pushed to server.&lt;/p&gt;
 
-&lt;p&gt;The browsers (chrome, safari ..etc) play a client role that is like expo stadium. When users surt on the internet through a browser and find a website (or called a booth) that he/she want to have a look. When they click the website, the browser (called a client) request a server that stores the website’s file, get the copy, and show it to the user. Moreover, the copied files can be scalable and changable because it is just copy.&lt;/p&gt;
+&lt;p&gt;The browsers (chrome, safari ..etc) play a client role that is like expo stadium. When users surf on the internet through a browser and find a website that he/she want to have a look. When they click the website, the browser (called a client) request a server that stores the website’s file, get the copy, and show it to the user. Moreover, the copied files can be scalable and changable because it is just copy.&lt;/p&gt;
 
 &lt;p&gt;Additionally, most website owners rent the server for deploying their website, because it costs a lot of money to execute their own server by themselves.&lt;/p&gt;</content>
 
@@ -72,7 +72,7 @@
       
 
       
-        <summary type="html">This is Python table of contents front-end-basic front-end-control-statement</summary>
+        <summary type="html"></summary>
       
 
       
@@ -85,11 +85,11 @@
       <published>2021-09-15T04:40:00+12:00</published>
       <updated>2021-09-15T04:40:00+12:00</updated>
       <id>https://lulubeanana17.github.io/frontend-control-statement</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-control-statement">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;&lt;/p&gt;
+      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-control-statement">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ul&gt;--&gt;
 
 &lt;p&gt;A website itself is made of front-end part and back-end part. Front-end part is visual thing, they show UI, a design that they did.&lt;/p&gt;
 
@@ -116,7 +116,7 @@
       
 
       
-        <summary type="html">This is Python table of contents front-end-basic front-end-control-statement</summary>
+        <summary type="html"></summary>
       
 
       
