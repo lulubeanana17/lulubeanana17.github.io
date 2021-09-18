@@ -1,4 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-17T22:32:48+12:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">Browser operating principle</title><link href="https://lulubeanana17.github.io/frontend-basic" rel="alternate" type="text/html" title="Browser operating principle" /><published>2021-09-16T04:40:00+12:00</published><updated>2021-09-16T04:40:00+12:00</updated><id>https://lulubeanana17.github.io/frontend-basic</id><content type="html" xml:base="https://lulubeanana17.github.io/frontend-basic">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-18T12:55:14+12:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">difference between compile and interpret</title><link href="https://lulubeanana17.github.io/difference-between-compile-and-interpret" rel="alternate" type="text/html" title="difference between compile and interpret" /><published>2021-09-18T04:40:00+12:00</published><updated>2021-09-18T04:40:00+12:00</updated><id>https://lulubeanana17.github.io/difference%20between%20compile%20and%20interpret</id><content type="html" xml:base="https://lulubeanana17.github.io/difference-between-compile-and-interpret">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Compiler is translating the whole codes by advanced language to machine language at one time.
+In other words, it collects commands once they read the whole source code, and re-organize it.
+So, it takes long time for translating, but it takes short time to activate the code file after
+translating.&lt;/p&gt;
+
+&lt;p&gt;Interpreter is translating the sourcodes line by line to machine language, so it takes short time
+for translating. However, it should do translate the codes every single time whenever they execute the file. Because of this, interpreter languages are slower than compiler.&lt;/p&gt;
+
+&lt;p&gt;These features seem like compiler is better than intrpreter. However, here is the thing why we
+use interpreter as well.&lt;/p&gt;
+
+&lt;p&gt;Interpreter is not obsessed by each hardware, but compiler is. Hardware obsession is 
+quite a big deal when we consider this software is working on different hardware.&lt;/p&gt;
+
+&lt;p&gt;For example, cpu A is not compatible with cpu B.&lt;/p&gt;
+
+&lt;p&gt;Compiler is translating advanced language to machine language directly, so the compiled software
+in A is not properly working in B. In this case, developers should make the software
+in B environment as well.&lt;/p&gt;
+
+&lt;p&gt;However, interpreter is translating advanced language to bytecode (or intermediate code)
+during interpreting time, and the virtual machine depending on what language uses translates
+the bytecodes to machine language being suitable for B hardware environment.&lt;/p&gt;
+
+&lt;p&gt;Python is interpreter language, C languages are compile language,
+this is why c is a programming language for hardware control system.&lt;/p&gt;
+
+&lt;p&gt;However, Java is compile and interpreter language. In java, java compiler translates .java file into .class file by bytecode, and java virtual machine(java interpreter) is translating bytecode to object codes.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">Browser operating principle</title><link href="https://lulubeanana17.github.io/process-thread" rel="alternate" type="text/html" title="Browser operating principle" /><published>2021-09-16T04:40:00+12:00</published><updated>2021-09-16T04:40:00+12:00</updated><id>https://lulubeanana17.github.io/process-thread</id><content type="html" xml:base="https://lulubeanana17.github.io/process-thread">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Program : a file that can operate some work (e.g. applications)&lt;/p&gt;
+
+&lt;p&gt;A program operates on operating system on cpu.&lt;/p&gt;
+
+&lt;p&gt;-Process-&lt;/p&gt;
+
+&lt;p&gt;Process is an action when program operates. Process is operated by CPU and stored by memory.
+Process gets assigned some system resource from CPU.&lt;/p&gt;
+
+&lt;p&gt;The system resource is CPU time, memory storage, and address space.&lt;/p&gt;
+
+&lt;p&gt;When program starts, memory makes process address sapce for program.
+In address space, there are 3 segments.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;code segment : code storage (read only)&lt;/li&gt;
+  &lt;li&gt;data segment : data (such as global variables) storage (read &amp;amp; write)&lt;/li&gt;
+  &lt;li&gt;stack segment : stores functions &amp;amp; local variables (read &amp;amp; write)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/process.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The reason why stack segment exists is functions feature.
+Depending on outside &amp;amp; iside function, the function will be stacked by sequence.
+Local variables &amp;amp; functions can only approach by logical sequence, but global variables
+can approach any functions. We should separate them.&lt;/p&gt;
+
+&lt;p&gt;Each process has at least one thread.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/address-space.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each process has independent address space, one process cannot invade other process’s
+variable and data type. To communicate each other, they use IPC (inter-process communication).
+the communication between process is called context switching.&lt;/p&gt;
+
+&lt;p&gt;processes deal with tasks in CPU turn by turn, it is called context switching.
+specifically, each process rebuilds previous process’s work, doing it, and hand over to next.&lt;/p&gt;
+
+&lt;p&gt;-Thread-&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/thread.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thread is a specific flow path that operates in a process.
+Each threads in one process share the resources (heap, code, data) and address space.
+Each threads have their own register and stack, but they can read and write heap memory.&lt;/p&gt;
+
+&lt;p&gt;Stack has messages, addresses, and variables in functions when call functions.
+Register has the logs of threads commands activation because of context switching, they
+should remember the last action for next turn.&lt;/p&gt;
+
+&lt;p&gt;-Java thread-
+Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.
+Java has no process, only threads. Java threads are code blocks scheduled by JVM.
+Also, JVM manages&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;How many threads exist&lt;/li&gt;
+  &lt;li&gt;The location of memory for program codes&lt;/li&gt;
+  &lt;li&gt;Thread statements&lt;/li&gt;
+  &lt;li&gt;Priority of threads&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So, developers write thread codes by using java thread, and request to activates codes to JVM.&lt;/p&gt;
+
+&lt;p&gt;-Difference between multi-process and multi-thread-&lt;/p&gt;
+
+&lt;p&gt;The difference between multi-process and multi-thread&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Multi-processing&lt;/dt&gt;
+  &lt;dd&gt;One program consists of many processes, each process deal with one task.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;One issue from one process doesn’t affect other processes.&lt;/p&gt;
+
+&lt;p&gt;However, during context switching, it creates overhead by heavy works(such as cache menory reset).
+Because process get assigned each independent memory space, they don’t have share memory.
+So, they should reset every data to share other’s cache data by context switching.
+Also, they cannot share variables in each process.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Multi-threading&lt;/dt&gt;
+  &lt;dd&gt;One program consists of many threads.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;It reduces the needs of system resource, because they don’t need to allocate system resources
+to processes.
+Threads don’t need many time for sharing, so, context switching is fast, because it shares 
+every memory except for stack space.&lt;/p&gt;
+
+&lt;p&gt;However, it needs very sophisticated design, and debug is difficult.
+Also, one process system has no advantage from multi-thread system.
+Another process can’t manage one’s threads. moreover, multi-thread has resource sharing issue.
+A problem in one thread affects other threads.&lt;/p&gt;
+
+&lt;p&gt;Using multi-thread rather than multi-process means you reslove many tasks in one progarm, not
+activates many programs.
+By doing that, we can save time and resource for context switching.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">Browser operating principle</title><link href="https://lulubeanana17.github.io/frontend-basic" rel="alternate" type="text/html" title="Browser operating principle" /><published>2021-09-16T04:40:00+12:00</published><updated>2021-09-16T04:40:00+12:00</updated><id>https://lulubeanana17.github.io/frontend-basic</id><content type="html" xml:base="https://lulubeanana17.github.io/frontend-basic">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
