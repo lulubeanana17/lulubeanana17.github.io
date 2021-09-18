@@ -8,6 +8,25 @@
     
       
       <item>
+        <title>process and thread</title>
+        
+          <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+</description>
+        
+        <pubDate>Sat, 18 Sep 2021 03:40:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/process-thread</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/process-thread</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>difference between compile and interpret</title>
         
           <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
@@ -18,7 +37,7 @@
 
 </description>
         
-        <pubDate>Sat, 18 Sep 2021 04:40:00 +1200</pubDate>
+        <pubDate>Fri, 17 Sep 2021 04:40:00 +1200</pubDate>
         <link>
         https://lulubeanana17.github.io/difference-between-compile-and-interpret</link>
         <guid isPermaLink="true">https://lulubeanana17.github.io/difference-between-compile-and-interpret</guid>
@@ -37,10 +56,24 @@
 
 </description>
         
-        <pubDate>Thu, 16 Sep 2021 04:40:00 +1200</pubDate>
+        <pubDate>Wed, 15 Sep 2021 04:40:00 +1200</pubDate>
         <link>
         https://lulubeanana17.github.io/browser-principle</link>
         <guid isPermaLink="true">https://lulubeanana17.github.io/browser-principle</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>back-end-basic</title>
+        
+          <description>&lt;p&gt;This is the first post.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 15 Sep 2021 04:40:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/backend-basic</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/backend-basic</guid>
       </item>
       
     
@@ -56,24 +89,10 @@
 
 </description>
         
-        <pubDate>Wed, 15 Sep 2021 04:40:00 +1200</pubDate>
+        <pubDate>Tue, 14 Sep 2021 04:40:00 +1200</pubDate>
         <link>
         https://lulubeanana17.github.io/frontend-backend</link>
         <guid isPermaLink="true">https://lulubeanana17.github.io/frontend-backend</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>back-end-basic</title>
-        
-          <description>&lt;p&gt;This is the first post.&lt;/p&gt;
-</description>
-        
-        <pubDate>Wed, 15 Sep 2021 04:40:00 +1200</pubDate>
-        <link>
-        https://lulubeanana17.github.io/backend-basic</link>
-        <guid isPermaLink="true">https://lulubeanana17.github.io/backend-basic</guid>
       </item>
       
     
