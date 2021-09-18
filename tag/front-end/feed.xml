@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-18T18:32:59+12:00</updated>
+  <updated>2021-09-18T18:36:24+12:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -68,7 +68,7 @@ Ansyncoronous is that they activate next command without the response of current
 until response back.
 So, Chrome support several web API to use JS code by ansyncoronous.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ansyncoronous code can change the commands order. 
 For example, if there are first function and second function, second function can be activated faster than first function.&lt;/p&gt;
