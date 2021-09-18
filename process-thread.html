@@ -240,8 +240,9 @@ Each threads have their own register and stack, but they can read and write heap
 Register has the logs of threads commands activation because of context switching, they
 should remember the last action for next turn.</p>
 
-<p>-Java thread-
-Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.
+<p>-Java thread-</p>
+
+<p>Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.
 Java has no process, only threads. Java threads are code blocks scheduled by JVM.
 Also, JVM manages</p>
 <ol>
@@ -257,10 +258,9 @@ Also, JVM manages</p>
 
 <p>The difference between multi-process and multi-thread</p>
 
-<dl>
-  <dt>Multi-processing</dt>
-  <dd>One program consists of many processes, each process deal with one task.</dd>
-</dl>
+<p>Multi-processing</p>
+
+<p>One program consists of many processes, each process deal with one task.</p>
 
 <p>One issue from one process doesn’t affect other processes.</p>
 
@@ -269,10 +269,9 @@ Because process get assigned each independent memory space, they don’t have sh
 So, they should reset every data to share other’s cache data by context switching.
 Also, they cannot share variables in each process.</p>
 
-<dl>
-  <dt>Multi-threading</dt>
-  <dd>One program consists of many threads.</dd>
-</dl>
+<p>Multi-threading</p>
+
+<p>One program consists of many threads.</p>
 
 <p>It reduces the needs of system resource, because they don’t need to allocate system resources
 to processes.

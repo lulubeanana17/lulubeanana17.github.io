@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-18T12:57:16+12:00</updated>
+  <updated>2021-09-18T13:00:20+12:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -207,8 +207,9 @@ Each threads have their own register and stack, but they can read and write heap
 Register has the logs of threads commands activation because of context switching, they
 should remember the last action for next turn.&lt;/p&gt;
 
-&lt;p&gt;-Java thread-
-Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.
+&lt;p&gt;-Java thread-&lt;/p&gt;
+
+&lt;p&gt;Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.
 Java has no process, only threads. Java threads are code blocks scheduled by JVM.
 Also, JVM manages&lt;/p&gt;
 &lt;ol&gt;
@@ -224,10 +225,9 @@ Also, JVM manages&lt;/p&gt;
 
 &lt;p&gt;The difference between multi-process and multi-thread&lt;/p&gt;
 
-&lt;dl&gt;
-  &lt;dt&gt;Multi-processing&lt;/dt&gt;
-  &lt;dd&gt;One program consists of many processes, each process deal with one task.&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;p&gt;Multi-processing&lt;/p&gt;
+
+&lt;p&gt;One program consists of many processes, each process deal with one task.&lt;/p&gt;
 
 &lt;p&gt;One issue from one process doesn’t affect other processes.&lt;/p&gt;
 
@@ -236,10 +236,9 @@ Because process get assigned each independent memory space, they don’t have sh
 So, they should reset every data to share other’s cache data by context switching.
 Also, they cannot share variables in each process.&lt;/p&gt;
 
-&lt;dl&gt;
-  &lt;dt&gt;Multi-threading&lt;/dt&gt;
-  &lt;dd&gt;One program consists of many threads.&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;p&gt;Multi-threading&lt;/p&gt;
+
+&lt;p&gt;One program consists of many threads.&lt;/p&gt;
 
 &lt;p&gt;It reduces the needs of system resource, because they don’t need to allocate system resources
 to processes.
