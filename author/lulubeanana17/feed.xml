@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-18T18:36:24+12:00</updated>
+  <updated>2021-09-18T20:23:39+12:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -30,6 +30,102 @@
   
   
 
+  
+    <entry>
+      <title type="html">stackoverflow in javascript</title>
+      <link href="https://lulubeanana17.github.io/stackoverflow" rel="alternate" type="text/html" title="stackoverflow in javascript" />
+      <published>2021-09-18T04:50:00+12:00</published>
+      <updated>2021-09-18T04:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/stackoverflow</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/stackoverflow">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Javascript is based on single thread and call back queue.
+It has JS engine, the most famous one is Google V8 engine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime-2.png&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The engine consists of memory heap and call stack.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;memory heap : memory allocation&lt;/li&gt;
+  &lt;li&gt;call stack : stack the commands code by code&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As i said, runtime = the environment (Chrome)&lt;/p&gt;
+
+&lt;p&gt;most developers use web API, which is not given by JS engine.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;call stack&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;it is data structure that logs where I am in a program, which means what commands completed.
+&lt;br /&gt;
+&lt;br /&gt;
+1) example (normal call stack)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-1.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the call stack, result is&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/callstack-1.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each steps of call stack are called “Stack Frame”.&lt;/p&gt;
+
+&lt;p&gt;2) example (stack trace)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-2.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Stack trace is a statement of call stack when exception happened.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/stacktrace.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3) example (stack overflow)&lt;/p&gt;
+
+&lt;p&gt;It shows when eternal loop is executed.
+Call stack has maximum. When stack is over the maximum, it is called stack overflow.
+And then, it blows the call stack, which is called “blowing the stack”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-3.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/stackoverflow.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/stackoverflow-error.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Single thread is simple, but it has a lot of limitations.
+To solve the limitation (slow), we use event loop and ansyncoronous.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">event loop &amp;amp; callback queue in Javascript</title>
