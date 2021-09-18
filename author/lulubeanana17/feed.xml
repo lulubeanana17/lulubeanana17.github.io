@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-18T15:35:00+12:00</updated>
+  <updated>2021-09-18T15:54:46+12:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -100,11 +100,11 @@ this is why c is a programming language for hardware control system.&lt;/p&gt;
   
     <entry>
       <title type="html">Browser operating principle</title>
-      <link href="https://lulubeanana17.github.io/frontend-basic" rel="alternate" type="text/html" title="Browser operating principle" />
+      <link href="https://lulubeanana17.github.io/browser-principle" rel="alternate" type="text/html" title="Browser operating principle" />
       <published>2021-09-16T04:40:00+12:00</published>
       <updated>2021-09-16T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/frontend-basic</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-basic">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+      <id>https://lulubeanana17.github.io/browser-principle</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/browser-principle">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -148,11 +148,11 @@ this is why c is a programming language for hardware control system.&lt;/p&gt;
   
     <entry>
       <title type="html">the difference between front-end and back-end</title>
-      <link href="https://lulubeanana17.github.io/frontend-control-statement" rel="alternate" type="text/html" title="the difference between front-end and back-end" />
+      <link href="https://lulubeanana17.github.io/frontend-backend" rel="alternate" type="text/html" title="the difference between front-end and back-end" />
       <published>2021-09-15T04:40:00+12:00</published>
       <updated>2021-09-15T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/frontend-control-statement</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-control-statement">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+      <id>https://lulubeanana17.github.io/frontend-backend</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-backend">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
