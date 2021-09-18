@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-18T13:00:20+12:00</updated>
+  <updated>2021-09-18T15:35:00+12:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -119,140 +119,6 @@ this is why c is a programming language for hardware control system.&lt;/p&gt;
 &lt;p&gt;The browsers (chrome, safari ..etc) play a client role that is like expo stadium. When users surf on the internet through a browser and find a website that he/she want to have a look. When they click the website, the browser (called a client) request a server that stores the website’s file, get the copy, and show it to the user. Moreover, the copied files can be scalable and changable because it is just copy.&lt;/p&gt;
 
 &lt;p&gt;Additionally, most website owners rent the server for deploying their website, because it costs a lot of money to execute their own server by themselves.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">process and thread</title>
-      <link href="https://lulubeanana17.github.io/process-thread" rel="alternate" type="text/html" title="process and thread" />
-      <published>2021-09-16T04:40:00+12:00</published>
-      <updated>2021-09-16T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/process-thread</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/process-thread">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Program : a file that can operate some work (e.g. applications)&lt;/p&gt;
-
-&lt;p&gt;A program operates on operating system on cpu.&lt;/p&gt;
-
-&lt;p&gt;-Process-&lt;/p&gt;
-
-&lt;p&gt;Process is an action when program operates. Process is operated by CPU and stored by memory.
-Process gets assigned some system resource from CPU.&lt;/p&gt;
-
-&lt;p&gt;The system resource is CPU time, memory storage, and address space.&lt;/p&gt;
-
-&lt;p&gt;When program starts, memory makes process address sapce for program.
-In address space, there are 3 segments.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;code segment : code storage (read only)&lt;/li&gt;
-  &lt;li&gt;data segment : data (such as global variables) storage (read &amp;amp; write)&lt;/li&gt;
-  &lt;li&gt;stack segment : stores functions &amp;amp; local variables (read &amp;amp; write)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/process.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The reason why stack segment exists is functions feature.
-Depending on outside &amp;amp; iside function, the function will be stacked by sequence.
-Local variables &amp;amp; functions can only approach by logical sequence, but global variables
-can approach any functions. We should separate them.&lt;/p&gt;
-
-&lt;p&gt;Each process has at least one thread.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/address-space.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Each process has independent address space, one process cannot invade other process’s
-variable and data type. To communicate each other, they use IPC (inter-process communication).
-the communication between process is called context switching.&lt;/p&gt;
-
-&lt;p&gt;processes deal with tasks in CPU turn by turn, it is called context switching.
-specifically, each process rebuilds previous process’s work, doing it, and hand over to next.&lt;/p&gt;
-
-&lt;p&gt;-Thread-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/thread.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Thread is a specific flow path that operates in a process.
-Each threads in one process share the resources (heap, code, data) and address space.
-Each threads have their own register and stack, but they can read and write heap memory.&lt;/p&gt;
-
-&lt;p&gt;Stack has messages, addresses, and variables in functions when call functions.
-Register has the logs of threads commands activation because of context switching, they
-should remember the last action for next turn.&lt;/p&gt;
-
-&lt;p&gt;-Java thread-&lt;/p&gt;
-
-&lt;p&gt;Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.
-Java has no process, only threads. Java threads are code blocks scheduled by JVM.
-Also, JVM manages&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;How many threads exist&lt;/li&gt;
-  &lt;li&gt;The location of memory for program codes&lt;/li&gt;
-  &lt;li&gt;Thread statements&lt;/li&gt;
-  &lt;li&gt;Priority of threads&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;So, developers write thread codes by using java thread, and request to activates codes to JVM.&lt;/p&gt;
-
-&lt;p&gt;-Difference between multi-process and multi-thread-&lt;/p&gt;
-
-&lt;p&gt;The difference between multi-process and multi-thread&lt;/p&gt;
-
-&lt;p&gt;Multi-processing&lt;/p&gt;
-
-&lt;p&gt;One program consists of many processes, each process deal with one task.&lt;/p&gt;
-
-&lt;p&gt;One issue from one process doesn’t affect other processes.&lt;/p&gt;
-
-&lt;p&gt;However, during context switching, it creates overhead by heavy works(such as cache menory reset).
-Because process get assigned each independent memory space, they don’t have share memory.
-So, they should reset every data to share other’s cache data by context switching.
-Also, they cannot share variables in each process.&lt;/p&gt;
-
-&lt;p&gt;Multi-threading&lt;/p&gt;
-
-&lt;p&gt;One program consists of many threads.&lt;/p&gt;
-
-&lt;p&gt;It reduces the needs of system resource, because they don’t need to allocate system resources
-to processes.
-Threads don’t need many time for sharing, so, context switching is fast, because it shares 
-every memory except for stack space.&lt;/p&gt;
-
-&lt;p&gt;However, it needs very sophisticated design, and debug is difficult.
-Also, one process system has no advantage from multi-thread system.
-Another process can’t manage one’s threads. moreover, multi-thread has resource sharing issue.
-A problem in one thread affects other threads.&lt;/p&gt;
-
-&lt;p&gt;Using multi-thread rather than multi-process means you reslove many tasks in one progarm, not
-activates many programs.
-By doing that, we can save time and resource for context switching.&lt;/p&gt;</content>
 
       
       
