@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-19T15:55:39+12:00</updated>
+  <updated>2021-09-19T19:38:18+12:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -30,6 +30,97 @@
   
   
 
+  
+    <entry>
+      <title type="html">Hardware components</title>
+      <link href="https://lulubeanana17.github.io/hardware" rel="alternate" type="text/html" title="Hardware components" />
+      <published>2021-09-19T08:50:00+12:00</published>
+      <updated>2021-09-19T08:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/hardware</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/hardware">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Computer Hardware&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Computer consists of roughly 2 products: hardware and software.&lt;br /&gt;
+Hardware is a physical components that manage data. This has I/O devices, CPU, motherboard, etc.
+Motherboard is a main hub that can execute all other hardwares. CPU, RAM, Graphic card settled on
+Motherboard. This controls every activities of each hardware by allocating power to necessary
+hardware when they need.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/motherboard.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;CPU (central process unit) retrives and executes every instructions from Input devices and 
+send the results to Output devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu.PNG&quot; alt=&quot;runtime2&quot; /&gt;
+CPU internal connection helps all three components communicate each other. It is also called
+“BUS”, which is like a tunnel.&lt;br /&gt;&lt;br /&gt;
+Control Unit surveils data transaction in Register, and commands actions to Arithmetic and 
+Logical Unit. This controls the whole computers operation, order the actions in the order, 
+retrieves the commands from Input device and push signals to Register or ALU.&lt;br /&gt;
+Also, based on commands from Input, this raises program commands from Register, analyze it, and 
+orders to suitable components.&lt;br /&gt;&lt;br /&gt;
+ALU (Arithmetic and Logical Unit) operates microprocesses in order to executes commands.
+This covers all calculations.&lt;br /&gt;&lt;br /&gt;
+Register is a small volatile memory.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-real.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;RAM is Volatile memory. This is a desk that operates as many programs as possible at the same time.
+Data can be temporarily stored due to operates on computer. It loses their contents 
+if the current is turned off. The bigger storage is the better work efficiency of CPU.&lt;br /&gt;&lt;br /&gt;
+ROM is eternal memory that stores fundamental data, such as BIOS.
+User cannot change the ROM data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/ramrom.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+Hard Drive is storage components that store long and short term data.
+This has HDD and SSD. HDD (Hard Disk Drive) remembers all data with rapidly rotating disks coated 
+with magnetic material. But, SSD (Solid state Storage Drive) remembers in memory chips. So,
+SSD is faster, less fragile, and less power consumption than HDD.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/hddssd.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;GPU (graphic processing Unit) renders massive graphic data. In modern, newest GPU not only 
+render graphics but also cover CPU.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/gpu.webp&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;PSU (Power Supply Unit) supply power to computers. Motherboard controls the powers from PSU
+to spread to suitable components in computers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/psu.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Web API</title>
