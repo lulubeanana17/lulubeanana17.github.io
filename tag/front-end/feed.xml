@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-19T13:35:28+12:00</updated>
+  <updated>2021-09-19T15:55:39+12:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -30,6 +30,77 @@
   
   
 
+  
+    <entry>
+      <title type="html">Web API</title>
+      <link href="https://lulubeanana17.github.io/WebAPI" rel="alternate" type="text/html" title="Web API" />
+      <published>2021-09-19T07:50:00+12:00</published>
+      <updated>2021-09-19T07:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/WebAPI</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/WebAPI">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;API and WebAPI
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+API is ,Application Programming Interface, an interface that can control the features given by
+OS or language to use for programs. 
+&lt;br /&gt;
+API is like Keyboard. For example, I want to develop map program by using Google map.
+So, my program can approach to Google map data easily through API.&lt;br /&gt;
+Keyboard has standardization, as similar, API has standardization. API has a their wown rule 
+when developers use API to request data.&lt;br /&gt;
+Open API is free for all users.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/API.PNG&quot; alt=&quot;runtime2&quot; /&gt;
+&lt;br /&gt;
+WebAPI is an API for web server or web browser. It uses HTTP service, also designed to be able
+to access in many clients. It  provides Data CRUD interface in Web environment.&lt;br /&gt;
+WebAPI request to another service to use the service’s features. Because of WebAPI, we don’t 
+need to develop every services.&lt;br /&gt;WebAPI is formed as Website.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/webapi.png&quot; alt=&quot;runtime2&quot; /&gt;
+WebAPI can make unlimited platform and client enviroment through HTTP.&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;XML&lt;br /&gt;
+XML (eXtensible Markup Language) is similar to HTML as Markup language.&lt;br /&gt;
+HTML only have fixed tags, the tages already have roles. However, XML can be made any tages by
+a user. The reason is  XML represent new data by tags made by the user, which means the user
+explain the data by tags. So, the data is marked by tags, the user can put additional data in 
+the data already made. In a nutshell, tags in XML represents data.&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">HTTP, SSL, and TLS</title>
