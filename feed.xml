@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-19T19:38:18+12:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">Hardware components</title><link href="https://lulubeanana17.github.io/hardware" rel="alternate" type="text/html" title="Hardware components" /><published>2021-09-19T08:50:00+12:00</published><updated>2021-09-19T08:50:00+12:00</updated><id>https://lulubeanana17.github.io/hardware</id><content type="html" xml:base="https://lulubeanana17.github.io/hardware">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-20T15:50:58+12:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">Operating System</title><link href="https://lulubeanana17.github.io/OS" rel="alternate" type="text/html" title="Operating System" /><published>2021-09-20T04:50:00+12:00</published><updated>2021-09-20T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/OS</id><content type="html" xml:base="https://lulubeanana17.github.io/OS">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Operating System&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+OS is a software that controls hardware effectively, which is between users and hardware.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;There is two aspects on OS, which are a user and a system.&lt;br /&gt;
+For users, the main focus is comfortance during running, insteading of resource spreading.&lt;br /&gt;&lt;br /&gt;
+However, For system, resource allocator is the most important one. Also, it should handle with
+conflicts.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Computer system consists of CPU, Memory, I/O devices, system bus.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bootstraping&lt;br /&gt;
+A process that load OS on main memory to run a computer. &lt;br /&gt;&lt;br /&gt;
+Bootstrap program is the first running program when computer is turned on. The program is 
+stored in ROM, which is called a Bootstrap loader.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Interrupt&lt;br /&gt;
+Interrupt repuests CPU to stop the running program for running another program. This is the
+most important thing to create multi-programming.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Hardware Interrupt&lt;br /&gt;
+It can be changed by Mouse, keyboard. The signal of interrupt delivers through Bus.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Software Interrupt&lt;br /&gt;
+It works with “Syste Call”.&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Interrupt handling is one of the features of CPU.&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;System call requests Interrupt to CPU, CPU uses Interrupt Service Routine.&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;Interrupt Vector is an array of Interrupt Service Routine. Interrupt Vector Table consists
+of many Interrupt Vectors.&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;During running the program, if Interrupt happens, It should store data in Stack. otherwise,
+It couldn’t reload it.&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Interrupt Timeline&lt;br /&gt;
+During running I/O, CPU can do other works.&lt;/li&gt;
+  &lt;li&gt;Storage Structure&lt;br /&gt;
+Every programs must be loaded on memory to run.&lt;/li&gt;
+  &lt;li&gt;Von Neumann architecture&lt;br /&gt;
+Commands and Data will be stored in the same memory, which has same CPU link.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/neuman.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Secondary Storage&lt;br /&gt;
+HDD/SSD helps main memory (RAM) for more storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Device Controller&lt;br /&gt;
+Several Device Controllers connects with CPU.&lt;br /&gt;
+Each Device Controller manages each components. OS interprets how Device Controllers act, 
+provide the same interface to other components about the Device Controller.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;DMA (Direct Memory Access)&lt;br /&gt;
+DMA allows components (hard disk, graphic card, NIC) to access to Memory directly.&lt;br /&gt;
+CPU doesn’t need to participate the data transmission, it improves computer performance.&lt;br /&gt;
+&lt;br /&gt;
+When Device Controller controls a lot of data, it is usually heavy work on CPU. So, DMA helps
+ Device Controller to ignore CPU’s work on the data.&lt;br /&gt;
+Because of that, CPU doesn’t need to do that job and become more effective.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The structure of Computer System&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Single Processor system (=core)&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;Multi Processor system&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">Hardware components</title><link href="https://lulubeanana17.github.io/hardware" rel="alternate" type="text/html" title="Hardware components" /><published>2021-09-19T08:50:00+12:00</published><updated>2021-09-19T08:50:00+12:00</updated><id>https://lulubeanana17.github.io/hardware</id><content type="html" xml:base="https://lulubeanana17.github.io/hardware">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -563,14 +646,4 @@ this is why c is a programming language for hardware control system.&lt;/p&gt;
 
 &lt;p&gt;The browsers (chrome, safari ..etc) play a client role that is like expo stadium. When users surf on the internet through a browser and find a website that he/she want to have a look. When they click the website, the browser (called a client) request a server that stores the website’s file, get the copy, and show it to the user. Moreover, the copied files can be scalable and changable because it is just copy.&lt;/p&gt;
 
-&lt;p&gt;Additionally, most website owners rent the server for deploying their website, because it costs a lot of money to execute their own server by themselves.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">the difference between front-end and back-end</title><link href="https://lulubeanana17.github.io/frontend-backend" rel="alternate" type="text/html" title="the difference between front-end and back-end" /><published>2021-09-14T04:40:00+12:00</published><updated>2021-09-14T04:40:00+12:00</updated><id>https://lulubeanana17.github.io/frontend-backend</id><content type="html" xml:base="https://lulubeanana17.github.io/frontend-backend">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;A website itself is made of front-end part and back-end part. Front-end part is visual thing, they show UI, a design that they did.&lt;/p&gt;
-
-&lt;p&gt;In front-end, there are roughly three languages in (honestly even though html and css are not programming language). HTML is a structure of the website, also it is called bones in human body. CSS is a design aspect, it adds design aspects to the well-made html structure, it shows them better. Lastly, Javascript can make them have a movement, it creates moving features in their website. In Javascript section, they have Vanila.JS which is a pure Javascript, and also have some frameworks, such as React, Vue ..etc, when they work in an easier way.&lt;/p&gt;
-
-&lt;p&gt;In back-end, they manage the behind of websites, it is invisible. It can be said as Staffs working in any kind of show behind the curtain. They roughly have database, cloud, and back-end software which is node.js, .NET ..etc. Database can be operated by mongodb, mysql ..etc. they control the database for any data input through their website. Cloud can make our environment on virtual, we can upload or download without a geographical limitation. It has AWS, Azure ..etc.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;Additionally, most website owners rent the server for deploying their website, because it costs a lot of money to execute their own server by themselves.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry></feed>
