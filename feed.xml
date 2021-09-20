@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-20T15:50:58+12:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">Operating System</title><link href="https://lulubeanana17.github.io/OS" rel="alternate" type="text/html" title="Operating System" /><published>2021-09-20T04:50:00+12:00</published><updated>2021-09-20T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/OS</id><content type="html" xml:base="https://lulubeanana17.github.io/OS">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-21T11:12:02+12:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">DeadLock</title><link href="https://lulubeanana17.github.io/DeadLock" rel="alternate" type="text/html" title="DeadLock" /><published>2021-09-21T04:50:00+12:00</published><updated>2021-09-21T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/DeadLock</id><content type="html" xml:base="https://lulubeanana17.github.io/DeadLock">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;DeadLock&lt;br /&gt;&lt;br /&gt;
+DeadLock is a situation where a set of processes are blocked because each process is holding 
+a resource and waiting for another resource acquired by some other process.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 
+which is acquired by process 2, and process 2 is waiting for Resource 1.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/deadlock.PNG&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;DeadLock can arise if the following four conditions hold simultaneously&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mutual Exclusion: Only one Process can use one Resource at a time&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Hold and Wait : A Process is holding at least one Resource and waiting for Resources&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;No Preemption : A Resource cannot be taken from a process unless the Process releases the 
+Resource.&lt;/li&gt;
+  &lt;li&gt;Circular Wait : A set of Processes are waiting for each other in circular form (e.g. the 
+above diagram).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Methods of handling DeadLock&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;DeadLock prevention&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;DeadLock aviodance&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;DeadLock detection and recovery&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;DeadLock ignorance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;DeadLock Prevention&lt;br /&gt;&lt;br /&gt;
+This method is to not lets the four conditions happen, that is, it denies every four conditions.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mutual Exclusion&lt;br /&gt;
+  It allows processes to use one Resource simultaneously. This circumstance will arise 
+a synchronization problem.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Hold and Wait&lt;br /&gt;
+  A Process requires all Resources simultaneously and waits for until get permission. It 
+bans any waiting for another Resource.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;No Preemption&lt;br /&gt;
+  If no one holds one Resource, it allows the highest priority Process to hold it.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Circular Wait&lt;br /&gt;
+  It allows Processes to require Resources in one way.&lt;br /&gt;&lt;br /&gt;
+This Method will raise some disadvantages, such as lost of system handling and efficiency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;DeadLock Avoidance&lt;br /&gt;&lt;br /&gt;
+When CPU can distribute every Resources to Processes without DeadLock, the situation is called 
+“Safe State”.
+If CPU can find the sequence that does not affect DeadLock, it is called “Safe Sequence”.&lt;br /&gt;&lt;br /&gt;
+However, Unstable State is the opposite to Safe State, that is, can raise DeadLock.&lt;br /&gt;
+Avoidance allows CPU to keep allocating Reosurces all the time in order to stay in “Safe State”.&lt;br /&gt;
+We use “Banker’s Algorithm” to avoid DeadLock.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;DeadLock detection and recovery&lt;br /&gt;&lt;br /&gt;
+Once DeadLock occurs, detect it and recover it.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Detection&lt;br /&gt;
+CPU detects whether DeadLock occurs or not.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Recovery&lt;br /&gt;
+CPU uses recovery method to get out of Circular Wait.&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Seize one or more Processes&lt;br /&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Shut all Processes in DeadLock down&lt;br /&gt;
+  Some normal Processes can be shut down and lost the works.&lt;br /&gt;&lt;/li&gt;
+          &lt;li&gt;one check, one pass&lt;br /&gt;
+  CPU stops Every single Process and detect DeadLock simultaneously. It is heavy work.&lt;br /&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Preemption&lt;br /&gt;
+CPU preempts the allocated Resource and allocates it to another Process until DeadLock solved.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;DeadLock Ignorance&lt;br /&gt;&lt;br /&gt;
+If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">Operating System</title><link href="https://lulubeanana17.github.io/OS" rel="alternate" type="text/html" title="Operating System" /><published>2021-09-20T04:50:00+12:00</published><updated>2021-09-20T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/OS</id><content type="html" xml:base="https://lulubeanana17.github.io/OS">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -632,18 +719,4 @@ the bytecodes to machine language being suitable for B hardware environment.&lt;
 &lt;p&gt;Python is interpreter language, C languages are compile language,
 this is why c is a programming language for hardware control system.&lt;/p&gt;
 
-&lt;p&gt;However, Java is compile and interpreter language. In java, java compiler translates .java file into .class file by bytecode, and java virtual machine(java interpreter) is translating bytecode to object codes.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">back-end-basic</title><link href="https://lulubeanana17.github.io/backend-basic" rel="alternate" type="text/html" title="back-end-basic" /><published>2021-09-15T04:40:00+12:00</published><updated>2021-09-15T04:40:00+12:00</updated><id>https://lulubeanana17.github.io/backend-basic</id><content type="html" xml:base="https://lulubeanana17.github.io/backend-basic">&lt;p&gt;This is the first post.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="back-end" /><summary type="html">This is the first post.</summary></entry><entry><title type="html">Browser operating principle</title><link href="https://lulubeanana17.github.io/browser-principle" rel="alternate" type="text/html" title="Browser operating principle" /><published>2021-09-15T04:40:00+12:00</published><updated>2021-09-15T04:40:00+12:00</updated><id>https://lulubeanana17.github.io/browser-principle</id><content type="html" xml:base="https://lulubeanana17.github.io/browser-principle">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Our website consists of front-end and back-end. Front-end is about design aspect, which is made by html, css, and javascript or other frameworks. Back-end is about a structure that is invisible (like a pipeline behind a wall), it manages the website’s data.&lt;/p&gt;
-
-&lt;p&gt;The website is based on a browser, which supports internet environment to users. For example, we can say the browsers are expo stadium and the websites are booths in there for any kind of purpose.&lt;/p&gt;
-
-&lt;p&gt;Every website owners have the websites’ original file, it only can make any change to actual website showing on internet when the original files are changed and pushed to server.&lt;/p&gt;
-
-&lt;p&gt;The browsers (chrome, safari ..etc) play a client role that is like expo stadium. When users surf on the internet through a browser and find a website that he/she want to have a look. When they click the website, the browser (called a client) request a server that stores the website’s file, get the copy, and show it to the user. Moreover, the copied files can be scalable and changable because it is just copy.&lt;/p&gt;
-
-&lt;p&gt;Additionally, most website owners rent the server for deploying their website, because it costs a lot of money to execute their own server by themselves.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;However, Java is compile and interpreter language. In java, java compiler translates .java file into .class file by bytecode, and java virtual machine(java interpreter) is translating bytecode to object codes.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">back-end-basic</title><link href="https://lulubeanana17.github.io/backend-basic" rel="alternate" type="text/html" title="back-end-basic" /><published>2021-09-15T04:40:00+12:00</published><updated>2021-09-15T04:40:00+12:00</updated><id>https://lulubeanana17.github.io/backend-basic</id><content type="html" xml:base="https://lulubeanana17.github.io/backend-basic">&lt;p&gt;This is the first post.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="back-end" /><summary type="html">This is the first post.</summary></entry></feed>
