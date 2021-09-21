@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-21T11:12:02+12:00</updated>
+  <updated>2021-09-21T14:42:54+12:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -30,6 +30,125 @@
   
   
 
+  
+    <entry>
+      <title type="html">Banker’s Algorithm</title>
+      <link href="https://lulubeanana17.github.io/banker-algorithm" rel="alternate" type="text/html" title="Banker's Algorithm" />
+      <published>2021-09-21T05:50:00+12:00</published>
+      <updated>2021-09-21T05:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/banker-algorithm</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/banker-algorithm">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Banker’s algorithm is a DeadLock avoidance algorithm.&lt;br /&gt;&lt;br /&gt;
+DeadLock Avoidance only allocate Resources to Process in “Safe State”.&lt;br /&gt;
+So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests 
+until changing to Safe State.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;The concept of Banker’s algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/bank-1.PNG&quot; alt=&quot;runtime2&quot; /&gt;
+In the above image, Bank has $20 now, but User 1, 2, and 3 still need money.&lt;br /&gt;&lt;br /&gt;
+To solve the shortage, &lt;br /&gt;
+First solution is give $10 to User 2, and wait for user 2 until he give money back to bank.
+When Bank get $40 from user 2, they can help user 1 or 3.&lt;br /&gt;
+Second solution is give $20 to user 3, and wait for user 3 until get back money.&lt;br /&gt;
+However, this method is not working with user 1 because he needs $40.&lt;br /&gt;
+So, we can help user 1 after user 2 and 3 complete.&lt;br /&gt;&lt;br /&gt;
+“Safe State” is a state that bank can give and get back money from users.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;user2 -&amp;gt; user1 -&amp;gt; user3&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;user2 -&amp;gt; user3 -&amp;gt; user1&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;user3 -&amp;gt; user1 -&amp;gt; user2&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;user3 -&amp;gt; user2 -&amp;gt; user1&lt;br /&gt;&lt;br /&gt;
+These sequences are known as “Safe Sequence”, which can solve user’s problem.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;../assets/built/images/bank-2.PNG&quot; alt=&quot;runtime2&quot; /&gt;
+However, in this case, user1 needs urgent $35.
+The bank currently have only $5. The bank cannot help anyone of users, and they will bankrupt.&lt;br /&gt;
+This state is known as “Unsafe State” or “DeadLock”.&lt;br /&gt;&lt;br /&gt;
+So, the banker’s algorithm is caused from “Bank must have money that can help at least one users”.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Safe State&lt;br /&gt;
+ -&amp;gt; a state that has Safe sequence that can allocate necessary Resource to Process without DeadLock.&lt;br /&gt;&lt;br /&gt;
+Unsafe State&lt;br /&gt;
+ -&amp;gt; a state that does not have Safe Sequence. Unsafe State is a necessary condition to make DeadLock.&lt;br /&gt;&lt;br /&gt;
+ DeadLock only occur when Unsafe State exists. Unsafe State has no guarantee to make DeadLock.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Necessary conditions to operate Banker’s algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Maximum Money Users can request&lt;br /&gt;
+-&amp;gt; How much of each resource each process could possible request.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Current money users borrow&lt;br /&gt;
+-&amp;gt; How much of each resource each process is currently holding.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Available money in the bank&lt;br /&gt;
+-&amp;gt; How much of each resource the system has available.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Process example&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/bank-example.PNG&quot; alt=&quot;runtime2&quot; /&gt;
+P0, P1, P2 are Process, OS has 12 Drives for Resources.&lt;br /&gt;
+Now, at “t0” time, P0 uses 5 Drives, P1 uses 2 Drives, and P2 uses 2 Drives. So, 
+OS has 3 Drives as available Resources now.&lt;br /&gt;
+the system is Safe State at t0 because &amp;lt;P1 -&amp;gt; P0 -&amp;gt; P2&amp;gt; is satisfied with Safe Sequence.&lt;br /&gt;&lt;br /&gt;
+However, the system can be Unsafe State.&lt;br /&gt;
+At “t1” time, P2 Process request 1 more Drive Resource, and available Resource is 2.
+&lt;img src=&quot;../assets/built/images/bank-example1.PNG&quot; alt=&quot;runtime2&quot; /&gt;
+In this situation, P0 is impossible because it needs 5 Drives Resources.
+Also P1 is not solution because, even though OS helps P1 and get back 4 Drive Resources, OS can not 
+help P0 or P2 with 4 Drive Resources.&lt;br /&gt;
+So, the system is Unsafe State at “t1” Time.&lt;br /&gt;&lt;br /&gt;
+If we had made P2 waits until other processes had finished and released its resources, then we 
+could have avoided the DeadLock.&lt;br /&gt;
+The idea is imply to ensure that the system will always remain in Safe State.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Disadvantage of Banker’s algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The prerequisites&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Same Resource number&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;Low rate of Resource usability to prevent Unsafe State&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;Need to know the Maximum Resource numbers&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;Limited time for holding Resources&lt;br /&gt;&lt;br /&gt;
+Banker’s algorithm is not recommened.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">DeadLock</title>
@@ -1052,40 +1171,6 @@ this is why c is a programming language for hardware control system.&lt;/p&gt;
 
       
         <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">back-end-basic</title>
-      <link href="https://lulubeanana17.github.io/backend-basic" rel="alternate" type="text/html" title="back-end-basic" />
-      <published>2021-09-15T04:40:00+12:00</published>
-      <updated>2021-09-15T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/backend-basic</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/backend-basic">&lt;p&gt;This is the first post.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="back-end" />
-      
-
-      
-        <summary type="html">This is the first post.</summary>
       
 
       

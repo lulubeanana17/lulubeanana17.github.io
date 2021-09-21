@@ -11,7 +11,7 @@
 
 
 
-    <title>DeadLock</title>
+    <title>Banker's Algorithm</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -39,24 +39,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="Any knowledges about software fundamental & technics" />
     <link rel="shortcut icon" href="https://lulubeanana17.github.io/assets/built/images/favicon.PNG" type="image/png" />
-    <link rel="canonical" href="https://lulubeanana17.github.io/DeadLock" />
+    <link rel="canonical" href="https://lulubeanana17.github.io/banker-algorithm" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="DeadLock" />
-    <meta property="og:description" content="DeadLock DeadLock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process. As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 which is acquired" />
-    <meta property="og:url" content="https://lulubeanana17.github.io/DeadLock" />
+    <meta property="og:title" content="Banker's Algorithm" />
+    <meta property="og:description" content="Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources to Process in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User" />
+    <meta property="og:url" content="https://lulubeanana17.github.io/banker-algorithm" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-09-21T04:50:00+12:00" />
-    <meta property="article:modified_time" content="2021-09-21T04:50:00+12:00" />
+    <meta property="article:published_time" content="2021-09-21T05:50:00+12:00" />
+    <meta property="article:modified_time" content="2021-09-21T05:50:00+12:00" />
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DeadLock" />
-    <meta name="twitter:description" content="DeadLock DeadLock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process. As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 which is acquired" />
+    <meta name="twitter:title" content="Banker's Algorithm" />
+    <meta name="twitter:description" content="Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources to Process in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User" />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -77,7 +77,7 @@
         "name": "Siyoon Jung",
         "logo": "https://lulubeanana17.github.io/"
     },
-    "url": "https://lulubeanana17.github.io/DeadLock",
+    "url": "https://lulubeanana17.github.io/banker-algorithm",
     "image": {
         "@type": "ImageObject",
         "url": "https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg",
@@ -86,9 +86,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://lulubeanana17.github.io/DeadLock"
+        "@id": "https://lulubeanana17.github.io/banker-algorithm"
     },
-    "description": "DeadLock DeadLock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process. As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 which is acquired"
+    "description": "Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources to Process in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User"
 }
     </script>
 
@@ -101,7 +101,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="DeadLock" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Banker's Algorithm" href="/feed.xml" />
 
 
 </head>
@@ -173,7 +173,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">DeadLock</h1>
+                <h1 class="post-full-title">Banker's Algorithm</h1>
             </header>
 
             <!--
@@ -191,88 +191,86 @@ into the {body} of the default.hbs template -->
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
 
-<p>DeadLock<br /><br />
-DeadLock is a situation where a set of processes are blocked because each process is holding 
-a resource and waiting for another resource acquired by some other process.</p>
+<p>Banker’s algorithm is a DeadLock avoidance algorithm.<br /><br />
+DeadLock Avoidance only allocate Resources to Process in “Safe State”.<br />
+So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests 
+until changing to Safe State.</p>
 <hr />
 
-<p>As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 
-which is acquired by process 2, and process 2 is waiting for Resource 1.</p>
+<p>The concept of Banker’s algorithm<br /><br /></p>
 
-<p><img src="../assets/built/images/deadlock.PNG" alt="runtime2" /></p>
-<hr />
-
-<p>DeadLock can arise if the following four conditions hold simultaneously<br /></p>
+<p><img src="../assets/built/images/bank-1.PNG" alt="runtime2" />
+In the above image, Bank has $20 now, but User 1, 2, and 3 still need money.<br /><br />
+To solve the shortage, <br />
+First solution is give $10 to User 2, and wait for user 2 until he give money back to bank.
+When Bank get $40 from user 2, they can help user 1 or 3.<br />
+Second solution is give $20 to user 3, and wait for user 3 until get back money.<br />
+However, this method is not working with user 1 because he needs $40.<br />
+So, we can help user 1 after user 2 and 3 complete.<br /><br />
+“Safe State” is a state that bank can give and get back money from users.<br /></p>
 <ul>
-  <li>Mutual Exclusion: Only one Process can use one Resource at a time<br /></li>
-  <li>Hold and Wait : A Process is holding at least one Resource and waiting for Resources<br /></li>
-  <li>No Preemption : A Resource cannot be taken from a process unless the Process releases the 
-Resource.</li>
-  <li>Circular Wait : A set of Processes are waiting for each other in circular form (e.g. the 
-above diagram).</li>
+  <li>user2 -&gt; user1 -&gt; user3<br /></li>
+  <li>user2 -&gt; user3 -&gt; user1<br /></li>
+  <li>user3 -&gt; user1 -&gt; user2<br /></li>
+  <li>user3 -&gt; user2 -&gt; user1<br /><br />
+These sequences are known as “Safe Sequence”, which can solve user’s problem.<br /><br /><br />
+<img src="../assets/built/images/bank-2.PNG" alt="runtime2" />
+However, in this case, user1 needs urgent $35.
+The bank currently have only $5. The bank cannot help anyone of users, and they will bankrupt.<br />
+This state is known as “Unsafe State” or “DeadLock”.<br /><br />
+So, the banker’s algorithm is caused from “Bank must have money that can help at least one users”.</li>
 </ul>
 <hr />
 
-<p>Methods of handling DeadLock<br /></p>
-<ul>
-  <li>DeadLock prevention<br /></li>
-  <li>DeadLock aviodance<br /></li>
-  <li>DeadLock detection and recovery<br /></li>
-  <li>DeadLock ignorance</li>
-</ul>
+<p>Safe State<br />
+ -&gt; a state that has Safe sequence that can allocate necessary Resource to Process without DeadLock.<br /><br />
+Unsafe State<br />
+ -&gt; a state that does not have Safe Sequence. Unsafe State is a necessary condition to make DeadLock.<br /><br />
+ DeadLock only occur when Unsafe State exists. Unsafe State has no guarantee to make DeadLock.</p>
 <hr />
 
-<p>DeadLock Prevention<br /><br />
-This method is to not lets the four conditions happen, that is, it denies every four conditions.<br /></p>
-<ul>
-  <li>Mutual Exclusion<br />
-  It allows processes to use one Resource simultaneously. This circumstance will arise 
-a synchronization problem.<br /></li>
-  <li>Hold and Wait<br />
-  A Process requires all Resources simultaneously and waits for until get permission. It 
-bans any waiting for another Resource.<br /></li>
-  <li>No Preemption<br />
-  If no one holds one Resource, it allows the highest priority Process to hold it.<br /></li>
-  <li>Circular Wait<br />
-  It allows Processes to require Resources in one way.<br /><br />
-This Method will raise some disadvantages, such as lost of system handling and efficiency.</li>
-</ul>
+<p>Necessary conditions to operate Banker’s algorithm<br /><br /></p>
+<ol>
+  <li>Maximum Money Users can request<br />
+-&gt; How much of each resource each process could possible request.<br /></li>
+  <li>Current money users borrow<br />
+-&gt; How much of each resource each process is currently holding.<br /></li>
+  <li>Available money in the bank<br />
+-&gt; How much of each resource the system has available.</li>
+</ol>
 <hr />
 
-<p>DeadLock Avoidance<br /><br />
-When CPU can distribute every Resources to Processes without DeadLock, the situation is called 
-“Safe State”.
-If CPU can find the sequence that does not affect DeadLock, it is called “Safe Sequence”.<br /><br />
-However, Unstable State is the opposite to Safe State, that is, can raise DeadLock.<br />
-Avoidance allows CPU to keep allocating Reosurces all the time in order to stay in “Safe State”.<br />
-We use “Banker’s Algorithm” to avoid DeadLock.</p>
+<p>Process example<br /><br /></p>
+
+<p><img src="../assets/built/images/bank-example.PNG" alt="runtime2" />
+P0, P1, P2 are Process, OS has 12 Drives for Resources.<br />
+Now, at “t0” time, P0 uses 5 Drives, P1 uses 2 Drives, and P2 uses 2 Drives. So, 
+OS has 3 Drives as available Resources now.<br />
+the system is Safe State at t0 because &lt;P1 -&gt; P0 -&gt; P2&gt; is satisfied with Safe Sequence.<br /><br />
+However, the system can be Unsafe State.<br />
+At “t1” time, P2 Process request 1 more Drive Resource, and available Resource is 2.
+<img src="../assets/built/images/bank-example1.PNG" alt="runtime2" />
+In this situation, P0 is impossible because it needs 5 Drives Resources.
+Also P1 is not solution because, even though OS helps P1 and get back 4 Drive Resources, OS can not 
+help P0 or P2 with 4 Drive Resources.<br />
+So, the system is Unsafe State at “t1” Time.<br /><br />
+If we had made P2 waits until other processes had finished and released its resources, then we 
+could have avoided the DeadLock.<br />
+The idea is imply to ensure that the system will always remain in Safe State.</p>
 <hr />
 
-<p>DeadLock detection and recovery<br /><br />
-Once DeadLock occurs, detect it and recover it.<br /></p>
+<p>Disadvantage of Banker’s algorithm<br /><br /></p>
 <ul>
-  <li>Detection<br />
-CPU detects whether DeadLock occurs or not.<br /></li>
-  <li>Recovery<br />
-CPU uses recovery method to get out of Circular Wait.<br />
+  <li>The prerequisites<br />
     <ul>
-      <li>Seize one or more Processes<br />
-        <ol>
-          <li>Shut all Processes in DeadLock down<br />
-  Some normal Processes can be shut down and lost the works.<br /></li>
-          <li>one check, one pass<br />
-  CPU stops Every single Process and detect DeadLock simultaneously. It is heavy work.<br /></li>
-        </ol>
-      </li>
-      <li>Preemption<br />
-CPU preempts the allocated Resource and allocates it to another Process until DeadLock solved.</li>
+      <li>Same Resource number<br /></li>
+      <li>Low rate of Resource usability to prevent Unsafe State<br /></li>
+      <li>Need to know the Maximum Resource numbers<br /></li>
+      <li>Limited time for holding Resources<br /><br />
+Banker’s algorithm is not recommened.</li>
     </ul>
   </li>
 </ul>
-<hr />
-
-<p>DeadLock Ignorance<br /><br />
-If DeadLock is very rare, then let it happen and reboot the system.</p>
 
                 </div>
             </section>
@@ -315,9 +313,9 @@ If DeadLock is very rare, then let it happen and reboot the system.</p>
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'https://lulubeanana17.github.io/DeadLock';
-                            var this_page_identifier = '/DeadLock';
-                            var this_page_title = 'DeadLock';
+                            var this_page_url = 'https://lulubeanana17.github.io/banker-algorithm';
+                            var this_page_identifier = '/banker-algorithm';
+                            var this_page_title = 'Banker's Algorithm';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -362,14 +360,14 @@ If DeadLock is very rare, then let it happen and reboot the system.</p>
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/banker-algorithm">Banker's Algorithm</a></li>
-                                        
-                                    
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                            <li><a href="/DeadLock">DeadLock</a></li>
+                                        
                                     
                                   
                                 
@@ -464,16 +462,19 @@ If DeadLock is very rare, then let it happen and reboot the system.</p>
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
                 
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/banker-algorithm">
+            <a class="post-card-image-link" href="/DeadLock">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/banker-algorithm">
+            <a class="post-card-content-link" href="/DeadLock">
                 <header class="post-card-header">
                     
                         
@@ -483,7 +484,7 @@ If DeadLock is very rare, then let it happen and reboot the system.</p>
                         
                     
 
-                    <h2 class="post-card-title">Banker's Algorithm</h2>
+                    <h2 class="post-card-title">DeadLock</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -509,53 +510,6 @@ If DeadLock is very rare, then let it happen and reboot the system.</p>
 
             
 
-            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
-            
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/OS">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.jpg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/OS">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Front-end</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Operating System</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
-
         </div>
     </div>
 </aside>
@@ -569,18 +523,18 @@ If DeadLock is very rare, then let it happen and reboot the system.</p>
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">DeadLock</div>
+    <div class="floating-header-title">Banker's Algorithm</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=DeadLock&amp;url=https://lulubeanana17.github.io/DeadLock"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Banker%27s+Algorithm&amp;url=https://lulubeanana17.github.io/banker-algorithm"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://lulubeanana17.github.io/DeadLock"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://lulubeanana17.github.io/banker-algorithm"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
