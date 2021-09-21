@@ -46,7 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="difference between compile and interpret" />
-    <meta property="og:description" content="Compiler is translating the whole codes by advanced language to machine language at one time. In other words, it collects commands once they read the whole source code, and re-organize it. So, it takes long time for translating, but it takes short time to activate the code file after translating." />
+    <meta property="og:description" content="Compiler is translating “the entire codes” in advanced language to machine language at one time. Interpreter is translating the sourcodes “line by line” to machine language. Compiler is slower than Interpreter at the first translation Once compile done, Compiler is faster than Interpreter to execute the file. Most of time," />
     <meta property="og:url" content="https://lulubeanana17.github.io/difference-between-compile-and-interpret" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -56,7 +56,7 @@
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="difference between compile and interpret" />
-    <meta name="twitter:description" content="Compiler is translating the whole codes by advanced language to machine language at one time. In other words, it collects commands once they read the whole source code, and re-organize it. So, it takes long time for translating, but it takes short time to activate the code file after translating." />
+    <meta name="twitter:description" content="Compiler is translating “the entire codes” in advanced language to machine language at one time. Interpreter is translating the sourcodes “line by line” to machine language. Compiler is slower than Interpreter at the first translation Once compile done, Compiler is faster than Interpreter to execute the file. Most of time," />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/difference-between-compile-and-interpret"
     },
-    "description": "Compiler is translating the whole codes by advanced language to machine language at one time. In other words, it collects commands once they read the whole source code, and re-organize it. So, it takes long time for translating, but it takes short time to activate the code file after translating."
+    "description": "Compiler is translating “the entire codes” in advanced language to machine language at one time. Interpreter is translating the sourcodes “line by line” to machine language. Compiler is slower than Interpreter at the first translation Once compile done, Compiler is faster than Interpreter to execute the file. Most of time,"
 }
     </script>
 
@@ -190,35 +190,33 @@ into the {body} of the default.hbs template -->
     <li><a href="./frontend-basic">front-end-basic</a></li>
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
+<p><img src="../assets/built/images/compiler-interpreter.PNG" alt="processimg" />
+Compiler is translating “the entire codes” in advanced language to machine language at one time.<br />
+Interpreter is translating the sourcodes “line by line” to machine language.<br /><br /></p>
+<ul>
+  <li>Compiler is slower than Interpreter at the first translation<br /></li>
+  <li>Once compile done, Compiler is faster than Interpreter to execute the file.</li>
+</ul>
+<hr />
 
-<p>Compiler is translating the whole codes by advanced language to machine language at one time.
-In other words, it collects commands once they read the whole source code, and re-organize it.
-So, it takes long time for translating, but it takes short time to activate the code file after
-translating.</p>
+<p>Most of time, Compiler is faster than Interpreter. However some languages use Interpreter for some reason.<br />
+The reason is that Interpreter is compatible to other hardware, but Compiler is not.</p>
+<hr />
 
-<p>Interpreter is translating the sourcodes line by line to machine language, so it takes short time
-for translating. However, it should do translate the codes every single time whenever they execute the file. Because of this, interpreter languages are slower than compiler.</p>
+<p>For example, cpu A is not compatible with cpu B.<br /><br /></p>
 
-<p>These features seem like compiler is better than intrpreter. However, here is the thing why we
-use interpreter as well.</p>
-
-<p>Interpreter is not obsessed by each hardware, but compiler is. Hardware obsession is 
-quite a big deal when we consider this software is working on different hardware.</p>
-
-<p>For example, cpu A is not compatible with cpu B.</p>
-
-<p>Compiler is translating advanced language to machine language directly, so the compiled software
-in A is not properly working in B. In this case, developers should make the software
-in B environment as well.</p>
-
-<p>However, interpreter is translating advanced language to bytecode (or intermediate code)
-during interpreting time, and the virtual machine depending on what language uses translates
+<p><img src="../assets/built/images/compiler-interpreter-1.PNG" alt="processimg" />
+Compiler is translating advanced language to machine language directly. It does not change the compatibility.<br />
+Developers should make the software in B environment as well.<br /><br />
+<img src="../assets/built/images/compiler-interpreter-2.PNG" alt="processimg" />
+Interpreter is translating advanced language to bytecode, and the virtual machine translates
 the bytecodes to machine language being suitable for B hardware environment.</p>
+<hr />
 
 <p>Python is interpreter language, C languages are compile language,
-this is why c is a programming language for hardware control system.</p>
+this is why c is a programming language for hardware control system (hardware must be fast).<br /></p>
 
-<p>However, Java is compile and interpreter language. In java, java compiler translates .java file into .class file by bytecode, and java virtual machine(java interpreter) is translating bytecode to object codes.</p>
+<p>However, Java is compile and interpreter language. In java, java compiler translates .java file into .class file by bytecode, and java virtual machine is translating bytecode to object codes.</p>
 
                 </div>
             </section>
@@ -461,12 +459,12 @@ this is why c is a programming language for hardware control system.</p>
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/browser-principle">
+            <a class="post-card-image-link" href="/frontend-backend">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/browser-principle">
+            <a class="post-card-content-link" href="/frontend-backend">
                 <header class="post-card-header">
                     
                         
@@ -476,7 +474,7 @@ this is why c is a programming language for hardware control system.</p>
                         
                     
 
-                    <h2 class="post-card-title">Browser operating principle</h2>
+                    <h2 class="post-card-title">the difference between front-end and back-end</h2>
                 </header>
                 <section class="post-card-excerpt">
                     

@@ -46,7 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="process and thread" />
-    <meta property="og:description" content="Program : a file that can operate some work (e.g. applications) A program operates on operating system on cpu. -Process- Process is an action when program operates. Process is operated by CPU and stored by memory. Process gets assigned some system resource from CPU. The system resource is CPU time," />
+    <meta property="og:description" content="A program = MS Word, Power Point A state that program runs = Process Program is stored in memory. Once OS executes Program, Process is working on memory. CPU gives Drive Resource to Process. Process only work when they have Resource. The system resource is CPU time, memory storage, and" />
     <meta property="og:url" content="https://lulubeanana17.github.io/process-thread" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -56,7 +56,7 @@
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="process and thread" />
-    <meta name="twitter:description" content="Program : a file that can operate some work (e.g. applications) A program operates on operating system on cpu. -Process- Process is an action when program operates. Process is operated by CPU and stored by memory. Process gets assigned some system resource from CPU. The system resource is CPU time," />
+    <meta name="twitter:description" content="A program = MS Word, Power Point A state that program runs = Process Program is stored in memory. Once OS executes Program, Process is working on memory. CPU gives Drive Resource to Process. Process only work when they have Resource. The system resource is CPU time, memory storage, and" />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/process-thread"
     },
-    "description": "Program : a file that can operate some work (e.g. applications) A program operates on operating system on cpu. -Process- Process is an action when program operates. Process is operated by CPU and stored by memory. Process gets assigned some system resource from CPU. The system resource is CPU time,"
+    "description": "A program = MS Word, Power Point A state that program runs = Process Program is stored in memory. Once OS executes Program, Process is working on memory. CPU gives Drive Resource to Process. Process only work when they have Resource. The system resource is CPU time, memory storage, and"
 }
     </script>
 
@@ -191,100 +191,84 @@ into the {body} of the default.hbs template -->
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
 
-<p>Program : a file that can operate some work (e.g. applications)</p>
+<p>A program = MS Word, Power Point<br /><br />
+A state that program runs = Process<br />
+Program is stored in memory. Once OS executes Program, Process is working on memory.<br />
+CPU gives Drive Resource to Process. Process only work when they have Resource.<br />
+The system resource is CPU time, memory storage, and address space.</p>
+<hr />
 
-<p>A program operates on operating system on cpu.</p>
-
-<p>-Process-</p>
-
-<p>Process is an action when program operates. Process is operated by CPU and stored by memory.
-Process gets assigned some system resource from CPU.</p>
-
-<p>The system resource is CPU time, memory storage, and address space.</p>
-
-<p>When program starts, memory makes process address sapce for program.
+<p>When program starts, memory makes address sapce for process.<br />
 In address space, there are 3 segments.</p>
-<ol>
+<ul>
   <li>code segment : code storage (read only)</li>
-  <li>data segment : data (such as global variables) storage (read &amp; write)</li>
-  <li>stack segment : stores functions &amp; local variables (read &amp; write)</li>
-</ol>
+  <li>data segment : data (global variables) storage (read &amp; write)</li>
+  <li>stack segment : functions &amp; local variables (read &amp; write)</li>
+</ul>
 
-<p><img src="../assets/built/images/process.png" alt="processimg" /></p>
-
-<p>The reason why stack segment exists is functions feature.
-Depending on outside &amp; iside function, the function will be stacked by sequence.
-Local variables &amp; functions can only approach by logical sequence, but global variables
-can approach any functions. We should separate them.</p>
+<p><img src="../assets/built/images/process.png" alt="processimg" />
+Local variables should separate from Global variables.<br />
+Even though they have same name, they can access to the different level.<br />
+When they are in the same memory, they can mess them up.</p>
+<hr />
 
 <p>Each process has at least one thread.</p>
 
-<p><img src="../assets/built/images/address-space.png" alt="processimg" /></p>
+<p><img src="../assets/built/images/address-space.png" alt="processimg" />
+Each process has independent address space, they do not share variable and data type.<br />
+To communicate each other, they use IPC (inter-process communication).<br />
+The communication between process is called “context switching”.</p>
 
-<p>Each process has independent address space, one process cannot invade other process’s
-variable and data type. To communicate each other, they use IPC (inter-process communication).
-the communication between process is called context switching.</p>
+<p><img src="../assets/built/images/process-1.PNG" alt="processimg" />
+At t0 time, Process 1 is handling the task.<br />
+<img src="../assets/built/images/process-2.PNG" alt="processimg" />
+At t1 time, Process 1 hands over their memory to Process 2.<br />
+Process 2 remove their memory and download Process 1 memory.</p>
+<hr />
 
-<p>processes deal with tasks in CPU turn by turn, it is called context switching.
-specifically, each process rebuilds previous process’s work, doing it, and hand over to next.</p>
+<p>Thread</p>
 
-<p>-Thread-</p>
+<p><img src="../assets/built/images/thread.png" alt="processimg" />
+A Process consists of several Threads.<br />
+they share the resources (heap, code, data) and address space.<br />
+Each threads have their own register and stack, but they can read and write heap memory.<br /><br /></p>
+<ul>
+  <li>Stack : A state that functions run<br /></li>
+  <li>Register : the logs of command’s activation, they store last task for context switching.</li>
+</ul>
+<hr />
 
-<p><img src="../assets/built/images/thread.png" alt="processimg" /></p>
+<p>Java thread</p>
 
-<p>Thread is a specific flow path that operates in a process.
-Each threads in one process share the resources (heap, code, data) and address space.
-Each threads have their own register and stack, but they can read and write heap memory.</p>
+<p>Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.<br />
+Java has no process, only threads. Java threads are code blocks “scheduled” by JVM.<br />
+Also, JVM manages<br /></p>
+<ul>
+  <li>How many threads exist<br /></li>
+  <li>The thread’s location in memory<br /></li>
+  <li>Thread statement<br /></li>
+  <li>Priority of threads<br /><br />
+So, developers write thread codes by using java thread, and request to activates codes to JVM.</li>
+</ul>
+<hr />
 
-<p>Stack has messages, addresses, and variables in functions when call functions.
-Register has the logs of threads commands activation because of context switching, they
-should remember the last action for next turn.</p>
+<p>Multi-processing<br /><br />
+One program consists of many processes.<br />
+One issue from one process doesn’t affect other processes.<br />
+However, during context switching, it creates heavy works (such as cache menory reset).<br />
+Because process get assigned each independent memory space, they don’t have share memory.<br />
+So, they should reset every data to share other’s cache data by context switching.</p>
+<hr />
 
-<p>-Java thread-</p>
+<p>Multi-threading<br /><br />
+One program consists of many threads.<br />
+Threads do not need many time for sharing, so, context switching is fast, because it shares 
+every memory except for stack space.<br /><br />
+However, it needs very sophisticated design, and debug is difficult.<br />
+One issue from one thread affects other threads.</p>
+<hr />
 
-<p>Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.
-Java has no process, only threads. Java threads are code blocks scheduled by JVM.
-Also, JVM manages</p>
-<ol>
-  <li>How many threads exist</li>
-  <li>The location of memory for program codes</li>
-  <li>Thread statements</li>
-  <li>Priority of threads</li>
-</ol>
-
-<p>So, developers write thread codes by using java thread, and request to activates codes to JVM.</p>
-
-<p>-Difference between multi-process and multi-thread-</p>
-
-<p>The difference between multi-process and multi-thread</p>
-
-<p>Multi-processing</p>
-
-<p>One program consists of many processes, each process deal with one task.</p>
-
-<p>One issue from one process doesn’t affect other processes.</p>
-
-<p>However, during context switching, it creates overhead by heavy works(such as cache menory reset).
-Because process get assigned each independent memory space, they don’t have share memory.
-So, they should reset every data to share other’s cache data by context switching.
-Also, they cannot share variables in each process.</p>
-
-<p>Multi-threading</p>
-
-<p>One program consists of many threads.</p>
-
-<p>It reduces the needs of system resource, because they don’t need to allocate system resources
-to processes.
-Threads don’t need many time for sharing, so, context switching is fast, because it shares 
-every memory except for stack space.</p>
-
-<p>However, it needs very sophisticated design, and debug is difficult.
-Also, one process system has no advantage from multi-thread system.
-Another process can’t manage one’s threads. moreover, multi-thread has resource sharing issue.
-A problem in one thread affects other threads.</p>
-
-<p>Using multi-thread rather than multi-process means you reslove many tasks in one progarm, not
-activates many programs.
+<p>Multi-thread does not need many processes for tasks.<br />
 By doing that, we can save time and resource for context switching.</p>
 
                 </div>
@@ -547,9 +531,7 @@ By doing that, we can save time and resource for context switching.</p>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>
-
-</p>
+                        <p>Compiler is translating “the entire codes” in advanced language to machine language at one time. Interpreter is translating the sourcodes “line by line” to machine language. Compiler is slower than Interpreter at the</p>
                     
                 </section>
             </a>

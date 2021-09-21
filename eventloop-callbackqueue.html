@@ -46,7 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="event loop & callback queue in Javascript" />
-    <meta property="og:description" content="Event loop and callback queue in javascript Javascript is single thread language, which means that the engine can take one task only, because JS engine has only one call stack. JS engine reads codes and add functions called in call stack, after complete the function, it removes them from call" />
+    <meta property="og:description" content="Event loop and callback queue in javascript Javascript is single thread language, which means that the engine can take one task only, because JS engine has only one call stack. JS engine reads codes and add functions in call stack, after complete the function, it removes them from call stack." />
     <meta property="og:url" content="https://lulubeanana17.github.io/eventloop-callbackqueue" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -56,7 +56,7 @@
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="event loop & callback queue in Javascript" />
-    <meta name="twitter:description" content="Event loop and callback queue in javascript Javascript is single thread language, which means that the engine can take one task only, because JS engine has only one call stack. JS engine reads codes and add functions called in call stack, after complete the function, it removes them from call" />
+    <meta name="twitter:description" content="Event loop and callback queue in javascript Javascript is single thread language, which means that the engine can take one task only, because JS engine has only one call stack. JS engine reads codes and add functions in call stack, after complete the function, it removes them from call stack." />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/eventloop-callbackqueue"
     },
-    "description": "Event loop and callback queue in javascript Javascript is single thread language, which means that the engine can take one task only, because JS engine has only one call stack. JS engine reads codes and add functions called in call stack, after complete the function, it removes them from call"
+    "description": "Event loop and callback queue in javascript Javascript is single thread language, which means that the engine can take one task only, because JS engine has only one call stack. JS engine reads codes and add functions in call stack, after complete the function, it removes them from call stack."
 }
     </script>
 
@@ -191,48 +191,42 @@ into the {body} of the default.hbs template -->
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
 
-<ul>
-  <li>Event loop and callback queue in javascript</li>
-</ul>
-
-<p>Javascript is single thread language, which means that the engine can take one task only,
-because JS engine has only one call stack.</p>
-
-<p>JS engine reads codes and add functions called in call stack, after complete the function,
+<p>Event loop and callback queue in javascript<br /><br />
+<img src="../assets/built/images/callstack-1.png" alt="processimg" />
+Javascript is single thread language, which means that the engine can take one task only,
+because JS engine has only one call stack.<br />
+JS engine reads codes and add functions in call stack, after complete the function,
 it removes them from call stack.</p>
+<hr />
 
-<p>When developer makes codes in JS and activates it, JS engine reads the codes.
+<p><img src="../assets/built/images/runtime.PNG" alt="processimg" />
+When developer makes codes in JS and activates it, JS engine reads the codes.<br />
 JS engine do interpreting the codes to bytecodes, and Virtual Machine does interpreting them
-to machine codes. When codes are interpreting, the environment is called “Runtime”.</p>
+to machine codes. When codes are interpreting, the environment is called “Runtime”.<br /><br />
+For example, Chrome uses V8 engine for JS. So, Chrome is Runtime.</p>
+<hr />
 
-<p>JS engine depends on the environment, for example, Chrome uses V8 engine for JS.
-So, Chrome is Runtime.</p>
+<p>Programming is judged by two concepts: Synchronous and Asynchronous.<br /></p>
+<ul>
+  <li>Syncronous : only when one task is completed, the following one is unblocked<br /></li>
+  <li>Ansyncoronous : you can move to another task before the previous one finishes<br /><br />
+Javascript is syncronous language, which is slow because it waits every events until response back. <br />
+So, Chrome supports several web API to use JS code by ansyncoronous.</li>
+</ul>
+<hr />
 
-<p>Programming is judged by two concepts: syncronous and ansyncoronous.
-Syncronous is that they don’t activate next command until get response of current.
-Ansyncoronous is that they activate next command without the response of current.</p>
-
-<p>Javascript is syncronous language, which usually have poor UX because it waits every events
-until response back.
-So, Chrome support several web API to use JS code by ansyncoronous.</p>
-
-<p><img src="../assets/built/images/runtime.PNG" alt="processimg" /></p>
-
-<p>Ansyncoronous code can change the commands order. 
-For example, if there are first function and second function, second function can be activated faster than first function.</p>
-
-<p>Event loop can make ansyncronous happen in JS code.
-Let’s see what happened in runtime.</p>
-
+<p>Ansyncoronous code can change the commands order. <br />
+For example, if there are first function and second function, second function can be activated faster than first function.<br />
+Event loop can make ansyncronous happen in JS code.<br /><br /></p>
 <ol>
-  <li>when a first function is called in callstack, first function’s callback function moves to
-background.</li>
-  <li>after first function complete, second fucntion is complete as well.</li>
-  <li>first function’s callback function moves to callback queue.</li>
-  <li>event loop looks at callstack and callback queue.</li>
-  <li>if there is a function in callback queue and callstack is all complete, first function in
+  <li>When a first function is in callstack, first function’s callback function moves to background.<br /></li>
+  <li>After first function moved, second fucntion is completed in callstack.<br /></li>
+  <li>First function’s callback function moves to callback queue.<br /></li>
+  <li>Event loop looks at callstack and callback queue.<br /></li>
+  <li>If there is a function in callback queue and callstack is all complete, first function in
 callback queue moves to callstack and activate it.</li>
 </ol>
+<hr />
 
 <p>ps. call stack is the same as execution stack, control stack, run-time stack, machine stack, and the stack.</p>
 

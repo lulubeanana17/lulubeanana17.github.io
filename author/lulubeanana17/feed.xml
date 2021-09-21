@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-21T14:42:54+12:00</updated>
+  <updated>2021-09-21T23:53:18+12:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -809,32 +809,22 @@ Speed&lt;br /&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;Javascript is based on single thread and call back queue.
-It has JS engine, the most famous one is Google V8 engine.&lt;/p&gt;
+&lt;p&gt;Javascript is based on single thread and callback queue.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime-2.png&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The engine consists of memory heap and call stack.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;memory heap : memory allocation&lt;/li&gt;
-  &lt;li&gt;call stack : stack the commands code by code&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As i said, runtime = the environment (Chrome)&lt;/p&gt;
-
-&lt;p&gt;most developers use web API, which is not given by JS engine.
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The engine consists of memory heap and call stack.&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;call stack&lt;/li&gt;
+  &lt;li&gt;Memory heap : memory allocation&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Callstack : stack the commands code by code&lt;br /&gt;&lt;br /&gt;
+Runtime = The environment&lt;br /&gt;
+Most developers use web API, which is not given by JS engine.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;it is data structure that logs where I am in a program, which means what commands completed.
-&lt;br /&gt;
-&lt;br /&gt;
-1) example (normal call stack)&lt;/p&gt;
+&lt;p&gt;callstack&lt;br /&gt;&lt;br /&gt;
+It is data structure that logs where I am in a program, which means what commands completed.&lt;br /&gt;&lt;br /&gt;
+Example (normal callstack)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/code-1.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
 
@@ -843,19 +833,20 @@ It has JS engine, the most famous one is Google V8 engine.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/callstack-1.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Each steps of call stack are called “Stack Frame”.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;2) example (stack trace)&lt;/p&gt;
+&lt;p&gt;Example (stack trace)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/code-2.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Stack trace is a statement of call stack when exception happened.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/stacktrace.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;3) example (stack overflow)&lt;/p&gt;
-
-&lt;p&gt;It shows when eternal loop is executed.
-Call stack has maximum. When stack is over the maximum, it is called stack overflow.
+&lt;p&gt;Example (stack overflow)&lt;br /&gt;&lt;br /&gt;
+It shows when eternal loop is executed.&lt;br /&gt;
+Call stack has maximum. When stack is over the maximum, it is called stack overflow.&lt;br /&gt;
 And then, it blows the call stack, which is called “blowing the stack”.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/code-3.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
@@ -864,8 +855,8 @@ And then, it blows the call stack, which is called “blowing the stack”.&lt;/
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/stackoverflow-error.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Single thread is simple, but it has a lot of limitations.
-To solve the limitation (slow), we use event loop and ansyncoronous.&lt;/p&gt;</content>
+&lt;p&gt;Single thread is simple, but it has a lot of limitations.&lt;br /&gt;
+To solve the limitation (slow), we use event loop and asynchronous.&lt;/p&gt;</content>
 
       
       
@@ -905,48 +896,42 @@ To solve the limitation (slow), we use event loop and ansyncoronous.&lt;/p&gt;</
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Event loop and callback queue in javascript&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Javascript is single thread language, which means that the engine can take one task only,
-because JS engine has only one call stack.&lt;/p&gt;
-
-&lt;p&gt;JS engine reads codes and add functions called in call stack, after complete the function,
+&lt;p&gt;Event loop and callback queue in javascript&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;../assets/built/images/callstack-1.png&quot; alt=&quot;processimg&quot; /&gt;
+Javascript is single thread language, which means that the engine can take one task only,
+because JS engine has only one call stack.&lt;br /&gt;
+JS engine reads codes and add functions in call stack, after complete the function,
 it removes them from call stack.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;When developer makes codes in JS and activates it, JS engine reads the codes.
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime.PNG&quot; alt=&quot;processimg&quot; /&gt;
+When developer makes codes in JS and activates it, JS engine reads the codes.&lt;br /&gt;
 JS engine do interpreting the codes to bytecodes, and Virtual Machine does interpreting them
-to machine codes. When codes are interpreting, the environment is called “Runtime”.&lt;/p&gt;
+to machine codes. When codes are interpreting, the environment is called “Runtime”.&lt;br /&gt;&lt;br /&gt;
+For example, Chrome uses V8 engine for JS. So, Chrome is Runtime.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;JS engine depends on the environment, for example, Chrome uses V8 engine for JS.
-So, Chrome is Runtime.&lt;/p&gt;
+&lt;p&gt;Programming is judged by two concepts: Synchronous and Asynchronous.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Syncronous : only when one task is completed, the following one is unblocked&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Ansyncoronous : you can move to another task before the previous one finishes&lt;br /&gt;&lt;br /&gt;
+Javascript is syncronous language, which is slow because it waits every events until response back. &lt;br /&gt;
+So, Chrome supports several web API to use JS code by ansyncoronous.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Programming is judged by two concepts: syncronous and ansyncoronous.
-Syncronous is that they don’t activate next command until get response of current.
-Ansyncoronous is that they activate next command without the response of current.&lt;/p&gt;
-
-&lt;p&gt;Javascript is syncronous language, which usually have poor UX because it waits every events
-until response back.
-So, Chrome support several web API to use JS code by ansyncoronous.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ansyncoronous code can change the commands order. 
-For example, if there are first function and second function, second function can be activated faster than first function.&lt;/p&gt;
-
-&lt;p&gt;Event loop can make ansyncronous happen in JS code.
-Let’s see what happened in runtime.&lt;/p&gt;
-
+&lt;p&gt;Ansyncoronous code can change the commands order. &lt;br /&gt;
+For example, if there are first function and second function, second function can be activated faster than first function.&lt;br /&gt;
+Event loop can make ansyncronous happen in JS code.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;when a first function is called in callstack, first function’s callback function moves to
-background.&lt;/li&gt;
-  &lt;li&gt;after first function complete, second fucntion is complete as well.&lt;/li&gt;
-  &lt;li&gt;first function’s callback function moves to callback queue.&lt;/li&gt;
-  &lt;li&gt;event loop looks at callstack and callback queue.&lt;/li&gt;
-  &lt;li&gt;if there is a function in callback queue and callstack is all complete, first function in
+  &lt;li&gt;When a first function is in callstack, first function’s callback function moves to background.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;After first function moved, second fucntion is completed in callstack.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;First function’s callback function moves to callback queue.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Event loop looks at callstack and callback queue.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;If there is a function in callback queue and callstack is all complete, first function in
 callback queue moves to callstack and activate it.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;ps. call stack is the same as execution stack, control stack, run-time stack, machine stack, and the stack.&lt;/p&gt;</content>
 
@@ -988,100 +973,84 @@ callback queue moves to callstack and activate it.&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;Program : a file that can operate some work (e.g. applications)&lt;/p&gt;
+&lt;p&gt;A program = MS Word, Power Point&lt;br /&gt;&lt;br /&gt;
+A state that program runs = Process&lt;br /&gt;
+Program is stored in memory. Once OS executes Program, Process is working on memory.&lt;br /&gt;
+CPU gives Drive Resource to Process. Process only work when they have Resource.&lt;br /&gt;
+The system resource is CPU time, memory storage, and address space.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;A program operates on operating system on cpu.&lt;/p&gt;
-
-&lt;p&gt;-Process-&lt;/p&gt;
-
-&lt;p&gt;Process is an action when program operates. Process is operated by CPU and stored by memory.
-Process gets assigned some system resource from CPU.&lt;/p&gt;
-
-&lt;p&gt;The system resource is CPU time, memory storage, and address space.&lt;/p&gt;
-
-&lt;p&gt;When program starts, memory makes process address sapce for program.
+&lt;p&gt;When program starts, memory makes address sapce for process.&lt;br /&gt;
 In address space, there are 3 segments.&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;code segment : code storage (read only)&lt;/li&gt;
-  &lt;li&gt;data segment : data (such as global variables) storage (read &amp;amp; write)&lt;/li&gt;
-  &lt;li&gt;stack segment : stores functions &amp;amp; local variables (read &amp;amp; write)&lt;/li&gt;
-&lt;/ol&gt;
+  &lt;li&gt;data segment : data (global variables) storage (read &amp;amp; write)&lt;/li&gt;
+  &lt;li&gt;stack segment : functions &amp;amp; local variables (read &amp;amp; write)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/process.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The reason why stack segment exists is functions feature.
-Depending on outside &amp;amp; iside function, the function will be stacked by sequence.
-Local variables &amp;amp; functions can only approach by logical sequence, but global variables
-can approach any functions. We should separate them.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/process.png&quot; alt=&quot;processimg&quot; /&gt;
+Local variables should separate from Global variables.&lt;br /&gt;
+Even though they have same name, they can access to the different level.&lt;br /&gt;
+When they are in the same memory, they can mess them up.&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;Each process has at least one thread.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/address-space.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/address-space.png&quot; alt=&quot;processimg&quot; /&gt;
+Each process has independent address space, they do not share variable and data type.&lt;br /&gt;
+To communicate each other, they use IPC (inter-process communication).&lt;br /&gt;
+The communication between process is called “context switching”.&lt;/p&gt;
 
-&lt;p&gt;Each process has independent address space, one process cannot invade other process’s
-variable and data type. To communicate each other, they use IPC (inter-process communication).
-the communication between process is called context switching.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/process-1.PNG&quot; alt=&quot;processimg&quot; /&gt;
+At t0 time, Process 1 is handling the task.&lt;br /&gt;
+&lt;img src=&quot;../assets/built/images/process-2.PNG&quot; alt=&quot;processimg&quot; /&gt;
+At t1 time, Process 1 hands over their memory to Process 2.&lt;br /&gt;
+Process 2 remove their memory and download Process 1 memory.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;processes deal with tasks in CPU turn by turn, it is called context switching.
-specifically, each process rebuilds previous process’s work, doing it, and hand over to next.&lt;/p&gt;
+&lt;p&gt;Thread&lt;/p&gt;
 
-&lt;p&gt;-Thread-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/thread.png&quot; alt=&quot;processimg&quot; /&gt;
+A Process consists of several Threads.&lt;br /&gt;
+they share the resources (heap, code, data) and address space.&lt;br /&gt;
+Each threads have their own register and stack, but they can read and write heap memory.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stack : A state that functions run&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Register : the logs of command’s activation, they store last task for context switching.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/thread.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Java thread&lt;/p&gt;
 
-&lt;p&gt;Thread is a specific flow path that operates in a process.
-Each threads in one process share the resources (heap, code, data) and address space.
-Each threads have their own register and stack, but they can read and write heap memory.&lt;/p&gt;
+&lt;p&gt;Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.&lt;br /&gt;
+Java has no process, only threads. Java threads are code blocks “scheduled” by JVM.&lt;br /&gt;
+Also, JVM manages&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How many threads exist&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;The thread’s location in memory&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Thread statement&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Priority of threads&lt;br /&gt;&lt;br /&gt;
+So, developers write thread codes by using java thread, and request to activates codes to JVM.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Stack has messages, addresses, and variables in functions when call functions.
-Register has the logs of threads commands activation because of context switching, they
-should remember the last action for next turn.&lt;/p&gt;
+&lt;p&gt;Multi-processing&lt;br /&gt;&lt;br /&gt;
+One program consists of many processes.&lt;br /&gt;
+One issue from one process doesn’t affect other processes.&lt;br /&gt;
+However, during context switching, it creates heavy works (such as cache menory reset).&lt;br /&gt;
+Because process get assigned each independent memory space, they don’t have share memory.&lt;br /&gt;
+So, they should reset every data to share other’s cache data by context switching.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;-Java thread-&lt;/p&gt;
+&lt;p&gt;Multi-threading&lt;br /&gt;&lt;br /&gt;
+One program consists of many threads.&lt;br /&gt;
+Threads do not need many time for sharing, so, context switching is fast, because it shares 
+every memory except for stack space.&lt;br /&gt;&lt;br /&gt;
+However, it needs very sophisticated design, and debug is difficult.&lt;br /&gt;
+One issue from one thread affects other threads.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Java thread is quite similar to general threads, JVM(java virtual machine) is OS in java.
-Java has no process, only threads. Java threads are code blocks scheduled by JVM.
-Also, JVM manages&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;How many threads exist&lt;/li&gt;
-  &lt;li&gt;The location of memory for program codes&lt;/li&gt;
-  &lt;li&gt;Thread statements&lt;/li&gt;
-  &lt;li&gt;Priority of threads&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;So, developers write thread codes by using java thread, and request to activates codes to JVM.&lt;/p&gt;
-
-&lt;p&gt;-Difference between multi-process and multi-thread-&lt;/p&gt;
-
-&lt;p&gt;The difference between multi-process and multi-thread&lt;/p&gt;
-
-&lt;p&gt;Multi-processing&lt;/p&gt;
-
-&lt;p&gt;One program consists of many processes, each process deal with one task.&lt;/p&gt;
-
-&lt;p&gt;One issue from one process doesn’t affect other processes.&lt;/p&gt;
-
-&lt;p&gt;However, during context switching, it creates overhead by heavy works(such as cache menory reset).
-Because process get assigned each independent memory space, they don’t have share memory.
-So, they should reset every data to share other’s cache data by context switching.
-Also, they cannot share variables in each process.&lt;/p&gt;
-
-&lt;p&gt;Multi-threading&lt;/p&gt;
-
-&lt;p&gt;One program consists of many threads.&lt;/p&gt;
-
-&lt;p&gt;It reduces the needs of system resource, because they don’t need to allocate system resources
-to processes.
-Threads don’t need many time for sharing, so, context switching is fast, because it shares 
-every memory except for stack space.&lt;/p&gt;
-
-&lt;p&gt;However, it needs very sophisticated design, and debug is difficult.
-Also, one process system has no advantage from multi-thread system.
-Another process can’t manage one’s threads. moreover, multi-thread has resource sharing issue.
-A problem in one thread affects other threads.&lt;/p&gt;
-
-&lt;p&gt;Using multi-thread rather than multi-process means you reslove many tasks in one progarm, not
-activates many programs.
+&lt;p&gt;Multi-thread does not need many processes for tasks.&lt;br /&gt;
 By doing that, we can save time and resource for context switching.&lt;/p&gt;</content>
 
       
@@ -1121,35 +1090,33 @@ By doing that, we can save time and resource for context switching.&lt;/p&gt;</c
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/compiler-interpreter.PNG&quot; alt=&quot;processimg&quot; /&gt;
+Compiler is translating “the entire codes” in advanced language to machine language at one time.&lt;br /&gt;
+Interpreter is translating the sourcodes “line by line” to machine language.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Compiler is slower than Interpreter at the first translation&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Once compile done, Compiler is faster than Interpreter to execute the file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Compiler is translating the whole codes by advanced language to machine language at one time.
-In other words, it collects commands once they read the whole source code, and re-organize it.
-So, it takes long time for translating, but it takes short time to activate the code file after
-translating.&lt;/p&gt;
+&lt;p&gt;Most of time, Compiler is faster than Interpreter. However some languages use Interpreter for some reason.&lt;br /&gt;
+The reason is that Interpreter is compatible to other hardware, but Compiler is not.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Interpreter is translating the sourcodes line by line to machine language, so it takes short time
-for translating. However, it should do translate the codes every single time whenever they execute the file. Because of this, interpreter languages are slower than compiler.&lt;/p&gt;
+&lt;p&gt;For example, cpu A is not compatible with cpu B.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;These features seem like compiler is better than intrpreter. However, here is the thing why we
-use interpreter as well.&lt;/p&gt;
-
-&lt;p&gt;Interpreter is not obsessed by each hardware, but compiler is. Hardware obsession is 
-quite a big deal when we consider this software is working on different hardware.&lt;/p&gt;
-
-&lt;p&gt;For example, cpu A is not compatible with cpu B.&lt;/p&gt;
-
-&lt;p&gt;Compiler is translating advanced language to machine language directly, so the compiled software
-in A is not properly working in B. In this case, developers should make the software
-in B environment as well.&lt;/p&gt;
-
-&lt;p&gt;However, interpreter is translating advanced language to bytecode (or intermediate code)
-during interpreting time, and the virtual machine depending on what language uses translates
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/compiler-interpreter-1.PNG&quot; alt=&quot;processimg&quot; /&gt;
+Compiler is translating advanced language to machine language directly. It does not change the compatibility.&lt;br /&gt;
+Developers should make the software in B environment as well.&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;../assets/built/images/compiler-interpreter-2.PNG&quot; alt=&quot;processimg&quot; /&gt;
+Interpreter is translating advanced language to bytecode, and the virtual machine translates
 the bytecodes to machine language being suitable for B hardware environment.&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;Python is interpreter language, C languages are compile language,
-this is why c is a programming language for hardware control system.&lt;/p&gt;
+this is why c is a programming language for hardware control system (hardware must be fast).&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;However, Java is compile and interpreter language. In java, java compiler translates .java file into .class file by bytecode, and java virtual machine(java interpreter) is translating bytecode to object codes.&lt;/p&gt;</content>
+&lt;p&gt;However, Java is compile and interpreter language. In java, java compiler translates .java file into .class file by bytecode, and java virtual machine is translating bytecode to object codes.&lt;/p&gt;</content>
 
       
       
@@ -1170,7 +1137,7 @@ this is why c is a programming language for hardware control system.&lt;/p&gt;
       
 
       
-        <summary type="html"></summary>
+        <summary type="html">Compiler is translating “the entire codes” in advanced language to machine language at one time. Interpreter is translating the sourcodes “line by line” to machine language. Compiler is slower than Interpreter at the first translation Once compile done, Compiler is faster than Interpreter to execute the file. Most of time, Compiler is faster than Interpreter. However some languages use Interpreter for some reason. The reason is that Interpreter is compatible to other hardware, but Compiler is not. For example, cpu A is not compatible with cpu B.</summary>
       
 
       

@@ -46,7 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="stackoverflow in javascript" />
-    <meta property="og:description" content="Javascript is based on single thread and call back queue. It has JS engine, the most famous one is Google V8 engine. The engine consists of memory heap and call stack. memory heap : memory allocation call stack : stack the commands code by code As i said, runtime =" />
+    <meta property="og:description" content="Javascript is based on single thread and callback queue. The engine consists of memory heap and call stack. Memory heap : memory allocation Callstack : stack the commands code by code Runtime = The environment Most developers use web API, which is not given by JS engine. callstack It is" />
     <meta property="og:url" content="https://lulubeanana17.github.io/stackoverflow" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -56,7 +56,7 @@
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="stackoverflow in javascript" />
-    <meta name="twitter:description" content="Javascript is based on single thread and call back queue. It has JS engine, the most famous one is Google V8 engine. The engine consists of memory heap and call stack. memory heap : memory allocation call stack : stack the commands code by code As i said, runtime =" />
+    <meta name="twitter:description" content="Javascript is based on single thread and callback queue. The engine consists of memory heap and call stack. Memory heap : memory allocation Callstack : stack the commands code by code Runtime = The environment Most developers use web API, which is not given by JS engine. callstack It is" />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/stackoverflow"
     },
-    "description": "Javascript is based on single thread and call back queue. It has JS engine, the most famous one is Google V8 engine. The engine consists of memory heap and call stack. memory heap : memory allocation call stack : stack the commands code by code As i said, runtime ="
+    "description": "Javascript is based on single thread and callback queue. The engine consists of memory heap and call stack. Memory heap : memory allocation Callstack : stack the commands code by code Runtime = The environment Most developers use web API, which is not given by JS engine. callstack It is"
 }
     </script>
 
@@ -191,32 +191,22 @@ into the {body} of the default.hbs template -->
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
 
-<p>Javascript is based on single thread and call back queue.
-It has JS engine, the most famous one is Google V8 engine.</p>
+<p>Javascript is based on single thread and callback queue.<br /></p>
 
 <p><img src="../assets/built/images/runtime-2.png" alt="runtime2" /></p>
 
-<p>The engine consists of memory heap and call stack.</p>
-<ol>
-  <li>memory heap : memory allocation</li>
-  <li>call stack : stack the commands code by code</li>
-</ol>
-
-<p>As i said, runtime = the environment (Chrome)</p>
-
-<p>most developers use web API, which is not given by JS engine.
-<br />
-<br />
-<br />
-<br /></p>
+<p>The engine consists of memory heap and call stack.<br /></p>
 <ul>
-  <li>call stack</li>
+  <li>Memory heap : memory allocation<br /></li>
+  <li>Callstack : stack the commands code by code<br /><br />
+Runtime = The environment<br />
+Most developers use web API, which is not given by JS engine.</li>
 </ul>
+<hr />
 
-<p>it is data structure that logs where I am in a program, which means what commands completed.
-<br />
-<br />
-1) example (normal call stack)</p>
+<p>callstack<br /><br />
+It is data structure that logs where I am in a program, which means what commands completed.<br /><br />
+Example (normal callstack)</p>
 
 <p><img src="../assets/built/images/code-1.PNG" alt="processimg" /></p>
 
@@ -225,19 +215,20 @@ It has JS engine, the most famous one is Google V8 engine.</p>
 <p><img src="../assets/built/images/callstack-1.png" alt="processimg" /></p>
 
 <p>Each steps of call stack are called “Stack Frame”.</p>
+<hr />
 
-<p>2) example (stack trace)</p>
+<p>Example (stack trace)</p>
 
 <p><img src="../assets/built/images/code-2.PNG" alt="processimg" /></p>
 
 <p>Stack trace is a statement of call stack when exception happened.</p>
 
 <p><img src="../assets/built/images/stacktrace.png" alt="processimg" /></p>
+<hr />
 
-<p>3) example (stack overflow)</p>
-
-<p>It shows when eternal loop is executed.
-Call stack has maximum. When stack is over the maximum, it is called stack overflow.
+<p>Example (stack overflow)<br /><br />
+It shows when eternal loop is executed.<br />
+Call stack has maximum. When stack is over the maximum, it is called stack overflow.<br />
 And then, it blows the call stack, which is called “blowing the stack”.</p>
 
 <p><img src="../assets/built/images/code-3.PNG" alt="processimg" /></p>
@@ -246,8 +237,8 @@ And then, it blows the call stack, which is called “blowing the stack”.</p>
 
 <p><img src="../assets/built/images/stackoverflow-error.png" alt="processimg" /></p>
 
-<p>Single thread is simple, but it has a lot of limitations.
-To solve the limitation (slow), we use event loop and ansyncoronous.</p>
+<p>Single thread is simple, but it has a lot of limitations.<br />
+To solve the limitation (slow), we use event loop and asynchronous.</p>
 
                 </div>
             </section>
