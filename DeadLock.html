@@ -191,12 +191,12 @@ into the {body} of the default.hbs template -->
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
 
-<p>DeadLock<br /><br />
-DeadLock is a situation where a set of processes are blocked because each process is holding 
-a resource and waiting for another resource acquired by some other process.</p>
+<p>DeadLock</p>
 <hr />
 
-<p>As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 
+<p>DeadLock is a situation where a set of processes are blocked because each process is holding 
+a resource and waiting for another resource acquired by some other process.<br /><br />
+As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 
 which is acquired by process 2, and process 2 is waiting for Resource 1.</p>
 
 <p><img src="../assets/built/images/deadlock.PNG" alt="runtime2" /></p>
@@ -206,10 +206,8 @@ which is acquired by process 2, and process 2 is waiting for Resource 1.</p>
 <ul>
   <li>Mutual Exclusion: Only one Process can use one Resource at a time<br /></li>
   <li>Hold and Wait : A Process is holding at least one Resource and waiting for Resources<br /></li>
-  <li>No Preemption : A Resource cannot be taken from a process unless the Process releases the 
-Resource.</li>
-  <li>Circular Wait : A set of Processes are waiting for each other in circular form (e.g. the 
-above diagram).</li>
+  <li>No Preemption : A Resource cannot be taken from a process unless the Process releases the Resource<br /></li>
+  <li>Circular Wait : A set of Processes are waiting for each other in circular form</li>
 </ul>
 <hr />
 
@@ -223,17 +221,17 @@ above diagram).</li>
 <hr />
 
 <p>DeadLock Prevention<br /><br />
-This method is to not lets the four conditions happen, that is, it denies every four conditions.<br /></p>
+This method is not to let the four conditions happen, that is, it denies every four conditions.<br /></p>
 <ul>
-  <li>Mutual Exclusion<br />
+  <li>Mutual Exclusion prevention<br />
   It allows processes to use one Resource simultaneously. This circumstance will arise 
 a synchronization problem.<br /></li>
-  <li>Hold and Wait<br />
+  <li>Hold and Wait prevention<br />
   A Process requires all Resources simultaneously and waits for until get permission. It 
 bans any waiting for another Resource.<br /></li>
-  <li>No Preemption<br />
+  <li>No Preemption prevention<br />
   If no one holds one Resource, it allows the highest priority Process to hold it.<br /></li>
-  <li>Circular Wait<br />
+  <li>Circular Wait prevention<br />
   It allows Processes to require Resources in one way.<br /><br />
 This Method will raise some disadvantages, such as lost of system handling and efficiency.</li>
 </ul>
@@ -241,10 +239,10 @@ This Method will raise some disadvantages, such as lost of system handling and e
 
 <p>DeadLock Avoidance<br /><br />
 When CPU can distribute every Resources to Processes without DeadLock, the situation is called 
-“Safe State”.
-If CPU can find the sequence that does not affect DeadLock, it is called “Safe Sequence”.<br /><br />
-However, Unstable State is the opposite to Safe State, that is, can raise DeadLock.<br />
-Avoidance allows CPU to keep allocating Reosurces all the time in order to stay in “Safe State”.<br />
+“Safe State”.<br />
+If CPU can find the sequence that does not affect DeadLock, it is called “Safe Sequence”.<br />
+However, Unsafe State is the opposite to Safe State, that is, can raise DeadLock.<br /><br />
+Avoidance allows CPU to keep allocating Reosurces all the time to stay in “Safe State”.<br />
 We use “Banker’s Algorithm” to avoid DeadLock.</p>
 <hr />
 
@@ -261,7 +259,7 @@ CPU uses recovery method to get out of Circular Wait.<br />
           <li>Shut all Processes in DeadLock down<br />
   Some normal Processes can be shut down and lost the works.<br /></li>
           <li>one check, one pass<br />
-  CPU stops Every single Process and detect DeadLock simultaneously. It is heavy work.<br /></li>
+  CPU stops Every single Process and detect DeadLock. It is heavy work.<br /></li>
         </ol>
       </li>
       <li>Preemption<br />
@@ -441,6 +439,13 @@ If DeadLock is very rare, then let it happen and reboot the system.</p>
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
                                 
                                   
                                     
@@ -454,7 +459,7 @@ If DeadLock is very rare, then let it happen and reboot the system.</p>
                         <footer class="read-next-card-footer">
                             <a href="/tag/front-end/">
                                 
-                                    See all 11 posts  →
+                                    See all 12 posts  →
                                 
                             </a>
                         </footer>

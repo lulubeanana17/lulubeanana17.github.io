@@ -46,7 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Banker's Algorithm" />
-    <meta property="og:description" content="Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources to Process in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User" />
+    <meta property="og:description" content="Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unsafe State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User 1, 2," />
     <meta property="og:url" content="https://lulubeanana17.github.io/banker-algorithm" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -56,7 +56,7 @@
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Banker's Algorithm" />
-    <meta name="twitter:description" content="Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources to Process in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User" />
+    <meta name="twitter:description" content="Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unsafe State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User 1, 2," />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/banker-algorithm"
     },
-    "description": "Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources to Process in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User"
+    "description": "Banker’s algorithm is a DeadLock avoidance algorithm. DeadLock Avoidance only allocate Resources in “Safe State”. So, Banker’s algorithm only accept Safe State requests, and decline Unsafe State requests until changing to Safe State. The concept of Banker’s algorithm In the above image, Bank has $20 now, but User 1, 2,"
 }
     </script>
 
@@ -191,13 +191,15 @@ into the {body} of the default.hbs template -->
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
 
-<p>Banker’s algorithm is a DeadLock avoidance algorithm.<br /><br />
-DeadLock Avoidance only allocate Resources to Process in “Safe State”.<br />
-So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests 
+<p>Banker’s algorithm is a DeadLock avoidance algorithm.</p>
+<hr />
+
+<p>DeadLock Avoidance only allocate Resources in “Safe State”.<br />
+So, Banker’s algorithm only accept Safe State requests, and decline Unsafe State requests 
 until changing to Safe State.</p>
 <hr />
 
-<p>The concept of Banker’s algorithm<br /><br /></p>
+<p>The concept of Banker’s algorithm</p>
 
 <p><img src="../assets/built/images/bank-1.PNG" alt="runtime2" />
 In the above image, Bank has $20 now, but User 1, 2, and 3 still need money.<br /><br />
@@ -213,7 +215,7 @@ So, we can help user 1 after user 2 and 3 complete.<br /><br />
   <li>user2 -&gt; user3 -&gt; user1<br /></li>
   <li>user3 -&gt; user1 -&gt; user2<br /></li>
   <li>user3 -&gt; user2 -&gt; user1<br /><br />
-These sequences are known as “Safe Sequence”, which can solve user’s problem.<br /><br /><br />
+These sequences are known as “Safe Sequence”, which can solve user’s problem.
 <img src="../assets/built/images/bank-2.PNG" alt="runtime2" />
 However, in this case, user1 needs urgent $35.
 The bank currently have only $5. The bank cannot help anyone of users, and they will bankrupt.<br />
@@ -226,31 +228,31 @@ So, the banker’s algorithm is caused from “Bank must have money that can hel
  -&gt; a state that has Safe sequence that can allocate necessary Resource to Process without DeadLock.<br /><br />
 Unsafe State<br />
  -&gt; a state that does not have Safe Sequence. Unsafe State is a necessary condition to make DeadLock.<br /><br />
- DeadLock only occur when Unsafe State exists. Unsafe State has no guarantee to make DeadLock.</p>
+DeadLock only occur when Unsafe State exists. Unsafe State has no guarantee to make DeadLock.</p>
 <hr />
 
 <p>Necessary conditions to operate Banker’s algorithm<br /><br /></p>
 <ol>
-  <li>Maximum Money Users can request<br />
--&gt; How much of each resource each process could possible request.<br /></li>
-  <li>Current money users borrow<br />
--&gt; How much of each resource each process is currently holding.<br /></li>
+  <li>Maximum Money that Users can request<br />
+-&gt; How many resources the Process can request<br /></li>
+  <li>Current money that users can borrow<br />
+-&gt; how many resources the Process is holding now<br /></li>
   <li>Available money in the bank<br />
--&gt; How much of each resource the system has available.</li>
+-&gt; How many resources the system has available</li>
 </ol>
 <hr />
 
-<p>Process example<br /><br /></p>
+<p>Process example</p>
 
 <p><img src="../assets/built/images/bank-example.PNG" alt="runtime2" />
 P0, P1, P2 are Process, OS has 12 Drives for Resources.<br />
 Now, at “t0” time, P0 uses 5 Drives, P1 uses 2 Drives, and P2 uses 2 Drives. So, 
 OS has 3 Drives as available Resources now.<br />
-the system is Safe State at t0 because &lt;P1 -&gt; P0 -&gt; P2&gt; is satisfied with Safe Sequence.<br /><br />
+the system is Safe State at t0 because (P1 -&gt; P0 -&gt; P2) is satisfied with Safe Sequence.<br /><br />
 However, the system can be Unsafe State.<br />
 At “t1” time, P2 Process request 1 more Drive Resource, and available Resource is 2.
 <img src="../assets/built/images/bank-example1.PNG" alt="runtime2" />
-In this situation, P0 is impossible because it needs 5 Drives Resources.
+In this situation, P0 is impossible because it needs 5 Drives Resources.<br />
 Also P1 is not solution because, even though OS helps P1 and get back 4 Drive Resources, OS can not 
 help P0 or P2 with 4 Drive Resources.<br />
 So, the system is Unsafe State at “t1” Time.<br /><br />
@@ -439,6 +441,13 @@ Banker’s algorithm is not recommened.</li>
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
                                 
                                   
                                     
@@ -452,7 +461,7 @@ Banker’s algorithm is not recommened.</li>
                         <footer class="read-next-card-footer">
                             <a href="/tag/front-end/">
                                 
-                                    See all 11 posts  →
+                                    See all 12 posts  →
                                 
                             </a>
                         </footer>

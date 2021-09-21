@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-21T23:53:18+12:00</updated>
+  <updated>2021-09-22T11:24:39+12:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -43,13 +43,15 @@
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;Banker’s algorithm is a DeadLock avoidance algorithm.&lt;br /&gt;&lt;br /&gt;
-DeadLock Avoidance only allocate Resources to Process in “Safe State”.&lt;br /&gt;
-So, Banker’s algorithm only accept Safe State requests, and decline Unstable State requests 
+&lt;p&gt;Banker’s algorithm is a DeadLock avoidance algorithm.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;DeadLock Avoidance only allocate Resources in “Safe State”.&lt;br /&gt;
+So, Banker’s algorithm only accept Safe State requests, and decline Unsafe State requests 
 until changing to Safe State.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;The concept of Banker’s algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The concept of Banker’s algorithm&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/bank-1.PNG&quot; alt=&quot;runtime2&quot; /&gt;
 In the above image, Bank has $20 now, but User 1, 2, and 3 still need money.&lt;br /&gt;&lt;br /&gt;
@@ -65,7 +67,7 @@ So, we can help user 1 after user 2 and 3 complete.&lt;br /&gt;&lt;br /&gt;
   &lt;li&gt;user2 -&amp;gt; user3 -&amp;gt; user1&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;user3 -&amp;gt; user1 -&amp;gt; user2&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;user3 -&amp;gt; user2 -&amp;gt; user1&lt;br /&gt;&lt;br /&gt;
-These sequences are known as “Safe Sequence”, which can solve user’s problem.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+These sequences are known as “Safe Sequence”, which can solve user’s problem.
 &lt;img src=&quot;../assets/built/images/bank-2.PNG&quot; alt=&quot;runtime2&quot; /&gt;
 However, in this case, user1 needs urgent $35.
 The bank currently have only $5. The bank cannot help anyone of users, and they will bankrupt.&lt;br /&gt;
@@ -78,31 +80,31 @@ So, the banker’s algorithm is caused from “Bank must have money that can hel
  -&amp;gt; a state that has Safe sequence that can allocate necessary Resource to Process without DeadLock.&lt;br /&gt;&lt;br /&gt;
 Unsafe State&lt;br /&gt;
  -&amp;gt; a state that does not have Safe Sequence. Unsafe State is a necessary condition to make DeadLock.&lt;br /&gt;&lt;br /&gt;
- DeadLock only occur when Unsafe State exists. Unsafe State has no guarantee to make DeadLock.&lt;/p&gt;
+DeadLock only occur when Unsafe State exists. Unsafe State has no guarantee to make DeadLock.&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Necessary conditions to operate Banker’s algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Maximum Money Users can request&lt;br /&gt;
--&amp;gt; How much of each resource each process could possible request.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Current money users borrow&lt;br /&gt;
--&amp;gt; How much of each resource each process is currently holding.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Maximum Money that Users can request&lt;br /&gt;
+-&amp;gt; How many resources the Process can request&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Current money that users can borrow&lt;br /&gt;
+-&amp;gt; how many resources the Process is holding now&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Available money in the bank&lt;br /&gt;
--&amp;gt; How much of each resource the system has available.&lt;/li&gt;
+-&amp;gt; How many resources the system has available&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Process example&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Process example&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/bank-example.PNG&quot; alt=&quot;runtime2&quot; /&gt;
 P0, P1, P2 are Process, OS has 12 Drives for Resources.&lt;br /&gt;
 Now, at “t0” time, P0 uses 5 Drives, P1 uses 2 Drives, and P2 uses 2 Drives. So, 
 OS has 3 Drives as available Resources now.&lt;br /&gt;
-the system is Safe State at t0 because &amp;lt;P1 -&amp;gt; P0 -&amp;gt; P2&amp;gt; is satisfied with Safe Sequence.&lt;br /&gt;&lt;br /&gt;
+the system is Safe State at t0 because (P1 -&amp;gt; P0 -&amp;gt; P2) is satisfied with Safe Sequence.&lt;br /&gt;&lt;br /&gt;
 However, the system can be Unsafe State.&lt;br /&gt;
 At “t1” time, P2 Process request 1 more Drive Resource, and available Resource is 2.
 &lt;img src=&quot;../assets/built/images/bank-example1.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-In this situation, P0 is impossible because it needs 5 Drives Resources.
+In this situation, P0 is impossible because it needs 5 Drives Resources.&lt;br /&gt;
 Also P1 is not solution because, even though OS helps P1 and get back 4 Drive Resources, OS can not 
 help P0 or P2 with 4 Drive Resources.&lt;br /&gt;
 So, the system is Unsafe State at “t1” Time.&lt;br /&gt;&lt;br /&gt;
@@ -162,12 +164,12 @@ Banker’s algorithm is not recommened.&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;DeadLock&lt;br /&gt;&lt;br /&gt;
-DeadLock is a situation where a set of processes are blocked because each process is holding 
-a resource and waiting for another resource acquired by some other process.&lt;/p&gt;
+&lt;p&gt;DeadLock&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 
+&lt;p&gt;DeadLock is a situation where a set of processes are blocked because each process is holding 
+a resource and waiting for another resource acquired by some other process.&lt;br /&gt;&lt;br /&gt;
+As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 
 which is acquired by process 2, and process 2 is waiting for Resource 1.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/deadlock.PNG&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
@@ -177,10 +179,8 @@ which is acquired by process 2, and process 2 is waiting for Resource 1.&lt;/p&g
 &lt;ul&gt;
   &lt;li&gt;Mutual Exclusion: Only one Process can use one Resource at a time&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Hold and Wait : A Process is holding at least one Resource and waiting for Resources&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;No Preemption : A Resource cannot be taken from a process unless the Process releases the 
-Resource.&lt;/li&gt;
-  &lt;li&gt;Circular Wait : A set of Processes are waiting for each other in circular form (e.g. the 
-above diagram).&lt;/li&gt;
+  &lt;li&gt;No Preemption : A Resource cannot be taken from a process unless the Process releases the Resource&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Circular Wait : A set of Processes are waiting for each other in circular form&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
@@ -194,17 +194,17 @@ above diagram).&lt;/li&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;DeadLock Prevention&lt;br /&gt;&lt;br /&gt;
-This method is to not lets the four conditions happen, that is, it denies every four conditions.&lt;br /&gt;&lt;/p&gt;
+This method is not to let the four conditions happen, that is, it denies every four conditions.&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Mutual Exclusion&lt;br /&gt;
+  &lt;li&gt;Mutual Exclusion prevention&lt;br /&gt;
   It allows processes to use one Resource simultaneously. This circumstance will arise 
 a synchronization problem.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Hold and Wait&lt;br /&gt;
+  &lt;li&gt;Hold and Wait prevention&lt;br /&gt;
   A Process requires all Resources simultaneously and waits for until get permission. It 
 bans any waiting for another Resource.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;No Preemption&lt;br /&gt;
+  &lt;li&gt;No Preemption prevention&lt;br /&gt;
   If no one holds one Resource, it allows the highest priority Process to hold it.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Circular Wait&lt;br /&gt;
+  &lt;li&gt;Circular Wait prevention&lt;br /&gt;
   It allows Processes to require Resources in one way.&lt;br /&gt;&lt;br /&gt;
 This Method will raise some disadvantages, such as lost of system handling and efficiency.&lt;/li&gt;
 &lt;/ul&gt;
@@ -212,10 +212,10 @@ This Method will raise some disadvantages, such as lost of system handling and e
 
 &lt;p&gt;DeadLock Avoidance&lt;br /&gt;&lt;br /&gt;
 When CPU can distribute every Resources to Processes without DeadLock, the situation is called 
-“Safe State”.
-If CPU can find the sequence that does not affect DeadLock, it is called “Safe Sequence”.&lt;br /&gt;&lt;br /&gt;
-However, Unstable State is the opposite to Safe State, that is, can raise DeadLock.&lt;br /&gt;
-Avoidance allows CPU to keep allocating Reosurces all the time in order to stay in “Safe State”.&lt;br /&gt;
+“Safe State”.&lt;br /&gt;
+If CPU can find the sequence that does not affect DeadLock, it is called “Safe Sequence”.&lt;br /&gt;
+However, Unsafe State is the opposite to Safe State, that is, can raise DeadLock.&lt;br /&gt;&lt;br /&gt;
+Avoidance allows CPU to keep allocating Reosurces all the time to stay in “Safe State”.&lt;br /&gt;
 We use “Banker’s Algorithm” to avoid DeadLock.&lt;/p&gt;
 &lt;hr /&gt;
 
@@ -232,7 +232,7 @@ CPU uses recovery method to get out of Circular Wait.&lt;br /&gt;
           &lt;li&gt;Shut all Processes in DeadLock down&lt;br /&gt;
   Some normal Processes can be shut down and lost the works.&lt;br /&gt;&lt;/li&gt;
           &lt;li&gt;one check, one pass&lt;br /&gt;
-  CPU stops Every single Process and detect DeadLock simultaneously. It is heavy work.&lt;br /&gt;&lt;/li&gt;
+  CPU stops Every single Process and detect DeadLock. It is heavy work.&lt;br /&gt;&lt;/li&gt;
         &lt;/ol&gt;
       &lt;/li&gt;
       &lt;li&gt;Preemption&lt;br /&gt;
@@ -283,83 +283,68 @@ If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</c
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;Operating System&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-OS is a software that controls hardware effectively, which is between users and hardware.&lt;/p&gt;
+&lt;p&gt;Operating System&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;There is two aspects on OS, which are a user and a system.&lt;br /&gt;
-For users, the main focus is comfortance during running, insteading of resource spreading.&lt;br /&gt;&lt;br /&gt;
-However, For system, resource allocator is the most important one. Also, it should handle with
-conflicts.&lt;/p&gt;
+&lt;p&gt;OS is a software that controls hardware effectively, which is between users and hardware.&lt;br /&gt;
+Computer system consists of CPU, Memory, I/O devices, system bus.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Computer system consists of CPU, Memory, I/O devices, system bus.&lt;/p&gt;
+&lt;p&gt;Bootstraping&lt;br /&gt;&lt;br /&gt;
+CPU must put every program on memory to operate them.&lt;br /&gt;
+Same as OS, when we turn the computer on, CPU puts OS on memory.&lt;br /&gt;
+It is known as Bootstraping.&lt;br /&gt;&lt;br /&gt;
+Bootstrap program is the first running program when computer is turned on.&lt;br /&gt; 
+The program is stored in ROM, which is called a Bootstrap loader.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;hr /&gt;
-
+&lt;p&gt;Interrupt&lt;br /&gt;&lt;br /&gt;
+OS requests CPU to stop one program and operates another program.&lt;br /&gt;
+It is Interrupt. It creates multi-programming.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Bootstraping&lt;br /&gt;
-A process that load OS on main memory to run a computer. &lt;br /&gt;&lt;br /&gt;
-Bootstrap program is the first running program when computer is turned on. The program is 
-stored in ROM, which is called a Bootstrap loader.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Interrupt&lt;br /&gt;
-Interrupt repuests CPU to stop the running program for running another program. This is the
-most important thing to create multi-programming.&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Hardware Interrupt&lt;br /&gt;
-It can be changed by Mouse, keyboard. The signal of interrupt delivers through Bus.&lt;br /&gt;&lt;/li&gt;
+Keyboard or mouse requests it. The signal of interrupt delivers through Bus.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Software Interrupt&lt;br /&gt;
 It works with “Syste Call”.&lt;br /&gt;
     &lt;ul&gt;
       &lt;li&gt;Interrupt handling is one of the features of CPU.&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;System call requests Interrupt to CPU, CPU uses Interrupt Service Routine.&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;Interrupt Vector is an array of Interrupt Service Routine. Interrupt Vector Table consists
-of many Interrupt Vectors.&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;During running the program, if Interrupt happens, It should store data in Stack. otherwise,
-It couldn’t reload it.&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;System call requests Interrupt to CPU, CPU uses Interrupt Service Routine.&lt;br /&gt;&lt;br /&gt;
+During running the program, if Interrupt happens, It should store data in Stack.&lt;br /&gt; 
+otherwise, it couldn’t reload it.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Interrupt Timeline&lt;br /&gt;
-During running I/O, CPU can do other works.&lt;/li&gt;
-  &lt;li&gt;Storage Structure&lt;br /&gt;
-Every programs must be loaded on memory to run.&lt;/li&gt;
-  &lt;li&gt;Von Neumann architecture&lt;br /&gt;
-Commands and Data will be stored in the same memory, which has same CPU link.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Von Neumann architecture&lt;br /&gt;&lt;br /&gt;
+Commands and Data will be stored in the same memory, which has same CPU link.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/neuman.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Secondary Storage&lt;br /&gt;
-HDD/SSD helps main memory (RAM) for more storage.&lt;/li&gt;
-&lt;/ul&gt;
 &lt;hr /&gt;
 
+&lt;p&gt;Secondary Storage&lt;br /&gt;&lt;br /&gt;
+HDD/SSD helps main memory (RAM) for more storage.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Device Controller&lt;br /&gt;
-Several Device Controllers connects with CPU.&lt;br /&gt;
-Each Device Controller manages each components. OS interprets how Device Controllers act, 
-provide the same interface to other components about the Device Controller.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;DMA (Direct Memory Access)&lt;br /&gt;
+&lt;p&gt;Device Controller&lt;br /&gt;&lt;br /&gt;
+Several Device Controllers connects CPU.&lt;br /&gt;
+Each Device Controller manages each components.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;DMA (Direct Memory Access)&lt;br /&gt;&lt;br /&gt;
 DMA allows components (hard disk, graphic card, NIC) to access to Memory directly.&lt;br /&gt;
-CPU doesn’t need to participate the data transmission, it improves computer performance.&lt;br /&gt;
-&lt;br /&gt;
-When Device Controller controls a lot of data, it is usually heavy work on CPU. So, DMA helps
- Device Controller to ignore CPU’s work on the data.&lt;br /&gt;
-Because of that, CPU doesn’t need to do that job and become more effective.&lt;/li&gt;
-&lt;/ul&gt;
+CPU doesn’t need to participate the data transmission, it improves computer performance.&lt;/p&gt;
 &lt;hr /&gt;
 
+&lt;p&gt;When Device Controller controls a lot of data, it is usually heavy work on CPU.&lt;br /&gt;
+So, DMA helps Device Controller to ignore CPU’s work on the data.&lt;br /&gt;
+Because of that, CPU doesn’t need to do that job and become more effective.&lt;/p&gt;
 &lt;hr /&gt;
 
+&lt;p&gt;The structure of Computer System&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;The structure of Computer System&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Single Processor system (=core)&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;Multi Processor system&lt;br /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Single Processor system (=core)&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Multi Processor system&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
 
       
@@ -400,56 +385,70 @@ Because of that, CPU doesn’t need to do that job and become more effective.&lt
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Computer Hardware&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Computer Hardware&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;Computer consists of roughly 2 products: hardware and software.&lt;br /&gt;
-Hardware is a physical components that manage data. This has I/O devices, CPU, motherboard, etc.
-Motherboard is a main hub that can execute all other hardwares. CPU, RAM, Graphic card settled on
-Motherboard. This controls every activities of each hardware by allocating power to necessary
-hardware when they need.&lt;/p&gt;
+Hardware is physical components that manage data. This has I/O devices, CPU, motherboard, etc.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/motherboard.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Motherboard is a main hub that can execute all other hardwares. CPU, RAM, Graphic card settled on
+Motherboard. It controls every activities of each hardware by allocating power.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/motherboard.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;CPU (central process unit) retrives and executes every instructions from Input devices and 
 send the results to Output devices.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-CPU internal connection helps all three components communicate each other. It is also called
-“BUS”, which is like a tunnel.&lt;br /&gt;&lt;br /&gt;
-Control Unit surveils data transaction in Register, and commands actions to Arithmetic and 
-Logical Unit. This controls the whole computers operation, order the actions in the order, 
+CPU’s internal connection helps all three components communicate each other. It is also called
+“BUS”, which is like a tunnel.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Control Unit&lt;br /&gt;
+surveils data transaction in Register, and commands actions to Arithmetic and Logical Unit.&lt;br /&gt; 
+This controls the whole computers operation, 
 retrieves the commands from Input device and push signals to Register or ALU.&lt;br /&gt;
 Also, based on commands from Input, this raises program commands from Register, analyze it, and 
-orders to suitable components.&lt;br /&gt;&lt;br /&gt;
-ALU (Arithmetic and Logical Unit) operates microprocesses in order to executes commands.
-This covers all calculations.&lt;br /&gt;&lt;br /&gt;
-Register is a small volatile memory.&lt;/p&gt;
+orders to suitable components.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;ALU (Arithmetic and Logical Unit)&lt;br /&gt; 
+operates microprocesses in order to executes commands. This covers all calculations.&lt;br /&gt;&lt;br /&gt;
+Register is a small volatile memory.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-real.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-real.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;RAM is Volatile memory. This is a desk that operates as many programs as possible at the same time.
-Data can be temporarily stored due to operates on computer. It loses their contents 
-if the current is turned off. The bigger storage is the better work efficiency of CPU.&lt;br /&gt;&lt;br /&gt;
-ROM is eternal memory that stores fundamental data, such as BIOS.
+&lt;p&gt;RAM&lt;br /&gt;&lt;br /&gt; 
+It is Volatile memory. It is a desk that operates as many programs as possible at the same time.&lt;br /&gt;
+Data can be temporarily stored to operates on computer.&lt;br /&gt; 
+It loses their contents if it is turned off.&lt;br /&gt;
+The bigger storage is the better work efficiency of CPU.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+ROM&lt;br /&gt;&lt;br /&gt;
+It is eternal memory that stores fundamental data, such as BIOS.&lt;br /&gt;
 User cannot change the ROM data.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/ramrom.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
-Hard Drive is storage components that store long and short term data.
-This has HDD and SSD. HDD (Hard Disk Drive) remembers all data with rapidly rotating disks coated 
-with magnetic material. But, SSD (Solid state Storage Drive) remembers in memory chips. So,
-SSD is faster, less fragile, and less power consumption than HDD.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/ramrom.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/hddssd.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Hard Drive&lt;br /&gt;&lt;br /&gt;
+It is storage components that store long and short term data.&lt;br /&gt;
+It has HDD and SSD.&lt;br /&gt;
+HDD (Hard Disk Drive) remembers all data with rapidly rotating disks coated with magnetic material.&lt;br /&gt; 
+SSD (Solid state Storage Drive) remembers in memory chips.&lt;br /&gt;
+So, SSD is faster, less fragile, and less power consumption than HDD.&lt;/p&gt;
 
-&lt;p&gt;GPU (graphic processing Unit) renders massive graphic data. In modern, newest GPU not only 
-render graphics but also cover CPU.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/hddssd.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/gpu.webp&quot; alt=&quot;runtime2&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;GPU (graphic processing Unit) renders massive graphic data.&lt;br /&gt; 
+In modern, newest GPU not only render graphics but also cover CPU.&lt;/p&gt;
 
-&lt;p&gt;PSU (Power Supply Unit) supply power to computers. Motherboard controls the powers from PSU
-to spread to suitable components in computers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/gpu.webp&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;PSU (Power Supply Unit) supply power to computers.&lt;br /&gt;
+Motherboard controls the powers from PSU to spread to suitable components in computers.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/psu.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;</content>
 
@@ -491,38 +490,118 @@ to spread to suitable components in computers.&lt;/p&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;API and WebAPI
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-API is ,Application Programming Interface, an interface that can control the features given by
+&lt;p&gt;API and WebAPI&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;API (Application Programming Interface) is an interface that can control the features given by
 OS or language to use for programs. 
-&lt;br /&gt;
-API is like Keyboard. For example, I want to develop map program by using Google map.
+&lt;br /&gt;&lt;br /&gt;
+API is like Keyboard. For example, I want to develop map program by using Google map.&lt;br /&gt;
 So, my program can approach to Google map data easily through API.&lt;br /&gt;
-Keyboard has standardization, as similar, API has standardization. API has a their wown rule 
-when developers use API to request data.&lt;br /&gt;
-Open API is free for all users.
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
+Keyboard has standardization, as similar, API has standardization.&lt;br /&gt; 
+API has their own rule when developers use API to request data.&lt;br /&gt;
+Open API is free for all users.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/API.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-&lt;br /&gt;
 WebAPI is an API for web server or web browser. It uses HTTP service, also designed to be able
-to access in many clients. It  provides Data CRUD interface in Web environment.&lt;br /&gt;
-WebAPI request to another service to use the service’s features. Because of WebAPI, we don’t 
+to access in many clients. It provides Data CRUD interface in Web environment.&lt;br /&gt;
+WebAPI requests another service to use the service’s features. Because of WebAPI, we don’t 
 need to develop every services.&lt;br /&gt;WebAPI is formed as Website.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/webapi.png&quot; alt=&quot;runtime2&quot; /&gt;
-WebAPI can make unlimited platform and client enviroment through HTTP.&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;XML&lt;br /&gt;
+WebAPI can make unlimited platform and client enviroment through HTTP.&lt;br /&gt;&lt;br /&gt;
+XML&lt;br /&gt;&lt;br /&gt;
 XML (eXtensible Markup Language) is similar to HTML as Markup language.&lt;br /&gt;
-HTML only have fixed tags, the tages already have roles. However, XML can be made any tages by
-a user. The reason is  XML represent new data by tags made by the user, which means the user
-explain the data by tags. So, the data is marked by tags, the user can put additional data in 
-the data already made. In a nutshell, tags in XML represents data.&lt;/li&gt;
-&lt;/ul&gt;</content>
+HTML only have fixed tags, the tages already have roles.&lt;br /&gt;However, XML can make any tages by
+a user.&lt;br /&gt;The reason is XML represents new data in a new tag made by the user, which means the user
+explain the data by tags.&lt;br /&gt;So, the data is marked by tags, the user can put additional data in 
+the data already made.&lt;br /&gt;In a nutshell, tags in XML represents data.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Cookie &amp;amp; Session</title>
+      <link href="https://lulubeanana17.github.io/Cookie" rel="alternate" type="text/html" title="Cookie &amp; Session" />
+      <published>2021-09-19T07:10:00+12:00</published>
+      <updated>2021-09-19T07:10:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/Cookie</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/Cookie">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Cookie and Session&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;In HTTP, it is unreliable, so, they forget the users, the users need to authorize every single time.&lt;br /&gt;
+So, Cookie and session helps them keep authorizing to the website.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Cookie&lt;br /&gt;&lt;br /&gt;
+A file that stores keys and values (name, time, path, address) in “Client Local”.&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Web browser requests to server&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Create Cookie to keep holding their information&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Attach Cookie on HTTP header and send it when server requests&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Web browser manages Cookie, send Cookie with HTTP in next request&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Server checks the previous information in Cookie, and response&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+e.g. ID, Password&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Session&lt;br /&gt;&lt;br /&gt;
+A time that keep holding the statement from access to finish in server through web browser.
+&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Web browser requests to server&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Server allocate ID to the web browser&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Put Session ID into Cookie with HTTP and send it to server when server response&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Web browser sends them again until close the web browser&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Server checks session ID and the previous information about session ID, and response&lt;br /&gt;&lt;br /&gt;
+Session also use Cookie for keeping statement.&lt;br /&gt;
+e.g. Login&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;The difference between Cookie and Session&lt;br /&gt;&lt;br /&gt;
+Storage location&lt;br /&gt;
+-Cookie : Client&lt;br /&gt;
+-Session : Server&lt;br /&gt;&lt;br /&gt;
+Security&lt;br /&gt;
+-Cookie : not secure, because it stores in Client&lt;br /&gt;
+-Session : secure, because it only store session ID in Client&lt;br /&gt;&lt;br /&gt;
+Duration&lt;br /&gt;
+-Cookie : Client still have data&lt;br /&gt;
+-Session : Client only have session ID, not data&lt;br /&gt;&lt;br /&gt;
+Speed&lt;br /&gt;
+-Cookie : fast, because it stores in Client&lt;br /&gt;
+-Session : slow, becuase the actual data is in Server&lt;/p&gt;</content>
 
       
       
@@ -562,85 +641,68 @@ the data already made. In a nutshell, tags in XML represents data.&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;HTTP (Hypertext Transfer Protocol)
-&lt;br /&gt;
-A protocol that be able to communicate between web browser and web server.
-&lt;br /&gt;
-&lt;br /&gt;
+&lt;p&gt;HTTP (Hypertext Transfer Protocol)&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;HTTP is a protocol that be able to communicate between web browser and web server.&lt;br /&gt;
 Server and client can share their data in HTTP protocol.&lt;br /&gt;
-HTTP can send any type of data.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;The difference between HTTP and HTTP&lt;br /&gt;
-HTTP : a communication between client and server in web.&lt;br /&gt;
-HTTPS encapsulate session data through SSL or TLS, not using normal text in socket communication.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;SSL&lt;br /&gt;
+HTTP can send any type of data.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;The difference between HTTP and HTTPS&lt;br /&gt;&lt;br /&gt;
+  HTTP : a communication between client and server in web.&lt;br /&gt;
+  HTTPS encapsulates session data through SSL or TLS, not using normal text in socket communication.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;SSL&lt;br /&gt;&lt;br /&gt;
 SSL is the standard technology for keeping an internet connection secure and safeguarding any
-data that is being sent between two systems. 
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;TLS&lt;br /&gt;
-TLS is more secure version of SSL.
-&lt;br /&gt;
-When a client and server establish a SSL/TLS connection, they establish a unique session.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;DTLS&lt;br /&gt;
+data that is being sent between two systems.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+TLS&lt;br /&gt;&lt;br /&gt;
+TLS is more secure version of SSL.&lt;br /&gt;
+When a client and server establish a SSL/TLS connection, they establish a unique session.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+DTLS&lt;br /&gt;&lt;br /&gt;
 It is based on TLS.&lt;br /&gt;
-It is communication protocol designed to protect privacy and prevent eavesdropping and tampering.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Why DTLS is more secure?&lt;br /&gt;
-Packet reordering&lt;br /&gt;
-Flow control&lt;br /&gt;
-Reliability assurance&lt;br /&gt;
+It is communication protocol designed to protect privacy and prevent eavesdropping and tampering.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Why DTLS is more secure?&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Packet reordering&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Flow control&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Reliability assurance&lt;br /&gt;
 &lt;br /&gt;
-SSL, TLS, DTLS is more secure than IPsec.
-&lt;br /&gt;
-&lt;br /&gt;
-DTLS uses UDP, otherwise, TLS uses TCP
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;TCP/IP core protocol&lt;/li&gt;
+SSL, TLS, DTLS is more secure than IPsec.&lt;br /&gt;
+DTLS uses UDP, otherwise, TLS uses TCP.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;TCP/IP core protocol&lt;/p&gt;
 
-&lt;p&gt;TCP/IP protocols add a header to data inherited from the layer above it.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Layer 7,6, and 5 : Data and instructions (=payload) are generated by applications 
-running on source host.&lt;/li&gt;
-  &lt;li&gt;Layer 4 : a transport layer protocol (TCP or UDP), adds a header to the payload.&lt;/li&gt;
-  &lt;li&gt;Includes a port number to identify the receiving applicaion.&lt;/li&gt;
-  &lt;li&gt;Layer 3 : network layer adds it own header and becomes a packet.&lt;/li&gt;
-  &lt;li&gt;Layer 2 : packet is passed to Data link layer on NIC, which encapsulates data with 
-its own header and trailer, creating a frame.&lt;/li&gt;
-  &lt;li&gt;Layer 1 : physical layer on the NIC recieves the frame and places the transmission 
-on the network.
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp.jpg&quot; alt=&quot;runtime2&quot; /&gt;
+TCP/IP protocols add a header to data inherited from the layer above it.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Layer 7,6, and 5 : Data and instructions (=payload) are generated by applications running on source host.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Layer 4 : A transport layer protocol (TCP or UDP), adds a header to the payload.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Includes a port number to identify the receiving applicaion.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Layer 3 : Network layer adds it’s own header and becomes a packet.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Layer 2 : Packet is passed to Data link layer on NIC, which encapsulates data with its own header and trailer, creating a frame.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Layer 1 : Physical layer on the NIC recieves the frame and places the transmission on the network.&lt;br /&gt;&lt;br /&gt;&amp;lt;br/s&amp;gt;
 Receiving host de-encapsulates the message at each layer in reverse order and 
-presents payload to the receiving applicaion.&lt;br /&gt;&lt;br /&gt;
+presents payload to the receiving applicaion.&lt;br /&gt;
 Connectivity devices (switch, router, firewall) are specialized devices that allow 
 two or more networks to connect and exahange data.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp-2.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-&lt;br /&gt;
+TCP&lt;br /&gt;&lt;br /&gt;
+TCP operates in the transport layer (layer 4) of OSI model.
 &lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;TCP&lt;br /&gt;
-TCP operates in the transport layer (layer 4) of OSI model.
-&lt;br /&gt;
-    &lt;ol&gt;
-      &lt;li&gt;Connection-oriented : TCP ensures that a connection or session is established 
-by using a three-step process called a “three-way handshare”&lt;/li&gt;
-      &lt;li&gt;Sequence and checksum : TCp sends a character string (called checksum) that is 
-checked by the destination host along with a sequence number of each segment.&lt;/li&gt;
-      &lt;li&gt;Flow control : rate of transmission based on “how quickly recipient can accept data.”&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Connection-oriented : TCP ensures that a connection or session is established 
+by using a three-step process called a “three-way handshare”&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Sequence and checksum : TCP sends a character string (called checksum) that is 
+checked by the destination host along with a sequence number of each segment.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Flow control : rate of transmission based on “how quickly recipient can accept data.”&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp-3.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
@@ -652,124 +714,45 @@ checked by the destination host along with a sequence number of each segment.&lt
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp-4.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-&lt;br /&gt;
+UDP&lt;br /&gt;&lt;br /&gt;
+UDP is an unreliable, connectionless protocol.
 &lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;UDP&lt;br /&gt;
-UDP is an unreliable, connectionless protocol.
-&lt;br /&gt;
-    &lt;ol&gt;
-      &lt;li&gt;No three-way handshare.&lt;/li&gt;
-      &lt;li&gt;Not gurantee delivery of data.&lt;/li&gt;
-      &lt;li&gt;No error checking, sequencing, or flow control.&lt;/li&gt;
-      &lt;li&gt;UCP is more efficient than TCP, but connection is worse.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
+  &lt;li&gt;No three-way handshare.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Not gurantee delivery of data.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;No error checking, sequencing, or flow control.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;UCP is more efficient than TCP, but connection is worse.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/udp.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+IP (Internet Protocol)&lt;br /&gt;&lt;br /&gt;
+IP operates at the Network layer (layer 3) of the OSI model.&lt;br /&gt;
+Specifies where data should be delivered.&lt;br /&gt;
+Identifies the data’s source and destination IP address.&lt;br /&gt;&lt;br /&gt;
+IP is an unreliable, connectionless protocol.&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;IP (Internet Protocol)&lt;br /&gt;
-    &lt;ol&gt;
-      &lt;li&gt;IP operates at the Network layer (layer 3) of the OSI model.&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;Specifies where data should be delivered.&lt;/li&gt;
-      &lt;li&gt;Identifies the data’s source and destination IP address.
-&lt;br /&gt;&lt;br /&gt;
-IP is an unreliable, connectionless protocol.
-&lt;br /&gt;No gurantee delivery of data
-&lt;br /&gt;No session is established before data is transmitted.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
+  &lt;li&gt;No gurantee delivery of data&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;No session is established before data is transmitted.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/ip.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+HTTP communication&lt;br /&gt;&lt;br /&gt;
+client - request - server - response - client&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;HTTP communication&lt;br /&gt;
-client - request - server - response - client&lt;br /&gt;&lt;br /&gt;
-Connectionless : it cuts connection just as get response.&lt;br /&gt;
-Stateless : Just as connection finish, it doesn’t remain the information.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Connectionless : it cuts connection just as get response.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Stateless : Just as connection finish, it doesn’t remain the information.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Advantages&lt;br /&gt;
 It is good for unknown users.&lt;br /&gt;
-It can deal with more request and response than the maximum of client - server.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+It can deal with more request and response than the maximum of client - server.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Disadvanatge&lt;br /&gt;
 It loses the previous condition.&lt;br /&gt;
-Cookie exists because of lost condition.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;URL (Uniform Resource Locator)&lt;br /&gt;
-The location of resources in Internet&lt;br /&gt;
-The address or path to approach a specific file in web server&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Cookie and Session&lt;br /&gt;
-In HTTP, it is unreliable, so, they don’t know the users, the users need to authorize every single time.&lt;br /&gt;
-So, Cookie and session helps them keep authorizing to the website.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Cookie&lt;br /&gt;
-A file that stores keys and values (name, time, path, address) in “Client Local”.
-&lt;br /&gt;&lt;/li&gt;
+Cookie exists because of lost condition.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/cookie.PNG&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Web browser request to server&lt;/li&gt;
-  &lt;li&gt;Create Cookie to keep holding their information&lt;/li&gt;
-  &lt;li&gt;Attach Cookie on HTTP header and send it when server requests&lt;/li&gt;
-  &lt;li&gt;Web browser manages Cookie, send Cookie with HTTP in next request&lt;/li&gt;
-  &lt;li&gt;Server checks the previous information in Cookie, and response
-&lt;br /&gt;&lt;br /&gt;
-e.g. ID, Password
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Session&lt;br /&gt;
-A time that keep holding the statement from access to finish in server through web browser.
-&lt;br /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/session.PNG&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Web browser requests to server&lt;/li&gt;
-  &lt;li&gt;Server allocate ID to the web browser&lt;/li&gt;
-  &lt;li&gt;Put Session ID into Cookie with HTTP and send it to server when server response&lt;/li&gt;
-  &lt;li&gt;Web browser sends them again until close the web browser&lt;/li&gt;
-  &lt;li&gt;Server checks session ID and the previous information about session ID, and response
-&lt;br /&gt;&lt;br /&gt;
-Session also use Cookie for keeping statement.&lt;br /&gt;
-So, Cookie is a method that can keep holding statement.&lt;br /&gt;
-e.g. Login
-&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;The difference between Cookie and Session&lt;br /&gt;
-&lt;br /&gt;
-Storage location&lt;br /&gt;
--Cookie : Client&lt;br /&gt;
--Session : Server&lt;br /&gt;
-&lt;br /&gt;
-Security&lt;br /&gt;
--Cookie : not secure, because it stores in Client&lt;br /&gt;
--Session : secure, because it only store session ID in Client&lt;br /&gt;
-&lt;br /&gt;
-Duration&lt;br /&gt;
--Cookie : still remain after browser close&lt;br /&gt;
--Session : delete everything after browser close&lt;br /&gt;
-&lt;br /&gt;
-Speed&lt;br /&gt;
--Cookie : fast, because it stores in Client&lt;br /&gt;
--Session : slow, becuase the actual information is in Server&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content>
+&lt;p&gt;URL (Uniform Resource Locator)&lt;br /&gt;&lt;br /&gt;
+The location of resources in Internet&lt;br /&gt;
+The address or path to approach a specific file in web server&lt;/p&gt;</content>
 
       
       
@@ -809,7 +792,7 @@ Speed&lt;br /&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;Javascript is based on single thread and callback queue.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Javascript is based on single thread and callback queue.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime-2.png&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
 
@@ -896,7 +879,7 @@ To solve the limitation (slow), we use event loop and asynchronous.&lt;/p&gt;</c
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;Event loop and callback queue in javascript&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Event loop and callback queue in javascript
 &lt;img src=&quot;../assets/built/images/callstack-1.png&quot; alt=&quot;processimg&quot; /&gt;
 Javascript is single thread language, which means that the engine can take one task only,
 because JS engine has only one call stack.&lt;br /&gt;
@@ -973,8 +956,10 @@ callback queue moves to callstack and activate it.&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;A program = MS Word, Power Point&lt;br /&gt;&lt;br /&gt;
-A state that program runs = Process&lt;br /&gt;
+&lt;p&gt;A program = MS Word, Power Point&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;A state that program runs = Process&lt;br /&gt;
 Program is stored in memory. Once OS executes Program, Process is working on memory.&lt;br /&gt;
 CPU gives Drive Resource to Process. Process only work when they have Resource.&lt;br /&gt;
 The system resource is CPU time, memory storage, and address space.&lt;/p&gt;
@@ -1073,71 +1058,6 @@ By doing that, we can save time and resource for context switching.&lt;/p&gt;</c
 
       
         <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">difference between compile and interpret</title>
-      <link href="https://lulubeanana17.github.io/difference-between-compile-and-interpret" rel="alternate" type="text/html" title="difference between compile and interpret" />
-      <published>2021-09-17T04:40:00+12:00</published>
-      <updated>2021-09-17T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/difference%20between%20compile%20and%20interpret</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/difference-between-compile-and-interpret">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/compiler-interpreter.PNG&quot; alt=&quot;processimg&quot; /&gt;
-Compiler is translating “the entire codes” in advanced language to machine language at one time.&lt;br /&gt;
-Interpreter is translating the sourcodes “line by line” to machine language.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Compiler is slower than Interpreter at the first translation&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Once compile done, Compiler is faster than Interpreter to execute the file.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Most of time, Compiler is faster than Interpreter. However some languages use Interpreter for some reason.&lt;br /&gt;
-The reason is that Interpreter is compatible to other hardware, but Compiler is not.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;For example, cpu A is not compatible with cpu B.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/compiler-interpreter-1.PNG&quot; alt=&quot;processimg&quot; /&gt;
-Compiler is translating advanced language to machine language directly. It does not change the compatibility.&lt;br /&gt;
-Developers should make the software in B environment as well.&lt;br /&gt;&lt;br /&gt;
-&lt;img src=&quot;../assets/built/images/compiler-interpreter-2.PNG&quot; alt=&quot;processimg&quot; /&gt;
-Interpreter is translating advanced language to bytecode, and the virtual machine translates
-the bytecodes to machine language being suitable for B hardware environment.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Python is interpreter language, C languages are compile language,
-this is why c is a programming language for hardware control system (hardware must be fast).&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;However, Java is compile and interpreter language. In java, java compiler translates .java file into .class file by bytecode, and java virtual machine is translating bytecode to object codes.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html">Compiler is translating “the entire codes” in advanced language to machine language at one time. Interpreter is translating the sourcodes “line by line” to machine language. Compiler is slower than Interpreter at the first translation Once compile done, Compiler is faster than Interpreter to execute the file. Most of time, Compiler is faster than Interpreter. However some languages use Interpreter for some reason. The reason is that Interpreter is compatible to other hardware, but Compiler is not. For example, cpu A is not compatible with cpu B.</summary>
       
 
       

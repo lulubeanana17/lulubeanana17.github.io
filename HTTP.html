@@ -46,7 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="HTTP, SSL, and TLS" />
-    <meta property="og:description" content="HTTP (Hypertext Transfer Protocol) A protocol that be able to communicate between web browser and web server. Server and client can share their data in HTTP protocol. HTTP can send any type of data. The difference between HTTP and HTTP HTTP : a communication between client and server in web." />
+    <meta property="og:description" content="HTTP (Hypertext Transfer Protocol) HTTP is a protocol that be able to communicate between web browser and web server. Server and client can share their data in HTTP protocol. HTTP can send any type of data. The difference between HTTP and HTTPS HTTP : a communication between client and server" />
     <meta property="og:url" content="https://lulubeanana17.github.io/HTTP" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -56,7 +56,7 @@
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="HTTP, SSL, and TLS" />
-    <meta name="twitter:description" content="HTTP (Hypertext Transfer Protocol) A protocol that be able to communicate between web browser and web server. Server and client can share their data in HTTP protocol. HTTP can send any type of data. The difference between HTTP and HTTP HTTP : a communication between client and server in web." />
+    <meta name="twitter:description" content="HTTP (Hypertext Transfer Protocol) HTTP is a protocol that be able to communicate between web browser and web server. Server and client can share their data in HTTP protocol. HTTP can send any type of data. The difference between HTTP and HTTPS HTTP : a communication between client and server" />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/HTTP"
     },
-    "description": "HTTP (Hypertext Transfer Protocol) A protocol that be able to communicate between web browser and web server. Server and client can share their data in HTTP protocol. HTTP can send any type of data. The difference between HTTP and HTTP HTTP : a communication between client and server in web."
+    "description": "HTTP (Hypertext Transfer Protocol) HTTP is a protocol that be able to communicate between web browser and web server. Server and client can share their data in HTTP protocol. HTTP can send any type of data. The difference between HTTP and HTTPS HTTP : a communication between client and server"
 }
     </script>
 
@@ -191,85 +191,68 @@ into the {body} of the default.hbs template -->
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
 
-<ul>
-  <li>HTTP (Hypertext Transfer Protocol)
-<br />
-A protocol that be able to communicate between web browser and web server.
-<br />
-<br />
+<p>HTTP (Hypertext Transfer Protocol)</p>
+<hr />
+
+<p>HTTP is a protocol that be able to communicate between web browser and web server.<br />
 Server and client can share their data in HTTP protocol.<br />
-HTTP can send any type of data.
-<br />
-<br /></li>
-  <li>The difference between HTTP and HTTP<br />
-HTTP : a communication between client and server in web.<br />
-HTTPS encapsulate session data through SSL or TLS, not using normal text in socket communication.
-<br />
-<br /></li>
-  <li>SSL<br />
+HTTP can send any type of data.</p>
+<hr />
+
+<p>The difference between HTTP and HTTPS<br /><br />
+  HTTP : a communication between client and server in web.<br />
+  HTTPS encapsulates session data through SSL or TLS, not using normal text in socket communication.</p>
+<hr />
+
+<p>SSL<br /><br />
 SSL is the standard technology for keeping an internet connection secure and safeguarding any
-data that is being sent between two systems. 
-<br />
-<br /></li>
-  <li>TLS<br />
-TLS is more secure version of SSL.
-<br />
-When a client and server establish a SSL/TLS connection, they establish a unique session.
-<br />
-<br /></li>
-  <li>DTLS<br />
+data that is being sent between two systems.<br /><br /><br />
+TLS<br /><br />
+TLS is more secure version of SSL.<br />
+When a client and server establish a SSL/TLS connection, they establish a unique session.<br /><br /><br />
+DTLS<br /><br />
 It is based on TLS.<br />
-It is communication protocol designed to protect privacy and prevent eavesdropping and tampering.<br />
-<br /></li>
-  <li>Why DTLS is more secure?<br />
-Packet reordering<br />
-Flow control<br />
-Reliability assurance<br />
+It is communication protocol designed to protect privacy and prevent eavesdropping and tampering.</p>
+<hr />
+
+<p>Why DTLS is more secure?<br /></p>
+<ul>
+  <li>Packet reordering<br /></li>
+  <li>Flow control<br /></li>
+  <li>Reliability assurance<br />
 <br />
-SSL, TLS, DTLS is more secure than IPsec.
-<br />
-<br />
-DTLS uses UDP, otherwise, TLS uses TCP
-<br />
-<br /></li>
-  <li>TCP/IP core protocol</li>
+SSL, TLS, DTLS is more secure than IPsec.<br />
+DTLS uses UDP, otherwise, TLS uses TCP.</li>
 </ul>
+<hr />
 
-<p><img src="../assets/built/images/tcp.jpg" alt="runtime2" /></p>
+<p>TCP/IP core protocol</p>
 
-<p>TCP/IP protocols add a header to data inherited from the layer above it.</p>
-<ol>
-  <li>Layer 7,6, and 5 : Data and instructions (=payload) are generated by applications 
-running on source host.</li>
-  <li>Layer 4 : a transport layer protocol (TCP or UDP), adds a header to the payload.</li>
-  <li>Includes a port number to identify the receiving applicaion.</li>
-  <li>Layer 3 : network layer adds it own header and becomes a packet.</li>
-  <li>Layer 2 : packet is passed to Data link layer on NIC, which encapsulates data with 
-its own header and trailer, creating a frame.</li>
-  <li>Layer 1 : physical layer on the NIC recieves the frame and places the transmission 
-on the network.
-<br /><br />
+<p><img src="../assets/built/images/tcp.jpg" alt="runtime2" />
+TCP/IP protocols add a header to data inherited from the layer above it.<br /></p>
+<ul>
+  <li>Layer 7,6, and 5 : Data and instructions (=payload) are generated by applications running on source host.<br /></li>
+  <li>Layer 4 : A transport layer protocol (TCP or UDP), adds a header to the payload.<br /></li>
+  <li>Includes a port number to identify the receiving applicaion.<br /></li>
+  <li>Layer 3 : Network layer adds it’s own header and becomes a packet.<br /></li>
+  <li>Layer 2 : Packet is passed to Data link layer on NIC, which encapsulates data with its own header and trailer, creating a frame.<br /></li>
+  <li>Layer 1 : Physical layer on the NIC recieves the frame and places the transmission on the network.<br /><br />&lt;br/s&gt;
 Receiving host de-encapsulates the message at each layer in reverse order and 
-presents payload to the receiving applicaion.<br /><br />
+presents payload to the receiving applicaion.<br />
 Connectivity devices (switch, router, firewall) are specialized devices that allow 
 two or more networks to connect and exahange data.</li>
-</ol>
+</ul>
 
 <p><img src="../assets/built/images/tcp-2.jpg" alt="runtime2" />
-<br />
+TCP<br /><br />
+TCP operates in the transport layer (layer 4) of OSI model.
 <br /></p>
 <ul>
-  <li>TCP<br />
-TCP operates in the transport layer (layer 4) of OSI model.
-<br />
-    <ol>
-      <li>Connection-oriented : TCP ensures that a connection or session is established 
-by using a three-step process called a “three-way handshare”</li>
-      <li>Sequence and checksum : TCp sends a character string (called checksum) that is 
-checked by the destination host along with a sequence number of each segment.</li>
-      <li>Flow control : rate of transmission based on “how quickly recipient can accept data.”</li>
-    </ol>
-  </li>
+  <li>Connection-oriented : TCP ensures that a connection or session is established 
+by using a three-step process called a “three-way handshare”<br /></li>
+  <li>Sequence and checksum : TCP sends a character string (called checksum) that is 
+checked by the destination host along with a sequence number of each segment.<br /></li>
+  <li>Flow control : rate of transmission based on “how quickly recipient can accept data.”<br /></li>
 </ul>
 
 <p><img src="../assets/built/images/tcp-3.jpg" alt="runtime2" /></p>
@@ -281,124 +264,45 @@ checked by the destination host along with a sequence number of each segment.</l
 </ul>
 
 <p><img src="../assets/built/images/tcp-4.jpg" alt="runtime2" />
-<br />
+UDP<br /><br />
+UDP is an unreliable, connectionless protocol.
 <br /></p>
 <ul>
-  <li>UDP<br />
-UDP is an unreliable, connectionless protocol.
-<br />
-    <ol>
-      <li>No three-way handshare.</li>
-      <li>Not gurantee delivery of data.</li>
-      <li>No error checking, sequencing, or flow control.</li>
-      <li>UCP is more efficient than TCP, but connection is worse.</li>
-    </ol>
-  </li>
+  <li>No three-way handshare.<br /></li>
+  <li>Not gurantee delivery of data.<br /></li>
+  <li>No error checking, sequencing, or flow control.<br /></li>
+  <li>UCP is more efficient than TCP, but connection is worse.</li>
 </ul>
 
 <p><img src="../assets/built/images/udp.jpg" alt="runtime2" />
-<br />
-<br /></p>
+IP (Internet Protocol)<br /><br />
+IP operates at the Network layer (layer 3) of the OSI model.<br />
+Specifies where data should be delivered.<br />
+Identifies the data’s source and destination IP address.<br /><br />
+IP is an unreliable, connectionless protocol.<br /></p>
 <ul>
-  <li>IP (Internet Protocol)<br />
-    <ol>
-      <li>IP operates at the Network layer (layer 3) of the OSI model.<br /></li>
-      <li>Specifies where data should be delivered.</li>
-      <li>Identifies the data’s source and destination IP address.
-<br /><br />
-IP is an unreliable, connectionless protocol.
-<br />No gurantee delivery of data
-<br />No session is established before data is transmitted.</li>
-    </ol>
-  </li>
+  <li>No gurantee delivery of data<br /></li>
+  <li>No session is established before data is transmitted.</li>
 </ul>
 
 <p><img src="../assets/built/images/ip.jpg" alt="runtime2" />
-<br />
-<br /></p>
+HTTP communication<br /><br />
+client - request - server - response - client<br /><br /></p>
 <ul>
-  <li>HTTP communication<br />
-client - request - server - response - client<br /><br />
-Connectionless : it cuts connection just as get response.<br />
-Stateless : Just as connection finish, it doesn’t remain the information.
-<br />
-<br /></li>
+  <li>Connectionless : it cuts connection just as get response.<br /></li>
+  <li>Stateless : Just as connection finish, it doesn’t remain the information.<br /><br /></li>
   <li>Advantages<br />
 It is good for unknown users.<br />
-It can deal with more request and response than the maximum of client - server.<br />
-<br /></li>
+It can deal with more request and response than the maximum of client - server.<br /><br /></li>
   <li>Disadvanatge<br />
 It loses the previous condition.<br />
-Cookie exists because of lost condition.<br />
-<br /></li>
-  <li>URL (Uniform Resource Locator)<br />
-The location of resources in Internet<br />
-The address or path to approach a specific file in web server<br />
-<br /></li>
-  <li>Cookie and Session<br />
-In HTTP, it is unreliable, so, they don’t know the users, the users need to authorize every single time.<br />
-So, Cookie and session helps them keep authorizing to the website.
-<br />
-<br /></li>
-  <li>Cookie<br />
-A file that stores keys and values (name, time, path, address) in “Client Local”.
-<br /></li>
+Cookie exists because of lost condition.</li>
 </ul>
+<hr />
 
-<p><img src="../assets/built/images/cookie.PNG" alt="runtime2" /></p>
-<ol>
-  <li>Web browser request to server</li>
-  <li>Create Cookie to keep holding their information</li>
-  <li>Attach Cookie on HTTP header and send it when server requests</li>
-  <li>Web browser manages Cookie, send Cookie with HTTP in next request</li>
-  <li>Server checks the previous information in Cookie, and response
-<br /><br />
-e.g. ID, Password
-<br />
-<br />
-<br />
-    <ul>
-      <li>Session<br />
-A time that keep holding the statement from access to finish in server through web browser.
-<br /></li>
-    </ul>
-  </li>
-</ol>
-
-<p><img src="../assets/built/images/session.PNG" alt="runtime2" /></p>
-<ol>
-  <li>Web browser requests to server</li>
-  <li>Server allocate ID to the web browser</li>
-  <li>Put Session ID into Cookie with HTTP and send it to server when server response</li>
-  <li>Web browser sends them again until close the web browser</li>
-  <li>Server checks session ID and the previous information about session ID, and response
-<br /><br />
-Session also use Cookie for keeping statement.<br />
-So, Cookie is a method that can keep holding statement.<br />
-e.g. Login
-<br />
-<br /><br />
-    <ul>
-      <li>The difference between Cookie and Session<br />
-<br />
-Storage location<br />
--Cookie : Client<br />
--Session : Server<br />
-<br />
-Security<br />
--Cookie : not secure, because it stores in Client<br />
--Session : secure, because it only store session ID in Client<br />
-<br />
-Duration<br />
--Cookie : still remain after browser close<br />
--Session : delete everything after browser close<br />
-<br />
-Speed<br />
--Cookie : fast, because it stores in Client<br />
--Session : slow, becuase the actual information is in Server</li>
-    </ul>
-  </li>
-</ol>
+<p>URL (Uniform Resource Locator)<br /><br />
+The location of resources in Internet<br />
+The address or path to approach a specific file in web server</p>
 
                 </div>
             </section>
@@ -529,6 +433,13 @@ Speed<br />
                                 
                                   
                                     
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
                                   
                                 
                                   
@@ -580,7 +491,7 @@ Speed<br />
                         <footer class="read-next-card-footer">
                             <a href="/tag/front-end/">
                                 
-                                    See all 11 posts  →
+                                    See all 12 posts  →
                                 
                             </a>
                         </footer>
@@ -594,12 +505,12 @@ Speed<br />
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/WebAPI">
+            <a class="post-card-image-link" href="/Cookie">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/WebAPI">
+            <a class="post-card-content-link" href="/Cookie">
                 <header class="post-card-header">
                     
                         
@@ -609,7 +520,7 @@ Speed<br />
                         
                     
 
-                    <h2 class="post-card-title">Web API</h2>
+                    <h2 class="post-card-title">Cookie & Session</h2>
                 </header>
                 <section class="post-card-excerpt">
                     

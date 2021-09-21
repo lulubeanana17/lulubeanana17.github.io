@@ -103,6 +103,25 @@
     
       
       <item>
+        <title>Cookie &amp; Session</title>
+        
+          <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+</description>
+        
+        <pubDate>Sun, 19 Sep 2021 07:10:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/Cookie</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/Cookie</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>HTTP, SSL, and TLS</title>
         
           <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
@@ -186,9 +205,9 @@
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/compiler-interpreter.PNG&quot; alt=&quot;processimg&quot; /&gt;
-Compiler is translating “the entire codes” in advanced language to machine language at one time.&lt;br /&gt;
-Interpreter is translating the sourcodes “line by line” to machine language.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Compiler is translating “the entire codes” in advanced language to machine language at one time.&lt;br /&gt;
+Interpreter is translating the sourcodes “line by line” to machine language.
+&lt;img src=&quot;../assets/built/images/compiler-interpreter.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Compiler is slower than Interpreter at the first translation&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Once compile done, Compiler is faster than Interpreter to execute the file.&lt;/li&gt;

@@ -46,7 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Operating System" />
-    <meta property="og:description" content="Operating System OS is a software that controls hardware effectively, which is between users and hardware. There is two aspects on OS, which are a user and a system. For users, the main focus is comfortance during running, insteading of resource spreading. However, For system, resource allocator is the most" />
+    <meta property="og:description" content="Operating System OS is a software that controls hardware effectively, which is between users and hardware. Computer system consists of CPU, Memory, I/O devices, system bus. Bootstraping CPU must put every program on memory to operate them. Same as OS, when we turn the computer on, CPU puts OS on" />
     <meta property="og:url" content="https://lulubeanana17.github.io/OS" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -56,7 +56,7 @@
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Operating System" />
-    <meta name="twitter:description" content="Operating System OS is a software that controls hardware effectively, which is between users and hardware. There is two aspects on OS, which are a user and a system. For users, the main focus is comfortance during running, insteading of resource spreading. However, For system, resource allocator is the most" />
+    <meta name="twitter:description" content="Operating System OS is a software that controls hardware effectively, which is between users and hardware. Computer system consists of CPU, Memory, I/O devices, system bus. Bootstraping CPU must put every program on memory to operate them. Same as OS, when we turn the computer on, CPU puts OS on" />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/OS"
     },
-    "description": "Operating System OS is a software that controls hardware effectively, which is between users and hardware. There is two aspects on OS, which are a user and a system. For users, the main focus is comfortance during running, insteading of resource spreading. However, For system, resource allocator is the most"
+    "description": "Operating System OS is a software that controls hardware effectively, which is between users and hardware. Computer system consists of CPU, Memory, I/O devices, system bus. Bootstraping CPU must put every program on memory to operate them. Same as OS, when we turn the computer on, CPU puts OS on"
 }
     </script>
 
@@ -191,83 +191,68 @@ into the {body} of the default.hbs template -->
     <li><a href="./python-control-statement">front-end-control-statement</a></li>
 </ul>-->
 
-<p>Operating System<br /><br /><br />
-OS is a software that controls hardware effectively, which is between users and hardware.</p>
+<p>Operating System</p>
 <hr />
 
-<p>There is two aspects on OS, which are a user and a system.<br />
-For users, the main focus is comfortance during running, insteading of resource spreading.<br /><br />
-However, For system, resource allocator is the most important one. Also, it should handle with
-conflicts.</p>
+<p>OS is a software that controls hardware effectively, which is between users and hardware.<br />
+Computer system consists of CPU, Memory, I/O devices, system bus.</p>
 <hr />
 
-<p>Computer system consists of CPU, Memory, I/O devices, system bus.</p>
+<p>Bootstraping<br /><br />
+CPU must put every program on memory to operate them.<br />
+Same as OS, when we turn the computer on, CPU puts OS on memory.<br />
+It is known as Bootstraping.<br /><br />
+Bootstrap program is the first running program when computer is turned on.<br /> 
+The program is stored in ROM, which is called a Bootstrap loader.</p>
 <hr />
 
-<hr />
-
+<p>Interrupt<br /><br />
+OS requests CPU to stop one program and operates another program.<br />
+It is Interrupt. It creates multi-programming.<br /><br /><br /></p>
 <ul>
-  <li>Bootstraping<br />
-A process that load OS on main memory to run a computer. <br /><br />
-Bootstrap program is the first running program when computer is turned on. The program is 
-stored in ROM, which is called a Bootstrap loader.<br /></li>
-  <li>Interrupt<br />
-Interrupt repuests CPU to stop the running program for running another program. This is the
-most important thing to create multi-programming.<br /></li>
   <li>Hardware Interrupt<br />
-It can be changed by Mouse, keyboard. The signal of interrupt delivers through Bus.<br /></li>
+Keyboard or mouse requests it. The signal of interrupt delivers through Bus.<br /><br /></li>
   <li>Software Interrupt<br />
 It works with “Syste Call”.<br />
     <ul>
       <li>Interrupt handling is one of the features of CPU.<br /></li>
-      <li>System call requests Interrupt to CPU, CPU uses Interrupt Service Routine.<br /></li>
-      <li>Interrupt Vector is an array of Interrupt Service Routine. Interrupt Vector Table consists
-of many Interrupt Vectors.<br /></li>
-      <li>During running the program, if Interrupt happens, It should store data in Stack. otherwise,
-It couldn’t reload it.<br /></li>
+      <li>System call requests Interrupt to CPU, CPU uses Interrupt Service Routine.<br /><br />
+During running the program, if Interrupt happens, It should store data in Stack.<br /> 
+otherwise, it couldn’t reload it.</li>
     </ul>
   </li>
-  <li>Interrupt Timeline<br />
-During running I/O, CPU can do other works.</li>
-  <li>Storage Structure<br />
-Every programs must be loaded on memory to run.</li>
-  <li>Von Neumann architecture<br />
-Commands and Data will be stored in the same memory, which has same CPU link.</li>
 </ul>
+<hr />
+
+<p>Von Neumann architecture<br /><br />
+Commands and Data will be stored in the same memory, which has same CPU link.</p>
 
 <p><img src="../assets/built/images/neuman.jpg" alt="runtime2" /></p>
-<ul>
-  <li>Secondary Storage<br />
-HDD/SSD helps main memory (RAM) for more storage.</li>
-</ul>
 <hr />
 
+<p>Secondary Storage<br /><br />
+HDD/SSD helps main memory (RAM) for more storage.</p>
 <hr />
 
-<ul>
-  <li>Device Controller<br />
-Several Device Controllers connects with CPU.<br />
-Each Device Controller manages each components. OS interprets how Device Controllers act, 
-provide the same interface to other components about the Device Controller.<br /></li>
-  <li>DMA (Direct Memory Access)<br />
+<p>Device Controller<br /><br />
+Several Device Controllers connects CPU.<br />
+Each Device Controller manages each components.</p>
+<hr />
+
+<p>DMA (Direct Memory Access)<br /><br />
 DMA allows components (hard disk, graphic card, NIC) to access to Memory directly.<br />
-CPU doesn’t need to participate the data transmission, it improves computer performance.<br />
-<br />
-When Device Controller controls a lot of data, it is usually heavy work on CPU. So, DMA helps
- Device Controller to ignore CPU’s work on the data.<br />
-Because of that, CPU doesn’t need to do that job and become more effective.</li>
-</ul>
+CPU doesn’t need to participate the data transmission, it improves computer performance.</p>
 <hr />
 
+<p>When Device Controller controls a lot of data, it is usually heavy work on CPU.<br />
+So, DMA helps Device Controller to ignore CPU’s work on the data.<br />
+Because of that, CPU doesn’t need to do that job and become more effective.</p>
 <hr />
 
+<p>The structure of Computer System<br /></p>
 <ul>
-  <li>The structure of Computer System<br />
-    <ul>
-      <li>Single Processor system (=core)<br /></li>
-      <li>Multi Processor system<br /></li>
-    </ul>
-  </li>
+  <li>Single Processor system (=core)<br /></li>
+  <li>Multi Processor system<br /></li>
 </ul>
 
                 </div>
@@ -437,6 +422,13 @@ Because of that, CPU doesn’t need to do that job and become more effective.</l
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
                                 
                                   
                                     
@@ -450,7 +442,7 @@ Because of that, CPU doesn’t need to do that job and become more effective.</l
                         <footer class="read-next-card-footer">
                             <a href="/tag/front-end/">
                                 
-                                    See all 11 posts  →
+                                    See all 12 posts  →
                                 
                             </a>
                         </footer>
