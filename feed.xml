@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-22T13:10:13+12:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">Process scheduling algorithm</title><link href="https://lulubeanana17.github.io/Scheduling" rel="alternate" type="text/html" title="Process scheduling algorithm" /><published>2021-09-22T04:50:00+12:00</published><updated>2021-09-22T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/Scheduling</id><content type="html" xml:base="https://lulubeanana17.github.io/Scheduling">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-22T23:25:57+12:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">Process scheduling algorithm</title><link href="https://lulubeanana17.github.io/Scheduling" rel="alternate" type="text/html" title="Process scheduling algorithm" /><published>2021-09-22T04:50:00+12:00</published><updated>2021-09-22T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/Scheduling</id><content type="html" xml:base="https://lulubeanana17.github.io/Scheduling">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -244,8 +244,17 @@ If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</c
 &lt;p&gt;Operating System&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;OS is a software that controls hardware effectively, which is between users and hardware.&lt;br /&gt;
-Computer system consists of CPU, Memory, I/O devices, system bus.&lt;/p&gt;
+&lt;p&gt;OS is a program that manages a computer’s hardware.&lt;br /&gt;
+It distributes Hardware and Software Resources effectively.&lt;br /&gt;
+Computer system consists of CPU, Memory, I/O devices, system bus.&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Without OS, user needs to control every components.&lt;br /&gt;
+For example, when user uses a program,&lt;br /&gt; 
+they need to put it on memory, control I/O device order, synchronize the logic, and 
+do coding with machine language.&lt;br /&gt;&lt;br /&gt;
+However, OS assembles these components to allow users working easily.&lt;br /&gt;
+Every single actions originally acts by programming commands, but OS can make it easy.&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Bootstraping&lt;br /&gt;&lt;br /&gt;

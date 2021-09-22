@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-22T13:10:13+12:00</updated>
+  <updated>2021-09-22T23:25:57+12:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -385,8 +385,17 @@ If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</c
 &lt;p&gt;Operating System&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;OS is a software that controls hardware effectively, which is between users and hardware.&lt;br /&gt;
-Computer system consists of CPU, Memory, I/O devices, system bus.&lt;/p&gt;
+&lt;p&gt;OS is a program that manages a computer’s hardware.&lt;br /&gt;
+It distributes Hardware and Software Resources effectively.&lt;br /&gt;
+Computer system consists of CPU, Memory, I/O devices, system bus.&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Without OS, user needs to control every components.&lt;br /&gt;
+For example, when user uses a program,&lt;br /&gt; 
+they need to put it on memory, control I/O device order, synchronize the logic, and 
+do coding with machine language.&lt;br /&gt;&lt;br /&gt;
+However, OS assembles these components to allow users working easily.&lt;br /&gt;
+Every single actions originally acts by programming commands, but OS can make it easy.&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Bootstraping&lt;br /&gt;&lt;br /&gt;
