@@ -8,6 +8,44 @@
     
       
       <item>
+        <title>CPU burst VS I/O burst</title>
+        
+          <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+</description>
+        
+        <pubDate>Thu, 23 Sep 2021 05:50:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/CPUburst</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/CPUburst</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Inter-Process Communication</title>
+        
+          <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+</description>
+        
+        <pubDate>Thu, 23 Sep 2021 04:50:00 +1200</pubDate>
+        <link>
+        https://lulubeanana17.github.io/IPC</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/IPC</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Process scheduling algorithm</title>
         
           <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;

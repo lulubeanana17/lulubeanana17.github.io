@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-22T23:25:57+12:00</updated>
+  <updated>2021-09-23T12:52:13+12:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -30,6 +30,173 @@
   
   
 
+  
+    <entry>
+      <title type="html">CPU burst VS I/O burst</title>
+      <link href="https://lulubeanana17.github.io/CPUburst" rel="alternate" type="text/html" title="CPU burst VS I/O burst" />
+      <published>2021-09-23T05:50:00+12:00</published>
+      <updated>2021-09-23T05:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/CPUburst</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/CPUburst">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;CPU burst VS I/O burst&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Process somethimes use CPU burst, sometimes use I/O burst.&lt;br /&gt;
+CPU burst means Process operates CPU commands.&lt;br /&gt;
+I/O burst is a waiting time for input or output through device.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-burst.PNG&quot; alt=&quot;CPU-burst&quot; /&gt;
+If CPU burst time is 10sec, CPU completes the Process for 10sec.&lt;br /&gt;
+I/O burst coming after CPU burst means the process needs input or output&lt;br /&gt;
+to operate the next CPU burst.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Process has 2 options for burst: CPU bound process and I/O bound process.&lt;br /&gt;&lt;br /&gt;
+If the Process has more CPU burst than I/O burst, it is CPU bound process.&lt;br /&gt;
+If the Process has more I/O burst than CPU burst, it is I/O bound process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-burst-1.PNG&quot; alt=&quot;CPU-burst&quot; /&gt;
+In CPU burst, Users do not attempt the Process, which means that the process&lt;br /&gt;
+work only (e.g. scientific calculator). CPU bound Process time is usually short.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Inter-Process Communication</title>
+      <link href="https://lulubeanana17.github.io/IPC" rel="alternate" type="text/html" title="Inter-Process Communication" />
+      <published>2021-09-23T04:50:00+12:00</published>
+      <updated>2021-09-23T04:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/IPC</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/IPC">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;IPC&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Process has 2 options: Independent Process and Cooperating Process.&lt;br /&gt;
+Independent Process does not share data.&lt;br /&gt;
+Cooperating Process shares data.&lt;br /&gt;
+IPC is an action that shares data between Process.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Advantages of Cooperate Process&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Information sharing&lt;br /&gt;
+  When people can share one file together.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Computation speedup&lt;br /&gt;
+  Processes work together in one file, finish fast.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Modularity&lt;br /&gt;
+  Process and thread can divide the system features more effectively.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Convenience&lt;br /&gt;
+  People can play multi-process at the same time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Messaging passing VS Shared memory&lt;br /&gt;&lt;br /&gt;
+IPC has 2 methods: messaging passing and shared memory.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Message passing&lt;br /&gt;
+  Kernel (OS) is an agent that deliver data between Process for memory protection.&lt;br /&gt;
+  It is safe and doesn’t have synchronization issue because OS synchronizes memory.&lt;br /&gt;
+  However, the performance is worse.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Shared memory&lt;br /&gt;
+  Processes create shared memory and use it.&lt;br /&gt;
+  The performance is good, but it has synchronization issue.&lt;br /&gt;
+  Application synchronizes the memory.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/ipc.PNG&quot; alt=&quot;IPC&quot; /&gt;
+Imagine that Process A has Rss1 and Process B has Rss2.&lt;br /&gt;
+When they try to share the resources, Memory protection blocks process A approaching process B directly. If Process A can approach Process B directly, Process A can kill Process B.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Messaging Passing&lt;br /&gt;&lt;br /&gt;
+To share the Resources, OS needs to help.&lt;br /&gt;
+Process A passes a message to Kernel, Kernel passes the message to B.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/ipc-1.PNG&quot; alt=&quot;messagin passing&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Direct communication&lt;br /&gt;
+  Kernel passes messages directly&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Indirect communication&lt;br /&gt;
+  Kernel is like Lost property office. When A puts a message in Kernel, &lt;br /&gt;
+  B come and get the message.&lt;br /&gt;&lt;br /&gt;
+Messaging passing is not efficiency and raise overhead.&lt;br /&gt;
+(a) picture domonstrates Indirect message, the above picture is Direct message.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Shared Memory&lt;br /&gt;&lt;br /&gt;
+Shared memory is better performance than Messaging Passing.&lt;br /&gt;
+However, It has synchronization issue.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;When A writes a message in shared memory, B does not know when the message is written.&lt;br /&gt;
+So, it should synchronize the time, which is known as synchronization issue.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;IPC represents every communication between Processes.&lt;br /&gt;
+Process 1 in Computer A can communicate with Process 2 in Computer B by using IPC.&lt;br /&gt;
+So, the networking is also called IPC.&lt;br /&gt;
+IPC is called Socket, RPC (Remote Procedure Call) in C++, RMI in Java.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Process scheduling algorithm</title>
@@ -861,170 +1028,6 @@ Cookie exists because of lost condition.&lt;/li&gt;
 &lt;p&gt;URL (Uniform Resource Locator)&lt;br /&gt;&lt;br /&gt;
 The location of resources in Internet&lt;br /&gt;
 The address or path to approach a specific file in web server&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">stackoverflow in javascript</title>
-      <link href="https://lulubeanana17.github.io/stackoverflow" rel="alternate" type="text/html" title="stackoverflow in javascript" />
-      <published>2021-09-18T04:50:00+12:00</published>
-      <updated>2021-09-18T04:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/stackoverflow</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/stackoverflow">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Javascript is based on single thread and callback queue.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime-2.png&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The engine consists of memory heap and call stack.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Memory heap : memory allocation&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Callstack : stack the commands code by code&lt;br /&gt;&lt;br /&gt;
-Runtime = The environment&lt;br /&gt;
-Most developers use web API, which is not given by JS engine.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;callstack&lt;br /&gt;&lt;br /&gt;
-It is data structure that logs where I am in a program, which means what commands completed.&lt;br /&gt;&lt;br /&gt;
-Example (normal callstack)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-1.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the call stack, result is&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/callstack-1.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Each steps of call stack are called “Stack Frame”.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Example (stack trace)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-2.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Stack trace is a statement of call stack when exception happened.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/stacktrace.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Example (stack overflow)&lt;br /&gt;&lt;br /&gt;
-It shows when eternal loop is executed.&lt;br /&gt;
-Call stack has maximum. When stack is over the maximum, it is called stack overflow.&lt;br /&gt;
-And then, it blows the call stack, which is called “blowing the stack”.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-3.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/stackoverflow.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/stackoverflow-error.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Single thread is simple, but it has a lot of limitations.&lt;br /&gt;
-To solve the limitation (slow), we use event loop and asynchronous.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">event loop &amp;amp; callback queue in Javascript</title>
-      <link href="https://lulubeanana17.github.io/eventloop-callbackqueue" rel="alternate" type="text/html" title="event loop &amp; callback queue in Javascript" />
-      <published>2021-09-18T04:40:00+12:00</published>
-      <updated>2021-09-18T04:40:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/eventloop-callbackqueue</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/eventloop-callbackqueue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Event loop and callback queue in javascript
-&lt;img src=&quot;../assets/built/images/callstack-1.png&quot; alt=&quot;processimg&quot; /&gt;
-Javascript is single thread language, which means that the engine can take one task only,
-because JS engine has only one call stack.&lt;br /&gt;
-JS engine reads codes and add functions in call stack, after complete the function,
-it removes them from call stack.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime.PNG&quot; alt=&quot;processimg&quot; /&gt;
-When developer makes codes in JS and activates it, JS engine reads the codes.&lt;br /&gt;
-JS engine do interpreting the codes to bytecodes, and Virtual Machine does interpreting them
-to machine codes. When codes are interpreting, the environment is called “Runtime”.&lt;br /&gt;&lt;br /&gt;
-For example, Chrome uses V8 engine for JS. So, Chrome is Runtime.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Programming is judged by two concepts: Synchronous and Asynchronous.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Syncronous : only when one task is completed, the following one is unblocked&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Ansyncoronous : you can move to another task before the previous one finishes&lt;br /&gt;&lt;br /&gt;
-Javascript is syncronous language, which is slow because it waits every events until response back. &lt;br /&gt;
-So, Chrome supports several web API to use JS code by ansyncoronous.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Ansyncoronous code can change the commands order. &lt;br /&gt;
-For example, if there are first function and second function, second function can be activated faster than first function.&lt;br /&gt;
-Event loop can make ansyncronous happen in JS code.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;When a first function is in callstack, first function’s callback function moves to background.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;After first function moved, second fucntion is completed in callstack.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;First function’s callback function moves to callback queue.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Event loop looks at callstack and callback queue.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;If there is a function in callback queue and callstack is all complete, first function in
-callback queue moves to callstack and activate it.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;ps. call stack is the same as execution stack, control stack, run-time stack, machine stack, and the stack.&lt;/p&gt;</content>
 
       
       
