@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-23T12:52:13+12:00</updated>
+  <updated>2021-09-26T14:38:25+13:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -30,6 +30,123 @@
   
   
 
+  
+    <entry>
+      <title type="html">JSON &amp;amp; XML</title>
+      <link href="https://lulubeanana17.github.io/Json-xml" rel="alternate" type="text/html" title="JSON &amp; XML" />
+      <published>2021-09-26T05:50:00+13:00</published>
+      <updated>2021-09-26T05:50:00+13:00</updated>
+      <id>https://lulubeanana17.github.io/Json-xml</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/Json-xml">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;XML &amp;amp; JSON&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;XML&lt;br /&gt;&lt;br /&gt;
+XML (eXtensible Markup Language) is a text-based data format as Markup language.&lt;br /&gt;
+HTML only have fixed tags, the tages already have roles.&lt;br /&gt;However, XML can make any tages by
+a user.&lt;br /&gt;XML can make new tags for new data independently.&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;JSON&lt;br /&gt;&lt;br /&gt;
+JSON (JavaScript Object Notation) is a text-based data format and a lightweight data-interchange format. It transmits data between computers.&lt;br /&gt;&lt;br /&gt;
+Nowadays, JSON is more popular than XML because it is light and easy to understand.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;JSON features&lt;br /&gt;&lt;br /&gt;
+JSON is a plain text written in JavaScript object notation.&lt;br /&gt;
+JSON can be translated to JavaScript Object through JavaScript.&lt;br /&gt;
+JSON is language independent, JSON exists in many programming languages.&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Difference between XML and JSON&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;XML has tags covering data, which is similar to HTML tags.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;JSON has {} instead tags, and split ‘,’ data by data.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;JSON uses null, number, string, array, object, boolean&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Issues of JSON&lt;br /&gt;&lt;br /&gt;
+AJAX (Asynchronous JavaScript And XML) is a part of JavaScript that transfers data with servers.&lt;br /&gt;AJAX may send not JSON data but JavaScript itself, AJAX may not distinguish JSON and JavaScript.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;JSON is just data format.&lt;br /&gt;
+To get the JSON data, they use XMLHttpRequest() function in JS,&lt;br /&gt;
+this function only support the original server that JS is uploaded.&lt;br /&gt;
+JSON is only available on the server having JS.&lt;br /&gt;
+e.g. In google.com, we only can get JSON from Google, not other websites.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">FIFO/FCFS &amp;amp; convey effect</title>
+      <link href="https://lulubeanana17.github.io/multilevel-queue" rel="alternate" type="text/html" title="FIFO/FCFS &amp; convey effect" />
+      <published>2021-09-23T06:50:00+12:00</published>
+      <updated>2021-09-23T06:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/multilevel-queue</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/multilevel-queue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;FIFO (Frist In First Out) = FCFS (First Come First Served)&lt;/p&gt;
+&lt;hr /&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">CPU burst VS I/O burst</title>
@@ -784,250 +901,7 @@ WebAPI requests another service to use the service’s features. Because of WebA
 need to develop every services.&lt;br /&gt;WebAPI is formed as Website.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/webapi.png&quot; alt=&quot;runtime2&quot; /&gt;
-WebAPI can make unlimited platform and client enviroment through HTTP.&lt;br /&gt;&lt;br /&gt;
-XML&lt;br /&gt;&lt;br /&gt;
-XML (eXtensible Markup Language) is similar to HTML as Markup language.&lt;br /&gt;
-HTML only have fixed tags, the tages already have roles.&lt;br /&gt;However, XML can make any tages by
-a user.&lt;br /&gt;The reason is XML represents new data in a new tag made by the user, which means the user
-explain the data by tags.&lt;br /&gt;So, the data is marked by tags, the user can put additional data in 
-the data already made.&lt;br /&gt;In a nutshell, tags in XML represents data.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Cookie &amp;amp; Session</title>
-      <link href="https://lulubeanana17.github.io/Cookie" rel="alternate" type="text/html" title="Cookie &amp; Session" />
-      <published>2021-09-19T07:10:00+12:00</published>
-      <updated>2021-09-19T07:10:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/Cookie</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/Cookie">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Cookie and Session&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;In HTTP, it is unreliable, so, they forget the users, the users need to authorize every single time.&lt;br /&gt;
-So, Cookie and session helps them keep authorizing to the website.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Cookie&lt;br /&gt;&lt;br /&gt;
-A file that stores keys and values (name, time, path, address) in “Client Local”.&lt;br /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Web browser requests to server&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Create Cookie to keep holding their information&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Attach Cookie on HTTP header and send it when server requests&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Web browser manages Cookie, send Cookie with HTTP in next request&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Server checks the previous information in Cookie, and response&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-e.g. ID, Password&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Session&lt;br /&gt;&lt;br /&gt;
-A time that keep holding the statement from access to finish in server through web browser.
-&lt;br /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Web browser requests to server&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Server allocate ID to the web browser&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Put Session ID into Cookie with HTTP and send it to server when server response&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Web browser sends them again until close the web browser&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Server checks session ID and the previous information about session ID, and response&lt;br /&gt;&lt;br /&gt;
-Session also use Cookie for keeping statement.&lt;br /&gt;
-e.g. Login&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;The difference between Cookie and Session&lt;br /&gt;&lt;br /&gt;
-Storage location&lt;br /&gt;
--Cookie : Client&lt;br /&gt;
--Session : Server&lt;br /&gt;&lt;br /&gt;
-Security&lt;br /&gt;
--Cookie : not secure, because it stores in Client&lt;br /&gt;
--Session : secure, because it only store session ID in Client&lt;br /&gt;&lt;br /&gt;
-Duration&lt;br /&gt;
--Cookie : Client still have data&lt;br /&gt;
--Session : Client only have session ID, not data&lt;br /&gt;&lt;br /&gt;
-Speed&lt;br /&gt;
--Cookie : fast, because it stores in Client&lt;br /&gt;
--Session : slow, becuase the actual data is in Server&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">HTTP, SSL, and TLS</title>
-      <link href="https://lulubeanana17.github.io/HTTP" rel="alternate" type="text/html" title="HTTP, SSL, and TLS" />
-      <published>2021-09-19T06:50:00+12:00</published>
-      <updated>2021-09-19T06:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/HTTP</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/HTTP">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;HTTP (Hypertext Transfer Protocol)&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;HTTP is a protocol that be able to communicate between web browser and web server.&lt;br /&gt;
-Server and client can share their data in HTTP protocol.&lt;br /&gt;
-HTTP can send any type of data.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;The difference between HTTP and HTTPS&lt;br /&gt;&lt;br /&gt;
-  HTTP : a communication between client and server in web.&lt;br /&gt;
-  HTTPS encapsulates session data through SSL or TLS, not using normal text in socket communication.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;SSL&lt;br /&gt;&lt;br /&gt;
-SSL is the standard technology for keeping an internet connection secure and safeguarding any
-data that is being sent between two systems.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-TLS&lt;br /&gt;&lt;br /&gt;
-TLS is more secure version of SSL.&lt;br /&gt;
-When a client and server establish a SSL/TLS connection, they establish a unique session.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-DTLS&lt;br /&gt;&lt;br /&gt;
-It is based on TLS.&lt;br /&gt;
-It is communication protocol designed to protect privacy and prevent eavesdropping and tampering.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Why DTLS is more secure?&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Packet reordering&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Flow control&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Reliability assurance&lt;br /&gt;
-&lt;br /&gt;
-SSL, TLS, DTLS is more secure than IPsec.&lt;br /&gt;
-DTLS uses UDP, otherwise, TLS uses TCP.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;TCP/IP core protocol&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-TCP/IP protocols add a header to data inherited from the layer above it.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Layer 7,6, and 5 : Data and instructions (=payload) are generated by applications running on source host.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Layer 4 : A transport layer protocol (TCP or UDP), adds a header to the payload.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Includes a port number to identify the receiving applicaion.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Layer 3 : Network layer adds it’s own header and becomes a packet.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Layer 2 : Packet is passed to Data link layer on NIC, which encapsulates data with its own header and trailer, creating a frame.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Layer 1 : Physical layer on the NIC recieves the frame and places the transmission on the network.&lt;br /&gt;&lt;br /&gt;&amp;lt;br/s&amp;gt;
-Receiving host de-encapsulates the message at each layer in reverse order and 
-presents payload to the receiving applicaion.&lt;br /&gt;
-Connectivity devices (switch, router, firewall) are specialized devices that allow 
-two or more networks to connect and exahange data.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp-2.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-TCP&lt;br /&gt;&lt;br /&gt;
-TCP operates in the transport layer (layer 4) of OSI model.
-&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Connection-oriented : TCP ensures that a connection or session is established 
-by using a three-step process called a “three-way handshare”&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Sequence and checksum : TCP sends a character string (called checksum) that is 
-checked by the destination host along with a sequence number of each segment.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Flow control : rate of transmission based on “how quickly recipient can accept data.”&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp-3.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Three-way handshare&lt;/li&gt;
-  &lt;li&gt;Request for a connection&lt;/li&gt;
-  &lt;li&gt;Response to the request&lt;/li&gt;
-  &lt;li&gt;Connection established&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/tcp-4.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-UDP&lt;br /&gt;&lt;br /&gt;
-UDP is an unreliable, connectionless protocol.
-&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;No three-way handshare.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Not gurantee delivery of data.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;No error checking, sequencing, or flow control.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;UCP is more efficient than TCP, but connection is worse.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/udp.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-IP (Internet Protocol)&lt;br /&gt;&lt;br /&gt;
-IP operates at the Network layer (layer 3) of the OSI model.&lt;br /&gt;
-Specifies where data should be delivered.&lt;br /&gt;
-Identifies the data’s source and destination IP address.&lt;br /&gt;&lt;br /&gt;
-IP is an unreliable, connectionless protocol.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;No gurantee delivery of data&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;No session is established before data is transmitted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/ip.jpg&quot; alt=&quot;runtime2&quot; /&gt;
-HTTP communication&lt;br /&gt;&lt;br /&gt;
-client - request - server - response - client&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Connectionless : it cuts connection just as get response.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Stateless : Just as connection finish, it doesn’t remain the information.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Advantages&lt;br /&gt;
-It is good for unknown users.&lt;br /&gt;
-It can deal with more request and response than the maximum of client - server.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Disadvanatge&lt;br /&gt;
-It loses the previous condition.&lt;br /&gt;
-Cookie exists because of lost condition.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;URL (Uniform Resource Locator)&lt;br /&gt;&lt;br /&gt;
-The location of resources in Internet&lt;br /&gt;
-The address or path to approach a specific file in web server&lt;/p&gt;</content>
+WebAPI can make unlimited platform and client enviroment through HTTP.&lt;/p&gt;</content>
 
       
       
