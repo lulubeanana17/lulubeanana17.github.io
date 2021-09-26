@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-26T14:38:25+13:00</updated>
+  <updated>2021-09-26T18:29:39+13:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -30,6 +30,170 @@
   
   
 
+  
+    <entry>
+      <title type="html">Round Robin Scheduling Algorithm</title>
+      <link href="https://lulubeanana17.github.io/RR" rel="alternate" type="text/html" title="Round Robin Scheduling Algorithm" />
+      <published>2021-09-26T09:50:00+13:00</published>
+      <updated>2021-09-26T09:50:00+13:00</updated>
+      <id>https://lulubeanana17.github.io/RR</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/RR">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Round Robin scheduling algorithm&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;This algorithm comes from the round-robin principle,&lt;br /&gt;
+where each person gets an equal share of something in turns.&lt;br /&gt;&lt;br /&gt;
+In RR scheduling, each ready task runs turn by turn only in a cyclic queue for “a limited time” slice. It offers starvation free execution of processes.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Characteristics of RR algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;CPU shifts to another process after fixed interval time,&lt;br /&gt;
+which is called “time quantum”/”time slice”.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Preempted Process will be added to the end of the queue.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;It responds to the event within a specific time limit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;How RR scheduling works&lt;br /&gt;&lt;br /&gt;
+Suppose that Process queue has 3: P1, P2, and P3.&lt;br /&gt;
+Burst time is P1: 4, P2: 3, P3: 5.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/rr.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;1) P1 executes for 2 secs first, is preempted, and go to the end of queue.&lt;br /&gt;
+2) At time 2, P2 executes for 2sec.&lt;br /&gt;
+3) At time 4, P3 executes for 2sec.&lt;br /&gt;
+4) At time 6, P1 executes last 2 secs and done.&lt;br /&gt;
+5) At time 8, P2 executes last 1 sec and done.&lt;br /&gt;
+6) At time 9, P3 executes for 2secs.&lt;br /&gt;
+7) At time 11, P3 executes last 1 sec and done.&lt;br /&gt;&lt;br /&gt;
+The waiting time&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;P1 = 0 + 4 = 4&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;P2 = 2 + 4 = 6&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;P3 = 4 + 3 = 7&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Advantages of Round-Robin scheduling&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;no issue of starvation or convey effect&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;fair allocation of resource&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;not depending on burst time&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Disadvantages of Round-Robin scheduling&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If time slice is low, output will be reduced&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;spending more time for context switching&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Finding correct time slice is difficult&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Worst case latency&lt;br /&gt;&lt;br /&gt;
+This term is used for the maximum time for execution of all the tasks.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">FIFO scheduling algorithm</title>
+      <link href="https://lulubeanana17.github.io/fifo.fcfs" rel="alternate" type="text/html" title="FIFO scheduling algorithm" />
+      <published>2021-09-26T07:50:00+13:00</published>
+      <updated>2021-09-26T07:50:00+13:00</updated>
+      <id>https://lulubeanana17.github.io/fifo.fcfs</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/fifo.fcfs">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;FIFO (first in first out) = FCFS (first come first served)&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;This algorithm is the most fair system.&lt;br /&gt;
+The order of handling tasks depends on how fast they input.&lt;br /&gt;
+If a task comes first, the task will be handled first.&lt;br /&gt;
+This algorithm does not preempt the resources, which prevent starvation.&lt;br /&gt;
+However, this system is not suitable for some specific tasks.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;How FIFO works&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/fifo.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Issue of FIFO&lt;br /&gt;&lt;br /&gt;
+In the above pic, we can reduce waiting time.&lt;br /&gt;
+If we put P1 at the end because P1 is the biggest burst time,&lt;br /&gt;
+the order will be P2 -&amp;gt; P3 -&amp;gt; P1.&lt;br /&gt;
+In this order, waiting time for P2: 0, P3: 3, P1: 6, and&lt;br /&gt;
+Average waiting time is 3.&lt;br /&gt;&lt;br /&gt;
+FIFO(= FCFS) is fair, but it is not effective for averaging waiting time.&lt;br /&gt;
+It loses the user satisfy.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Convey effect&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/convey.PNG&quot; alt=&quot;IPC&quot; /&gt;
+Convey Effect is phenomenon associated with FCFS algorithm,&lt;br /&gt;
+in which the entire OS slows down due to few slow processes.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="front-end" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">JSON &amp;amp; XML</title>
@@ -80,47 +244,6 @@ To get the JSON data, they use XMLHttpRequest() function in JS,&lt;br /&gt;
 this function only support the original server that JS is uploaded.&lt;br /&gt;
 JSON is only available on the server having JS.&lt;br /&gt;
 e.g. In google.com, we only can get JSON from Google, not other websites.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">FIFO/FCFS &amp;amp; convey effect</title>
-      <link href="https://lulubeanana17.github.io/multilevel-queue" rel="alternate" type="text/html" title="FIFO/FCFS &amp; convey effect" />
-      <published>2021-09-23T06:50:00+12:00</published>
-      <updated>2021-09-23T06:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/multilevel-queue</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/multilevel-queue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;FIFO (Frist In First Out) = FCFS (First Come First Served)&lt;/p&gt;
-&lt;hr /&gt;</content>
 
       
       
@@ -843,65 +966,6 @@ In modern, newest GPU not only render graphics but also cover CPU.&lt;/p&gt;
 Motherboard controls the powers from PSU to spread to suitable components in computers.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/psu.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Web API</title>
-      <link href="https://lulubeanana17.github.io/WebAPI" rel="alternate" type="text/html" title="Web API" />
-      <published>2021-09-19T07:50:00+12:00</published>
-      <updated>2021-09-19T07:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/WebAPI</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/WebAPI">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;API and WebAPI&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;API (Application Programming Interface) is an interface that can control the features given by
-OS or language to use for programs. 
-&lt;br /&gt;&lt;br /&gt;
-API is like Keyboard. For example, I want to develop map program by using Google map.&lt;br /&gt;
-So, my program can approach to Google map data easily through API.&lt;br /&gt;
-Keyboard has standardization, as similar, API has standardization.&lt;br /&gt; 
-API has their own rule when developers use API to request data.&lt;br /&gt;
-Open API is free for all users.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/API.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-WebAPI is an API for web server or web browser. It uses HTTP service, also designed to be able
-to access in many clients. It provides Data CRUD interface in Web environment.&lt;br /&gt;
-WebAPI requests another service to use the service’s features. Because of WebAPI, we don’t 
-need to develop every services.&lt;br /&gt;WebAPI is formed as Website.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/webapi.png&quot; alt=&quot;runtime2&quot; /&gt;
-WebAPI can make unlimited platform and client enviroment through HTTP.&lt;/p&gt;</content>
 
       
       

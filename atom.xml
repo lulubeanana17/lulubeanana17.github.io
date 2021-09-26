@@ -8,6 +8,44 @@
     
       
       <item>
+        <title>Round Robin Scheduling Algorithm</title>
+        
+          <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+</description>
+        
+        <pubDate>Sun, 26 Sep 2021 09:50:00 +1300</pubDate>
+        <link>
+        https://lulubeanana17.github.io/RR</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/RR</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>FIFO scheduling algorithm</title>
+        
+          <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+</description>
+        
+        <pubDate>Sun, 26 Sep 2021 07:50:00 +1300</pubDate>
+        <link>
+        https://lulubeanana17.github.io/fifo.fcfs</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/fifo.fcfs</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>JSON &amp; XML</title>
         
           <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
@@ -22,25 +60,6 @@
         <link>
         https://lulubeanana17.github.io/Json-xml</link>
         <guid isPermaLink="true">https://lulubeanana17.github.io/Json-xml</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>FIFO/FCFS &amp; convey effect</title>
-        
-          <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-</description>
-        
-        <pubDate>Thu, 23 Sep 2021 06:50:00 +1200</pubDate>
-        <link>
-        https://lulubeanana17.github.io/multilevel-queue</link>
-        <guid isPermaLink="true">https://lulubeanana17.github.io/multilevel-queue</guid>
       </item>
       
     
