@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-26T18:29:39+13:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">Round Robin Scheduling Algorithm</title><link href="https://lulubeanana17.github.io/RR" rel="alternate" type="text/html" title="Round Robin Scheduling Algorithm" /><published>2021-09-26T09:50:00+13:00</published><updated>2021-09-26T09:50:00+13:00</updated><id>https://lulubeanana17.github.io/RR</id><content type="html" xml:base="https://lulubeanana17.github.io/RR">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-27T08:44:38+13:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">multilevel Queue</title><link href="https://lulubeanana17.github.io/multilevel-queue" rel="alternate" type="text/html" title="multilevel Queue" /><published>2021-09-27T05:50:00+13:00</published><updated>2021-09-27T05:50:00+13:00</updated><id>https://lulubeanana17.github.io/multilevel-queue</id><content type="html" xml:base="https://lulubeanana17.github.io/multilevel-queue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Multilevel Queue&lt;/p&gt;
+&lt;hr /&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">Round Robin Scheduling Algorithm</title><link href="https://lulubeanana17.github.io/RR" rel="alternate" type="text/html" title="Round Robin Scheduling Algorithm" /><published>2021-09-26T09:50:00+13:00</published><updated>2021-09-26T09:50:00+13:00</updated><id>https://lulubeanana17.github.io/RR</id><content type="html" xml:base="https://lulubeanana17.github.io/RR">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -126,6 +133,12 @@ JSON is language independent, JSON exists in many programming languages.&lt;br /
   &lt;li&gt;JSON has {} instead tags, and split ‘,’ data by data.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;JSON uses null, number, string, array, object, boolean&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;The use of JSON&lt;br /&gt;&lt;br /&gt;
+JSON is serialized to send data through network.&lt;br /&gt;
+It is used for Web applications, server, API, and browsers.&lt;br /&gt;
+It is also used for storing objects.&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Issues of JSON&lt;br /&gt;&lt;br /&gt;
@@ -488,7 +501,8 @@ Computer system consists of CPU, Memory, I/O devices, system bus.&lt;br /&gt;&lt
 
 &lt;p&gt;Without OS, user needs to control every components.&lt;br /&gt;
 For example, when user uses a program,&lt;br /&gt; 
-they need to put it on memory, control I/O device order, synchronize the logic, and 
+they need to pick the program up from Hard Disk, put it on memory, 
+control I/O device order, synchronize the logic, and 
 do coding with machine language.&lt;br /&gt;&lt;br /&gt;
 However, OS assembles these components to allow users working easily.&lt;br /&gt;
 Every single actions originally acts by programming commands, but OS can make it easy.&lt;/p&gt;
@@ -549,75 +563,4 @@ Because of that, CPU doesn’t need to do that job and become more effective.&lt
 &lt;ul&gt;
   &lt;li&gt;Single Processor system (=core)&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Multi Processor system&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">Hardware components</title><link href="https://lulubeanana17.github.io/hardware" rel="alternate" type="text/html" title="Hardware components" /><published>2021-09-19T08:50:00+12:00</published><updated>2021-09-19T08:50:00+12:00</updated><id>https://lulubeanana17.github.io/hardware</id><content type="html" xml:base="https://lulubeanana17.github.io/hardware">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Computer Hardware&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Computer consists of roughly 2 products: hardware and software.&lt;br /&gt;
-Hardware is physical components that manage data. This has I/O devices, CPU, motherboard, etc.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Motherboard is a main hub that can execute all other hardwares. CPU, RAM, Graphic card settled on
-Motherboard. It controls every activities of each hardware by allocating power.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/motherboard.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;CPU (central process unit) retrives and executes every instructions from Input devices and 
-send the results to Output devices.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-CPU’s internal connection helps all three components communicate each other. It is also called
-“BUS”, which is like a tunnel.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Control Unit&lt;br /&gt;
-surveils data transaction in Register, and commands actions to Arithmetic and Logical Unit.&lt;br /&gt; 
-This controls the whole computers operation, 
-retrieves the commands from Input device and push signals to Register or ALU.&lt;br /&gt;
-Also, based on commands from Input, this raises program commands from Register, analyze it, and 
-orders to suitable components.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;ALU (Arithmetic and Logical Unit)&lt;br /&gt; 
-operates microprocesses in order to executes commands. This covers all calculations.&lt;br /&gt;&lt;br /&gt;
-Register is a small volatile memory.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-real.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;RAM&lt;br /&gt;&lt;br /&gt; 
-It is Volatile memory. It is a desk that operates as many programs as possible at the same time.&lt;br /&gt;
-Data can be temporarily stored to operates on computer.&lt;br /&gt; 
-It loses their contents if it is turned off.&lt;br /&gt;
-The bigger storage is the better work efficiency of CPU.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-ROM&lt;br /&gt;&lt;br /&gt;
-It is eternal memory that stores fundamental data, such as BIOS.&lt;br /&gt;
-User cannot change the ROM data.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/ramrom.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Hard Drive&lt;br /&gt;&lt;br /&gt;
-It is storage components that store long and short term data.&lt;br /&gt;
-It has HDD and SSD.&lt;br /&gt;
-HDD (Hard Disk Drive) remembers all data with rapidly rotating disks coated with magnetic material.&lt;br /&gt; 
-SSD (Solid state Storage Drive) remembers in memory chips.&lt;br /&gt;
-So, SSD is faster, less fragile, and less power consumption than HDD.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/hddssd.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;GPU (graphic processing Unit) renders massive graphic data.&lt;br /&gt; 
-In modern, newest GPU not only render graphics but also cover CPU.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/gpu.webp&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;PSU (Power Supply Unit) supply power to computers.&lt;br /&gt;
-Motherboard controls the powers from PSU to spread to suitable components in computers.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/psu.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry></feed>
