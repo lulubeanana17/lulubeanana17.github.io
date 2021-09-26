@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-27T08:44:38+13:00</updated>
+  <updated>2021-09-27T12:14:14+13:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -44,7 +44,47 @@
 &lt;/ul&gt;--&gt;
 
 &lt;p&gt;Multilevel Queue&lt;/p&gt;
-&lt;hr /&gt;</content>
+&lt;hr /&gt;
+
+&lt;p&gt;We have learnt several scheduling algorithms, such as RR and FIFO.&lt;br /&gt;
+Multilevel queue is a scheduling process that applies different scheduling algorithms&lt;br /&gt;
+to the different queues in each level.&lt;br /&gt;
+It classifies the processes in different level depending on use.&lt;br /&gt;&lt;br /&gt;
+For example, OS classifies interactive process with user as more important than 
+background process.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Why need Multilevel queue?&lt;br /&gt;&lt;br /&gt;
+Interactive process time is shorter and more affective to users.&lt;br /&gt;
+For instance, Website is interactive process.&lt;br /&gt;
+If the browser is slow, users will close the site.&lt;br /&gt;
+However, Extracting Zip.file or downloading movies are background process.&lt;br /&gt;
+These processes are not really affective to users, even if it is slow.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;What users doing now == interactive process&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Response time == time that respond the request from user&lt;br /&gt;&lt;br /&gt;
+Those reasons affect that interactive processes need to have higher priority,&lt;br /&gt;
+being applied more effective algorithm.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/multilevel.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;System process is the highest priority, which is made by OS.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Background process is applied FCFS algorithm (one process takes the resource until finish).&lt;br /&gt;
+e.g. Downloading will be finish during user doing internet surfing.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Interactive process is applied RR algorithm (processes will work in fixed time).&lt;br /&gt;
+e.g. Internet surfing won’t be affected by convey effect.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Student process is the lowest priority, which is made by user.&lt;br /&gt;&lt;br /&gt;
+OS separates the process depending on roles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;No process in the lower priority could run unless the queues for higher priority process is all empty.&lt;br /&gt;
+If higher process enters the “Ready queue” during lower process running, higher process preempts the resources first.&lt;br /&gt;
+Also, sometimes OS applies time-slice(RR algorithm). (= Preemption + RR)&lt;br /&gt;
+For example, in foreground - background queue, OS allocates 80% of CPU burst to foreground queue,
+20% of CPU burst to background queue.&lt;br /&gt;
+To allocates lone time-slice in RR algorithm, it pretends to be FCFS algorithm.&lt;/p&gt;</content>
 
       
       
@@ -343,7 +383,7 @@ I/O burst coming after CPU burst means the process needs input or output&lt;br /
 to operate the next CPU burst.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Process has 2 options for burst: CPU bound process and I/O bound process.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Process burst has 2 types: CPU bound process and I/O bound process.&lt;br /&gt;&lt;br /&gt;
 If the Process has more CPU burst than I/O burst, it is CPU bound process.&lt;br /&gt;
 If the Process has more I/O burst than CPU burst, it is I/O bound process.&lt;/p&gt;
 
@@ -539,7 +579,7 @@ It is a criteria when scheduling algorithm judges what the good is or what the b
   &lt;li&gt;CPU Utilization&lt;br /&gt;
  How useful when CPU is working&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Throughput&lt;br /&gt;
- How many processes CPU can instruct per second&lt;br /&gt;&lt;/li&gt;
+ How many processes CPU can instruct per second (about CPU clock, Htz)&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Turnaround time&lt;br /&gt;
  How fast CPU can finish the Process&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Waiting time&lt;br /&gt;

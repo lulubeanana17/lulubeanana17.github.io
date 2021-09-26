@@ -46,12 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="multilevel Queue" />
-    <meta property="og:description" content="
-
-Multilevel Queue
-
-
-" />
+    <meta property="og:description" content="Multilevel Queue We have learnt several scheduling algorithms, such as RR and FIFO. Multilevel queue is a scheduling process that applies different scheduling algorithms to the different queues in each level. It classifies the processes in different level depending on use. For example, OS classifies interactive process with user as" />
     <meta property="og:url" content="https://lulubeanana17.github.io/multilevel-queue" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -61,12 +56,7 @@ Multilevel Queue
     <meta property="article:tag" content="Front-end" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="multilevel Queue" />
-    <meta name="twitter:description" content="
-
-Multilevel Queue
-
-
-" />
+    <meta name="twitter:description" content="Multilevel Queue We have learnt several scheduling algorithms, such as RR and FIFO. Multilevel queue is a scheduling process that applies different scheduling algorithms to the different queues in each level. It classifies the processes in different level depending on use. For example, OS classifies interactive process with user as" />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -98,12 +88,7 @@ Multilevel Queue
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/multilevel-queue"
     },
-    "description": "
-
-Multilevel Queue
-
-
-"
+    "description": "Multilevel Queue We have learnt several scheduling algorithms, such as RR and FIFO. Multilevel queue is a scheduling process that applies different scheduling algorithms to the different queues in each level. It classifies the processes in different level depending on use. For example, OS classifies interactive process with user as"
 }
     </script>
 
@@ -208,6 +193,46 @@ into the {body} of the default.hbs template -->
 
 <p>Multilevel Queue</p>
 <hr />
+
+<p>We have learnt several scheduling algorithms, such as RR and FIFO.<br />
+Multilevel queue is a scheduling process that applies different scheduling algorithms<br />
+to the different queues in each level.<br />
+It classifies the processes in different level depending on use.<br /><br />
+For example, OS classifies interactive process with user as more important than 
+background process.</p>
+<hr />
+
+<p>Why need Multilevel queue?<br /><br />
+Interactive process time is shorter and more affective to users.<br />
+For instance, Website is interactive process.<br />
+If the browser is slow, users will close the site.<br />
+However, Extracting Zip.file or downloading movies are background process.<br />
+These processes are not really affective to users, even if it is slow.<br /><br /></p>
+<ul>
+  <li>What users doing now == interactive process<br /></li>
+  <li>Response time == time that respond the request from user<br /><br />
+Those reasons affect that interactive processes need to have higher priority,<br />
+being applied more effective algorithm.</li>
+</ul>
+
+<p><img src="../assets/built/images/multilevel.PNG" alt="IPC" /></p>
+<ul>
+  <li>System process is the highest priority, which is made by OS.<br /></li>
+  <li>Background process is applied FCFS algorithm (one process takes the resource until finish).<br />
+e.g. Downloading will be finish during user doing internet surfing.<br /><br /></li>
+  <li>Interactive process is applied RR algorithm (processes will work in fixed time).<br />
+e.g. Internet surfing won’t be affected by convey effect.<br /><br /></li>
+  <li>Student process is the lowest priority, which is made by user.<br /><br />
+OS separates the process depending on roles.</li>
+</ul>
+<hr />
+
+<p>No process in the lower priority could run unless the queues for higher priority process is all empty.<br />
+If higher process enters the “Ready queue” during lower process running, higher process preempts the resources first.<br />
+Also, sometimes OS applies time-slice(RR algorithm). (= Preemption + RR)<br />
+For example, in foreground - background queue, OS allocates 80% of CPU burst to foreground queue,
+20% of CPU burst to background queue.<br />
+To allocates lone time-slice in RR algorithm, it pretends to be FCFS algorithm.</p>
 
 
                 </div>
