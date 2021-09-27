@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-28T09:46:46+13:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">multilevel Queue</title><link href="https://lulubeanana17.github.io/multilevel-queue" rel="alternate" type="text/html" title="multilevel Queue" /><published>2021-09-27T05:50:00+13:00</published><updated>2021-09-27T05:50:00+13:00</updated><id>https://lulubeanana17.github.io/multilevel-queue</id><content type="html" xml:base="https://lulubeanana17.github.io/multilevel-queue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://lulubeanana17.github.io/tag/computer-fundamental/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-09-28T09:46:46+13:00</updated>
+  <id>https://lulubeanana17.github.io/tag/computer-fundamental/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Siyoon Jung | </title>
+  
+
+  
+    <subtitle>Any knowledges about software fundamental &amp; technics</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">multilevel Queue</title>
+      <link href="https://lulubeanana17.github.io/multilevel-queue" rel="alternate" type="text/html" title="multilevel Queue" />
+      <published>2021-09-27T05:50:00+13:00</published>
+      <updated>2021-09-27T05:50:00+13:00</updated>
+      <id>https://lulubeanana17.github.io/multilevel-queue</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/multilevel-queue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -45,7 +84,41 @@ If higher process enters the “Ready queue” during lower process running, hig
 Also, sometimes OS applies time-slice(RR algorithm). (= Preemption + RR)&lt;br /&gt;
 For example, in foreground - background queue, OS allocates 80% of CPU burst to foreground queue,
 20% of CPU burst to background queue.&lt;br /&gt;
-To allocates lone time-slice in RR algorithm, it pretends to be FCFS algorithm.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">Round Robin Scheduling Algorithm</title><link href="https://lulubeanana17.github.io/RR" rel="alternate" type="text/html" title="Round Robin Scheduling Algorithm" /><published>2021-09-26T09:50:00+13:00</published><updated>2021-09-26T09:50:00+13:00</updated><id>https://lulubeanana17.github.io/RR</id><content type="html" xml:base="https://lulubeanana17.github.io/RR">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+To allocates lone time-slice in RR algorithm, it pretends to be FCFS algorithm.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Round Robin Scheduling Algorithm</title>
+      <link href="https://lulubeanana17.github.io/RR" rel="alternate" type="text/html" title="Round Robin Scheduling Algorithm" />
+      <published>2021-09-26T09:50:00+13:00</published>
+      <updated>2021-09-26T09:50:00+13:00</updated>
+      <id>https://lulubeanana17.github.io/RR</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/RR">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -106,7 +179,41 @@ The waiting time&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Worst case latency&lt;br /&gt;&lt;br /&gt;
-This term is used for the maximum time for execution of all the tasks.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">FIFO scheduling algorithm</title><link href="https://lulubeanana17.github.io/fifo.fcfs" rel="alternate" type="text/html" title="FIFO scheduling algorithm" /><published>2021-09-26T07:50:00+13:00</published><updated>2021-09-26T07:50:00+13:00</updated><id>https://lulubeanana17.github.io/fifo.fcfs</id><content type="html" xml:base="https://lulubeanana17.github.io/fifo.fcfs">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+This term is used for the maximum time for execution of all the tasks.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">FIFO scheduling algorithm</title>
+      <link href="https://lulubeanana17.github.io/fifo.fcfs" rel="alternate" type="text/html" title="FIFO scheduling algorithm" />
+      <published>2021-09-26T07:50:00+13:00</published>
+      <updated>2021-09-26T07:50:00+13:00</updated>
+      <id>https://lulubeanana17.github.io/fifo.fcfs</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/fifo.fcfs">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -141,55 +248,41 @@ It loses the user satisfy.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/convey.PNG&quot; alt=&quot;IPC&quot; /&gt;
 Convey Effect is phenomenon associated with FCFS algorithm,&lt;br /&gt;
-in which the entire OS slows down due to few slow processes.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">JSON &amp;amp; XML</title><link href="https://lulubeanana17.github.io/Json-xml" rel="alternate" type="text/html" title="JSON &amp;amp; XML" /><published>2021-09-26T05:50:00+13:00</published><updated>2021-09-26T05:50:00+13:00</updated><id>https://lulubeanana17.github.io/Json-xml</id><content type="html" xml:base="https://lulubeanana17.github.io/Json-xml">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
+in which the entire OS slows down due to few slow processes.&lt;/p&gt;</content>
 
-&lt;p&gt;XML &amp;amp; JSON&lt;/p&gt;
-&lt;hr /&gt;
+      
+      
+      
+      
+      
 
-&lt;p&gt;XML&lt;br /&gt;&lt;br /&gt;
-XML (eXtensible Markup Language) is a text-based data format as Markup language.&lt;br /&gt;
-HTML only have fixed tags, the tages already have roles.&lt;br /&gt;However, XML can make any tages by
-a user.&lt;br /&gt;XML can make new tags for new data independently.&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
 
-&lt;p&gt;JSON&lt;br /&gt;&lt;br /&gt;
-JSON (JavaScript Object Notation) is a text-based data format and a lightweight data-interchange format. It transmits data between computers.&lt;br /&gt;&lt;br /&gt;
-Nowadays, JSON is more popular than XML because it is light and easy to understand.&lt;/p&gt;
-&lt;hr /&gt;
+      
 
-&lt;p&gt;JSON features&lt;br /&gt;&lt;br /&gt;
-JSON is a plain text written in JavaScript object notation.&lt;br /&gt;
-JSON can be translated to JavaScript Object through JavaScript.&lt;br /&gt;
-JSON is language independent, JSON exists in many programming languages.&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
+      
+        <category term="computer-fundamental" />
+      
 
-&lt;p&gt;Difference between XML and JSON&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;XML has tags covering data, which is similar to HTML tags.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;JSON has {} instead tags, and split ‘,’ data by data.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;JSON uses null, number, string, array, object, boolean&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
+      
+        <summary type="html"></summary>
+      
 
-&lt;p&gt;The use of JSON&lt;br /&gt;&lt;br /&gt;
-JSON is serialized to send data through network.&lt;br /&gt;
-It is used for Web applications, server, API, and browsers.&lt;br /&gt;
-It is also used for storing objects.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Issues of JSON&lt;br /&gt;&lt;br /&gt;
-AJAX (Asynchronous JavaScript And XML) is a part of JavaScript that transfers data with servers.&lt;br /&gt;AJAX may send not JSON data but JavaScript itself, AJAX may not distinguish JSON and JavaScript.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;JSON is just data format.&lt;br /&gt;
-To get the JSON data, they use XMLHttpRequest() function in JS,&lt;br /&gt;
-this function only support the original server that JS is uploaded.&lt;br /&gt;
-JSON is only available on the server having JS.&lt;br /&gt;
-e.g. In google.com, we only can get JSON from Google, not other websites.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="front-end" /><summary type="html"></summary></entry><entry><title type="html">CPU burst VS I/O burst</title><link href="https://lulubeanana17.github.io/CPUburst" rel="alternate" type="text/html" title="CPU burst VS I/O burst" /><published>2021-09-23T05:50:00+12:00</published><updated>2021-09-23T05:50:00+12:00</updated><id>https://lulubeanana17.github.io/CPUburst</id><content type="html" xml:base="https://lulubeanana17.github.io/CPUburst">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">CPU burst VS I/O burst</title>
+      <link href="https://lulubeanana17.github.io/CPUburst" rel="alternate" type="text/html" title="CPU burst VS I/O burst" />
+      <published>2021-09-23T05:50:00+12:00</published>
+      <updated>2021-09-23T05:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/CPUburst</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/CPUburst">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -214,7 +307,41 @@ If the Process has more I/O burst than CPU burst, it is I/O bound process.&lt;/p
 
 &lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-burst-1.PNG&quot; alt=&quot;CPU-burst&quot; /&gt;
 In CPU burst, Users do not attempt the Process, which means that the process&lt;br /&gt;
-work only (e.g. scientific calculator). CPU bound Process time is usually short.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">Inter-Process Communication</title><link href="https://lulubeanana17.github.io/IPC" rel="alternate" type="text/html" title="Inter-Process Communication" /><published>2021-09-23T04:50:00+12:00</published><updated>2021-09-23T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/IPC</id><content type="html" xml:base="https://lulubeanana17.github.io/IPC">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+work only (e.g. scientific calculator). CPU bound Process time is usually short.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Inter-Process Communication</title>
+      <link href="https://lulubeanana17.github.io/IPC" rel="alternate" type="text/html" title="Inter-Process Communication" />
+      <published>2021-09-23T04:50:00+12:00</published>
+      <updated>2021-09-23T04:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/IPC</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/IPC">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -288,7 +415,41 @@ So, it should synchronize the time, which is known as synchronization issue.&lt;
 &lt;p&gt;IPC represents every communication between Processes.&lt;br /&gt;
 Process 1 in Computer A can communicate with Process 2 in Computer B by using IPC.&lt;br /&gt;
 So, the networking is also called IPC.&lt;br /&gt;
-IPC is called Socket, RPC (Remote Procedure Call) in C++, RMI in Java.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">Process scheduling algorithm</title><link href="https://lulubeanana17.github.io/Scheduling" rel="alternate" type="text/html" title="Process scheduling algorithm" /><published>2021-09-22T04:50:00+12:00</published><updated>2021-09-22T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/Scheduling</id><content type="html" xml:base="https://lulubeanana17.github.io/Scheduling">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+IPC is called Socket, RPC (Remote Procedure Call) in C++, RMI in Java.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Process scheduling algorithm</title>
+      <link href="https://lulubeanana17.github.io/Scheduling" rel="alternate" type="text/html" title="Process scheduling algorithm" />
+      <published>2021-09-22T04:50:00+12:00</published>
+      <updated>2021-09-22T04:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/Scheduling</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/Scheduling">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -353,7 +514,41 @@ Throughput and CPU utilization is better when it has more and more.&lt;/li&gt;
 &lt;p&gt;Scheduling is everywhere&lt;br /&gt;
 Disk(HDD, SSD) has Disk scheduling. It Schedules Which Data will go first.&lt;br /&gt;&lt;br /&gt;
 Database has database scheduling. It schedules which transaction will go first.&lt;br /&gt;&lt;br /&gt;
-Network has network scheduling. It schedules which packets will go first.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">Banker’s Algorithm</title><link href="https://lulubeanana17.github.io/banker-algorithm" rel="alternate" type="text/html" title="Banker’s Algorithm" /><published>2021-09-21T05:50:00+12:00</published><updated>2021-09-21T05:50:00+12:00</updated><id>https://lulubeanana17.github.io/banker-algorithm</id><content type="html" xml:base="https://lulubeanana17.github.io/banker-algorithm">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+Network has network scheduling. It schedules which packets will go first.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Banker’s Algorithm</title>
+      <link href="https://lulubeanana17.github.io/banker-algorithm" rel="alternate" type="text/html" title="Banker's Algorithm" />
+      <published>2021-09-21T05:50:00+12:00</published>
+      <updated>2021-09-21T05:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/banker-algorithm</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/banker-algorithm">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -440,7 +635,41 @@ The idea is imply to ensure that the system will always remain in Safe State.&lt
 Banker’s algorithm is not recommened.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">DeadLock</title><link href="https://lulubeanana17.github.io/DeadLock" rel="alternate" type="text/html" title="DeadLock" /><published>2021-09-21T04:50:00+12:00</published><updated>2021-09-21T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/DeadLock</id><content type="html" xml:base="https://lulubeanana17.github.io/DeadLock">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">DeadLock</title>
+      <link href="https://lulubeanana17.github.io/DeadLock" rel="alternate" type="text/html" title="DeadLock" />
+      <published>2021-09-21T04:50:00+12:00</published>
+      <updated>2021-09-21T04:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/DeadLock</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/DeadLock">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -525,7 +754,41 @@ CPU preempts the allocated Resource and allocates it to another Process until De
 &lt;hr /&gt;
 
 &lt;p&gt;DeadLock Ignorance&lt;br /&gt;&lt;br /&gt;
-If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">Operating System</title><link href="https://lulubeanana17.github.io/OS" rel="alternate" type="text/html" title="Operating System" /><published>2021-09-20T04:50:00+12:00</published><updated>2021-09-20T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/OS</id><content type="html" xml:base="https://lulubeanana17.github.io/OS">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Operating System</title>
+      <link href="https://lulubeanana17.github.io/OS" rel="alternate" type="text/html" title="Operating System" />
+      <published>2021-09-20T04:50:00+12:00</published>
+      <updated>2021-09-20T04:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/OS</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/OS">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -603,4 +866,139 @@ Because of that, CPU doesn’t need to do that job and become more effective.&lt
 &lt;ul&gt;
   &lt;li&gt;Single Processor system (=core)&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Multi Processor system&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry></feed>
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Hardware components</title>
+      <link href="https://lulubeanana17.github.io/hardware" rel="alternate" type="text/html" title="Hardware components" />
+      <published>2021-09-19T08:50:00+12:00</published>
+      <updated>2021-09-19T08:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/hardware</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/hardware">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;Computer Hardware&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Computer consists of roughly 2 products: hardware and software.&lt;br /&gt;
+Hardware is physical components that manage data. This has I/O devices, CPU, motherboard, etc.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Motherboard is a main hub that can execute all other hardwares. CPU, RAM, Graphic card settled on
+Motherboard. It controls every activities of each hardware by allocating power.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/motherboard.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;CPU (central process unit) retrives and executes every instructions from Input devices and 
+send the results to Output devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu.PNG&quot; alt=&quot;runtime2&quot; /&gt;
+CPU’s internal connection helps all three components communicate each other. It is also called
+“BUS”, which is like a tunnel.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Control Unit&lt;br /&gt;
+surveils data transaction in Register, and commands actions to Arithmetic and Logical Unit.&lt;br /&gt; 
+This controls the whole computers operation, 
+retrieves the commands from Input device and push signals to Register or ALU.&lt;br /&gt;
+Also, based on commands from Input, this raises program commands from Register, analyze it, and 
+orders to suitable components.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;ALU (Arithmetic and Logical Unit)&lt;br /&gt; 
+operates microprocesses in order to executes commands. This covers all calculations.&lt;br /&gt;&lt;br /&gt;
+Register is a small volatile memory. It is a memory only for CPU.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-real.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;RAM&lt;br /&gt;&lt;br /&gt; 
+It is Volatile memory. It is a desk that operates as many programs as possible at the same time.&lt;br /&gt;
+Data can be temporarily stored to operates on computer.&lt;br /&gt; 
+It loses their contents if it is turned off.&lt;br /&gt;
+The bigger storage is the better work efficiency of CPU.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+ROM&lt;br /&gt;&lt;br /&gt;
+It is eternal memory that stores fundamental data, such as BIOS.&lt;br /&gt;
+User cannot change the ROM data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/ramrom.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Hard Drive&lt;br /&gt;&lt;br /&gt;
+It is storage components that store long and short term data.&lt;br /&gt;
+It has HDD and SSD.&lt;br /&gt;
+HDD (Hard Disk Drive) remembers all data with rapidly rotating disks coated with magnetic material.&lt;br /&gt; 
+SSD (Solid state Storage Drive) remembers in memory chips.&lt;br /&gt;
+So, SSD is faster, less fragile, and less power consumption than HDD.&lt;br /&gt;&lt;br /&gt;
+The difference between memory and Disk is volatility.&lt;br /&gt;
+Memory is volatile, Disk is permanent.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/hddssd.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;GPU (graphic processing Unit) renders massive graphic data.&lt;br /&gt; 
+In modern, newest GPU not only render graphics but also cover CPU.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/gpu.webp&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;PSU (Power Supply Unit) supply power to computers.&lt;br /&gt;
+Motherboard controls the powers from PSU to spread to suitable components in computers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/psu.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-27T12:14:14+13:00</updated>
+  <updated>2021-09-28T09:46:46+13:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -101,7 +101,7 @@ To allocates lone time-slice in RR algorithm, it pretends to be FCFS algorithm.&
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       
@@ -196,7 +196,7 @@ This term is used for the maximum time for execution of all the tasks.&lt;/p&gt;
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       
@@ -265,7 +265,7 @@ in which the entire OS slows down due to few slow processes.&lt;/p&gt;</content>
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       
@@ -406,7 +406,7 @@ work only (e.g. scientific calculator). CPU bound Process time is usually short.
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       
@@ -514,7 +514,7 @@ IPC is called Socket, RPC (Remote Procedure Call) in C++, RMI in Java.&lt;/p&gt;
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       
@@ -613,7 +613,7 @@ Network has network scheduling. It schedules which packets will go first.&lt;/p&
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       
@@ -734,7 +734,7 @@ Banker’s algorithm is not recommened.&lt;/li&gt;
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       
@@ -853,7 +853,7 @@ If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</c
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       
@@ -965,7 +965,7 @@ Because of that, CPU doesn’t need to do that job and become more effective.&lt
       
 
       
-        <category term="front-end" />
+        <category term="computer-fundamental" />
       
 
       

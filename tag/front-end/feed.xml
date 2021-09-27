@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/front-end/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-27T12:14:14+13:00</updated>
+  <updated>2021-09-28T09:46:46+13:00</updated>
   <id>https://lulubeanana17.github.io/tag/front-end/feed.xml</id>
 
   
@@ -30,251 +30,6 @@
   
   
 
-  
-    <entry>
-      <title type="html">multilevel Queue</title>
-      <link href="https://lulubeanana17.github.io/multilevel-queue" rel="alternate" type="text/html" title="multilevel Queue" />
-      <published>2021-09-27T05:50:00+13:00</published>
-      <updated>2021-09-27T05:50:00+13:00</updated>
-      <id>https://lulubeanana17.github.io/multilevel-queue</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/multilevel-queue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Multilevel Queue&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;We have learnt several scheduling algorithms, such as RR and FIFO.&lt;br /&gt;
-Multilevel queue is a scheduling process that applies different scheduling algorithms&lt;br /&gt;
-to the different queues in each level.&lt;br /&gt;
-It classifies the processes in different level depending on use.&lt;br /&gt;&lt;br /&gt;
-For example, OS classifies interactive process with user as more important than 
-background process.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Why need Multilevel queue?&lt;br /&gt;&lt;br /&gt;
-Interactive process time is shorter and more affective to users.&lt;br /&gt;
-For instance, Website is interactive process.&lt;br /&gt;
-If the browser is slow, users will close the site.&lt;br /&gt;
-However, Extracting Zip.file or downloading movies are background process.&lt;br /&gt;
-These processes are not really affective to users, even if it is slow.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;What users doing now == interactive process&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Response time == time that respond the request from user&lt;br /&gt;&lt;br /&gt;
-Those reasons affect that interactive processes need to have higher priority,&lt;br /&gt;
-being applied more effective algorithm.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/multilevel.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;System process is the highest priority, which is made by OS.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Background process is applied FCFS algorithm (one process takes the resource until finish).&lt;br /&gt;
-e.g. Downloading will be finish during user doing internet surfing.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Interactive process is applied RR algorithm (processes will work in fixed time).&lt;br /&gt;
-e.g. Internet surfing won’t be affected by convey effect.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Student process is the lowest priority, which is made by user.&lt;br /&gt;&lt;br /&gt;
-OS separates the process depending on roles.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;No process in the lower priority could run unless the queues for higher priority process is all empty.&lt;br /&gt;
-If higher process enters the “Ready queue” during lower process running, higher process preempts the resources first.&lt;br /&gt;
-Also, sometimes OS applies time-slice(RR algorithm). (= Preemption + RR)&lt;br /&gt;
-For example, in foreground - background queue, OS allocates 80% of CPU burst to foreground queue,
-20% of CPU burst to background queue.&lt;br /&gt;
-To allocates lone time-slice in RR algorithm, it pretends to be FCFS algorithm.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Round Robin Scheduling Algorithm</title>
-      <link href="https://lulubeanana17.github.io/RR" rel="alternate" type="text/html" title="Round Robin Scheduling Algorithm" />
-      <published>2021-09-26T09:50:00+13:00</published>
-      <updated>2021-09-26T09:50:00+13:00</updated>
-      <id>https://lulubeanana17.github.io/RR</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/RR">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Round Robin scheduling algorithm&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;This algorithm comes from the round-robin principle,&lt;br /&gt;
-where each person gets an equal share of something in turns.&lt;br /&gt;&lt;br /&gt;
-In RR scheduling, each ready task runs turn by turn only in a cyclic queue for “a limited time” slice. It offers starvation free execution of processes.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Characteristics of RR algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;CPU shifts to another process after fixed interval time,&lt;br /&gt;
-which is called “time quantum”/”time slice”.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Preempted Process will be added to the end of the queue.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;It responds to the event within a specific time limit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;How RR scheduling works&lt;br /&gt;&lt;br /&gt;
-Suppose that Process queue has 3: P1, P2, and P3.&lt;br /&gt;
-Burst time is P1: 4, P2: 3, P3: 5.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/rr.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;1) P1 executes for 2 secs first, is preempted, and go to the end of queue.&lt;br /&gt;
-2) At time 2, P2 executes for 2sec.&lt;br /&gt;
-3) At time 4, P3 executes for 2sec.&lt;br /&gt;
-4) At time 6, P1 executes last 2 secs and done.&lt;br /&gt;
-5) At time 8, P2 executes last 1 sec and done.&lt;br /&gt;
-6) At time 9, P3 executes for 2secs.&lt;br /&gt;
-7) At time 11, P3 executes last 1 sec and done.&lt;br /&gt;&lt;br /&gt;
-The waiting time&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;P1 = 0 + 4 = 4&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;P2 = 2 + 4 = 6&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;P3 = 4 + 3 = 7&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Advantages of Round-Robin scheduling&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;no issue of starvation or convey effect&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;fair allocation of resource&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;not depending on burst time&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Disadvantages of Round-Robin scheduling&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;If time slice is low, output will be reduced&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;spending more time for context switching&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Finding correct time slice is difficult&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Worst case latency&lt;br /&gt;&lt;br /&gt;
-This term is used for the maximum time for execution of all the tasks.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">FIFO scheduling algorithm</title>
-      <link href="https://lulubeanana17.github.io/fifo.fcfs" rel="alternate" type="text/html" title="FIFO scheduling algorithm" />
-      <published>2021-09-26T07:50:00+13:00</published>
-      <updated>2021-09-26T07:50:00+13:00</updated>
-      <id>https://lulubeanana17.github.io/fifo.fcfs</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/fifo.fcfs">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;FIFO (first in first out) = FCFS (first come first served)&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;This algorithm is the most fair system.&lt;br /&gt;
-The order of handling tasks depends on how fast they input.&lt;br /&gt;
-If a task comes first, the task will be handled first.&lt;br /&gt;
-This algorithm does not preempt the resources, which prevent starvation.&lt;br /&gt;
-However, this system is not suitable for some specific tasks.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;How FIFO works&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/fifo.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Issue of FIFO&lt;br /&gt;&lt;br /&gt;
-In the above pic, we can reduce waiting time.&lt;br /&gt;
-If we put P1 at the end because P1 is the biggest burst time,&lt;br /&gt;
-the order will be P2 -&amp;gt; P3 -&amp;gt; P1.&lt;br /&gt;
-In this order, waiting time for P2: 0, P3: 3, P1: 6, and&lt;br /&gt;
-Average waiting time is 3.&lt;br /&gt;&lt;br /&gt;
-FIFO(= FCFS) is fair, but it is not effective for averaging waiting time.&lt;br /&gt;
-It loses the user satisfy.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Convey effect&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/convey.PNG&quot; alt=&quot;IPC&quot; /&gt;
-Convey Effect is phenomenon associated with FCFS algorithm,&lt;br /&gt;
-in which the entire OS slows down due to few slow processes.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
   
     <entry>
       <title type="html">JSON &amp;amp; XML</title>
@@ -359,37 +114,65 @@ e.g. In google.com, we only can get JSON from Google, not other websites.&lt;/p&
     </entry>
   
     <entry>
-      <title type="html">CPU burst VS I/O burst</title>
-      <link href="https://lulubeanana17.github.io/CPUburst" rel="alternate" type="text/html" title="CPU burst VS I/O burst" />
-      <published>2021-09-23T05:50:00+12:00</published>
-      <updated>2021-09-23T05:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/CPUburst</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/CPUburst">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+      <title type="html">stackoverflow in javascript</title>
+      <link href="https://lulubeanana17.github.io/stackoverflow" rel="alternate" type="text/html" title="stackoverflow in javascript" />
+      <published>2021-09-18T04:50:00+12:00</published>
+      <updated>2021-09-18T04:50:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/stackoverflow</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/stackoverflow">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;CPU burst VS I/O burst&lt;/p&gt;
+&lt;p&gt;Javascript is based on single thread and callback queue.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime-2.png&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The engine consists of memory heap and call stack.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Memory heap : memory allocation&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Callstack : stack the commands code by code&lt;br /&gt;&lt;br /&gt;
+Runtime = The environment&lt;br /&gt;
+Most developers use web API, which is not given by JS engine.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Process somethimes use CPU burst, sometimes use I/O burst.&lt;br /&gt;
-CPU burst means Process operates CPU commands.&lt;br /&gt;
-I/O burst is a waiting time for input or output through device.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;callstack&lt;br /&gt;&lt;br /&gt;
+It is data structure that logs where I am in a program, which means what commands completed.&lt;br /&gt;&lt;br /&gt;
+Example (normal callstack)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-burst.PNG&quot; alt=&quot;CPU-burst&quot; /&gt;
-If CPU burst time is 10sec, CPU completes the Process for 10sec.&lt;br /&gt;
-I/O burst coming after CPU burst means the process needs input or output&lt;br /&gt;
-to operate the next CPU burst.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-1.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the call stack, result is&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/callstack-1.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each steps of call stack are called “Stack Frame”.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Process burst has 2 types: CPU bound process and I/O bound process.&lt;br /&gt;&lt;br /&gt;
-If the Process has more CPU burst than I/O burst, it is CPU bound process.&lt;br /&gt;
-If the Process has more I/O burst than CPU burst, it is I/O bound process.&lt;/p&gt;
+&lt;p&gt;Example (stack trace)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-burst-1.PNG&quot; alt=&quot;CPU-burst&quot; /&gt;
-In CPU burst, Users do not attempt the Process, which means that the process&lt;br /&gt;
-work only (e.g. scientific calculator). CPU bound Process time is usually short.&lt;/p&gt;</content>
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-2.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Stack trace is a statement of call stack when exception happened.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/stacktrace.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Example (stack overflow)&lt;br /&gt;&lt;br /&gt;
+It shows when eternal loop is executed.&lt;br /&gt;
+Call stack has maximum. When stack is over the maximum, it is called stack overflow.&lt;br /&gt;
+And then, it blows the call stack, which is called “blowing the stack”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/code-3.PNG&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/stackoverflow.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/stackoverflow-error.png&quot; alt=&quot;processimg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Single thread is simple, but it has a lot of limitations.&lt;br /&gt;
+To solve the limitation (slow), we use event loop and asynchronous.&lt;/p&gt;</content>
 
       
       
@@ -418,185 +201,55 @@ work only (e.g. scientific calculator). CPU bound Process time is usually short.
     </entry>
   
     <entry>
-      <title type="html">Inter-Process Communication</title>
-      <link href="https://lulubeanana17.github.io/IPC" rel="alternate" type="text/html" title="Inter-Process Communication" />
-      <published>2021-09-23T04:50:00+12:00</published>
-      <updated>2021-09-23T04:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/IPC</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/IPC">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+      <title type="html">event loop &amp;amp; callback queue in Javascript</title>
+      <link href="https://lulubeanana17.github.io/eventloop-callbackqueue" rel="alternate" type="text/html" title="event loop &amp; callback queue in Javascript" />
+      <published>2021-09-18T04:40:00+12:00</published>
+      <updated>2021-09-18T04:40:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/eventloop-callbackqueue</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/eventloop-callbackqueue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;IPC&lt;/p&gt;
+&lt;p&gt;Event loop and callback queue in javascript
+&lt;img src=&quot;../assets/built/images/callstack-1.png&quot; alt=&quot;processimg&quot; /&gt;
+Javascript is single thread language, which means that the engine can take one task only,
+because JS engine has only one call stack.&lt;br /&gt;
+JS engine reads codes and add functions in call stack, after complete the function,
+it removes them from call stack.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Process has 2 options: Independent Process and Cooperating Process.&lt;br /&gt;
-Independent Process does not share data.&lt;br /&gt;
-Cooperating Process shares data.&lt;br /&gt;
-IPC is an action that shares data between Process.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/runtime.PNG&quot; alt=&quot;processimg&quot; /&gt;
+When developer makes codes in JS and activates it, JS engine reads the codes.&lt;br /&gt;
+JS engine do interpreting the codes to bytecodes, and Virtual Machine does interpreting them
+to machine codes. When codes are interpreting, the environment is called “Runtime”.&lt;br /&gt;&lt;br /&gt;
+For example, Chrome uses V8 engine for JS. So, Chrome is Runtime.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Advantages of Cooperate Process&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Programming is judged by two concepts: Synchronous and Asynchronous.&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Information sharing&lt;br /&gt;
-  When people can share one file together.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Computation speedup&lt;br /&gt;
-  Processes work together in one file, finish fast.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Modularity&lt;br /&gt;
-  Process and thread can divide the system features more effectively.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Convenience&lt;br /&gt;
-  People can play multi-process at the same time&lt;/li&gt;
+  &lt;li&gt;Syncronous : only when one task is completed, the following one is unblocked&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Ansyncoronous : you can move to another task before the previous one finishes&lt;br /&gt;&lt;br /&gt;
+Javascript is syncronous language, which is slow because it waits every events until response back. &lt;br /&gt;
+So, Chrome supports several web API to use JS code by ansyncoronous.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Messaging passing VS Shared memory&lt;br /&gt;&lt;br /&gt;
-IPC has 2 methods: messaging passing and shared memory.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Message passing&lt;br /&gt;
-  Kernel (OS) is an agent that deliver data between Process for memory protection.&lt;br /&gt;
-  It is safe and doesn’t have synchronization issue because OS synchronizes memory.&lt;br /&gt;
-  However, the performance is worse.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Shared memory&lt;br /&gt;
-  Processes create shared memory and use it.&lt;br /&gt;
-  The performance is good, but it has synchronization issue.&lt;br /&gt;
-  Application synchronizes the memory.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/ipc.PNG&quot; alt=&quot;IPC&quot; /&gt;
-Imagine that Process A has Rss1 and Process B has Rss2.&lt;br /&gt;
-When they try to share the resources, Memory protection blocks process A approaching process B directly. If Process A can approach Process B directly, Process A can kill Process B.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Messaging Passing&lt;br /&gt;&lt;br /&gt;
-To share the Resources, OS needs to help.&lt;br /&gt;
-Process A passes a message to Kernel, Kernel passes the message to B.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/ipc-1.PNG&quot; alt=&quot;messagin passing&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Direct communication&lt;br /&gt;
-  Kernel passes messages directly&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Indirect communication&lt;br /&gt;
-  Kernel is like Lost property office. When A puts a message in Kernel, &lt;br /&gt;
-  B come and get the message.&lt;br /&gt;&lt;br /&gt;
-Messaging passing is not efficiency and raise overhead.&lt;br /&gt;
-(a) picture domonstrates Indirect message, the above picture is Direct message.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Shared Memory&lt;br /&gt;&lt;br /&gt;
-Shared memory is better performance than Messaging Passing.&lt;br /&gt;
-However, It has synchronization issue.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;When A writes a message in shared memory, B does not know when the message is written.&lt;br /&gt;
-So, it should synchronize the time, which is known as synchronization issue.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;IPC represents every communication between Processes.&lt;br /&gt;
-Process 1 in Computer A can communicate with Process 2 in Computer B by using IPC.&lt;br /&gt;
-So, the networking is also called IPC.&lt;br /&gt;
-IPC is called Socket, RPC (Remote Procedure Call) in C++, RMI in Java.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Process scheduling algorithm</title>
-      <link href="https://lulubeanana17.github.io/Scheduling" rel="alternate" type="text/html" title="Process scheduling algorithm" />
-      <published>2021-09-22T04:50:00+12:00</published>
-      <updated>2021-09-22T04:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/Scheduling</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/Scheduling">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Scheduling algorithm&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Process has state.&lt;br /&gt;
-New, Ready, Running, Waiting, and Terminated.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;New : The process is being created&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Terminated : The process has finished execution&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Running : Instructions are being executed&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Waiting : The process is waiting for some event to occur&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Ready : The process is waiting to be assigned to a process&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;For example, we start a game program.&lt;br /&gt;
-The game process is on Running state, But we should login.&lt;br /&gt;
-In login page, CPU changes the state to “Waiting” because the login page is not working until 
-login is finish.&lt;br /&gt;
-CPU put another process on “Running” state instead.&lt;br /&gt;
-In this state, when we login the game, Process send Interrupt message to CPU.&lt;br /&gt;
-CPU changes the game process state to “Ready”.&lt;br /&gt;&lt;br /&gt;
-The “Ready” Process can be “Running” when CPU allows it.&lt;br /&gt;
-When CPU chooses a Process to “Running”, CPU uses “Scheduling”.&lt;br /&gt;
-After CPU chose the Process to be “Running”, CPU uses “Dispatcher” to put the process on CPU.&lt;br /&gt;
-And then, the Process is running.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Process Scheduling&lt;br /&gt;&lt;br /&gt;
-It re-schedules the order of “Ready queue” Processes.&lt;br /&gt;
-The scheduled Processes will be running in the order.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Scheduling : when CPU chooses “Ready” Process&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Dispatch : when CPU put the process on CPU&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Scheduling Criteria&lt;br /&gt;&lt;br /&gt;
-It is a criteria when scheduling algorithm judges what the good is or what the bad is.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Ansyncoronous code can change the commands order. &lt;br /&gt;
+For example, if there are first function and second function, second function can be activated faster than first function.&lt;br /&gt;
+Event loop can make ansyncronous happen in JS code.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;CPU Utilization&lt;br /&gt;
- How useful when CPU is working&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Throughput&lt;br /&gt;
- How many processes CPU can instruct per second (about CPU clock, Htz)&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Turnaround time&lt;br /&gt;
- How fast CPU can finish the Process&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Waiting time&lt;br /&gt;
- How long the “Ready” Process waits to be “Running”&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Response time&lt;br /&gt;
- How fast Process respond what is going on.&lt;br /&gt;
- Usually when Process handles really heavy work, 
- It lets the user know the Process’s state.&lt;br /&gt;&lt;br /&gt;
-Times are better when it is faster.&lt;br /&gt;
-Throughput and CPU utilization is better when it has more and more.&lt;/li&gt;
+  &lt;li&gt;When a first function is in callstack, first function’s callback function moves to background.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;After first function moved, second fucntion is completed in callstack.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;First function’s callback function moves to callback queue.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Event loop looks at callstack and callback queue.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;If there is a function in callback queue and callstack is all complete, first function in
+callback queue moves to callstack and activate it.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Scheduling is everywhere&lt;br /&gt;
-Disk(HDD, SSD) has Disk scheduling. It Schedules Which Data will go first.&lt;br /&gt;&lt;br /&gt;
-Database has database scheduling. It schedules which transaction will go first.&lt;br /&gt;&lt;br /&gt;
-Network has network scheduling. It schedules which packets will go first.&lt;/p&gt;</content>
+&lt;p&gt;ps. call stack is the same as execution stack, control stack, run-time stack, machine stack, and the stack.&lt;/p&gt;</content>
 
       
       
@@ -625,99 +278,24 @@ Network has network scheduling. It schedules which packets will go first.&lt;/p&
     </entry>
   
     <entry>
-      <title type="html">Banker’s Algorithm</title>
-      <link href="https://lulubeanana17.github.io/banker-algorithm" rel="alternate" type="text/html" title="Banker's Algorithm" />
-      <published>2021-09-21T05:50:00+12:00</published>
-      <updated>2021-09-21T05:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/banker-algorithm</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/banker-algorithm">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+      <title type="html">the difference between front-end and back-end</title>
+      <link href="https://lulubeanana17.github.io/frontend-backend" rel="alternate" type="text/html" title="the difference between front-end and back-end" />
+      <published>2021-09-15T04:40:00+12:00</published>
+      <updated>2021-09-15T04:40:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/frontend-backend</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/frontend-backend">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;Banker’s algorithm is a DeadLock avoidance algorithm.&lt;/p&gt;
+&lt;p&gt;A website itself is made of front-end part and back-end part.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;DeadLock Avoidance only allocate Resources in “Safe State”.&lt;br /&gt;
-So, Banker’s algorithm only accept Safe State requests, and decline Unsafe State requests 
-until changing to Safe State.&lt;/p&gt;
+&lt;p&gt;In front-end, there are roughly three languages (honestly html and css are not programming languages). HTML is a structure of the website, CSS is a design aspect, and Javascript creates moving features in their website.&lt;br /&gt;In Javascript section, they have Vanila.JS which is a pure Javascript, and also have some frameworks, such as React and Vue.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;The concept of Banker’s algorithm&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/bank-1.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-In the above image, Bank has $20 now, but User 1, 2, and 3 still need money.&lt;br /&gt;&lt;br /&gt;
-To solve the shortage, &lt;br /&gt;
-First solution is give $10 to User 2, and wait for user 2 until he give money back to bank.
-When Bank get $40 from user 2, they can help user 1 or 3.&lt;br /&gt;
-Second solution is give $20 to user 3, and wait for user 3 until get back money.&lt;br /&gt;
-However, this method is not working with user 1 because he needs $40.&lt;br /&gt;
-So, we can help user 1 after user 2 and 3 complete.&lt;br /&gt;&lt;br /&gt;
-“Safe State” is a state that bank can give and get back money from users.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;user2 -&amp;gt; user1 -&amp;gt; user3&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;user2 -&amp;gt; user3 -&amp;gt; user1&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;user3 -&amp;gt; user1 -&amp;gt; user2&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;user3 -&amp;gt; user2 -&amp;gt; user1&lt;br /&gt;&lt;br /&gt;
-These sequences are known as “Safe Sequence”, which can solve user’s problem.
-&lt;img src=&quot;../assets/built/images/bank-2.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-However, in this case, user1 needs urgent $35.
-The bank currently have only $5. The bank cannot help anyone of users, and they will bankrupt.&lt;br /&gt;
-This state is known as “Unsafe State” or “DeadLock”.&lt;br /&gt;&lt;br /&gt;
-So, the banker’s algorithm is caused from “Bank must have money that can help at least one users”.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Safe State&lt;br /&gt;
- -&amp;gt; a state that has Safe sequence that can allocate necessary Resource to Process without DeadLock.&lt;br /&gt;&lt;br /&gt;
-Unsafe State&lt;br /&gt;
- -&amp;gt; a state that does not have Safe Sequence. Unsafe State is a necessary condition to make DeadLock.&lt;br /&gt;&lt;br /&gt;
-DeadLock only occur when Unsafe State exists. Unsafe State has no guarantee to make DeadLock.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Necessary conditions to operate Banker’s algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Maximum Money that Users can request&lt;br /&gt;
--&amp;gt; How many resources the Process can request&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Current money that users can borrow&lt;br /&gt;
--&amp;gt; how many resources the Process is holding now&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Available money in the bank&lt;br /&gt;
--&amp;gt; How many resources the system has available&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Process example&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/bank-example.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-P0, P1, P2 are Process, OS has 12 Drives for Resources.&lt;br /&gt;
-Now, at “t0” time, P0 uses 5 Drives, P1 uses 2 Drives, and P2 uses 2 Drives. So, 
-OS has 3 Drives as available Resources now.&lt;br /&gt;
-the system is Safe State at t0 because (P1 -&amp;gt; P0 -&amp;gt; P2) is satisfied with Safe Sequence.&lt;br /&gt;&lt;br /&gt;
-However, the system can be Unsafe State.&lt;br /&gt;
-At “t1” time, P2 Process request 1 more Drive Resource, and available Resource is 2.
-&lt;img src=&quot;../assets/built/images/bank-example1.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-In this situation, P0 is impossible because it needs 5 Drives Resources.&lt;br /&gt;
-Also P1 is not solution because, even though OS helps P1 and get back 4 Drive Resources, OS can not 
-help P0 or P2 with 4 Drive Resources.&lt;br /&gt;
-So, the system is Unsafe State at “t1” Time.&lt;br /&gt;&lt;br /&gt;
-If we had made P2 waits until other processes had finished and released its resources, then we 
-could have avoided the DeadLock.&lt;br /&gt;
-The idea is imply to ensure that the system will always remain in Safe State.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Disadvantage of Banker’s algorithm&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The prerequisites&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Same Resource number&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;Low rate of Resource usability to prevent Unsafe State&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;Need to know the Maximum Resource numbers&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;Limited time for holding Resources&lt;br /&gt;&lt;br /&gt;
-Banker’s algorithm is not recommened.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;p&gt;In back-end, they manage the behind of websites, it is invisible. They roughly have database (MongoDB, Mysql), cloud (AWS, Azure), and back-end software (node.js or .NET).&lt;/p&gt;</content>
 
       
       
@@ -746,209 +324,31 @@ Banker’s algorithm is not recommened.&lt;/li&gt;
     </entry>
   
     <entry>
-      <title type="html">DeadLock</title>
-      <link href="https://lulubeanana17.github.io/DeadLock" rel="alternate" type="text/html" title="DeadLock" />
-      <published>2021-09-21T04:50:00+12:00</published>
-      <updated>2021-09-21T04:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/DeadLock</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/DeadLock">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+      <title type="html">Browser operating principle</title>
+      <link href="https://lulubeanana17.github.io/browser-principle" rel="alternate" type="text/html" title="Browser operating principle" />
+      <published>2021-09-14T04:40:00+12:00</published>
+      <updated>2021-09-14T04:40:00+12:00</updated>
+      <id>https://lulubeanana17.github.io/browser-principle</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/browser-principle">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;--&gt;
 
-&lt;p&gt;DeadLock&lt;/p&gt;
+&lt;p&gt;Our website consists of front-end and back-end.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;DeadLock is a situation where a set of processes are blocked because each process is holding 
-a resource and waiting for another resource acquired by some other process.&lt;br /&gt;&lt;br /&gt;
-As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 
-which is acquired by process 2, and process 2 is waiting for Resource 1.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/deadlock.PNG&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Front-end is about design aspect, which is made by html, css, and javascript or other frameworks.&lt;br /&gt;Back-end is about a structure that is invisible (like a pipeline behind a wall), it manages the website’s data.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;DeadLock can arise if the following four conditions hold simultaneously&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mutual Exclusion: Only one Process can use one Resource at a time&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Hold and Wait : A Process is holding at least one Resource and waiting for Resources&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;No Preemption : A Resource cannot be taken from a process unless the Process releases the Resource&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Circular Wait : A set of Processes are waiting for each other in circular form&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;The website is based on a browser, which helps users access websites easily.&lt;br /&gt;
+Every website owners have the websites’ original file, when Original file is changed, the website on internet will be changed.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Methods of handling DeadLock&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;DeadLock prevention&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;DeadLock aviodance&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;DeadLock detection and recovery&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;DeadLock ignorance&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;When users surf on the internet through a browser and find a website. Once they click the website, the browser requests a copy file of the website to the server, get the copy, and show it to the user. Moreover, the copied files can be changable because it is just copy.&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;DeadLock Prevention&lt;br /&gt;&lt;br /&gt;
-This method is not to let the four conditions happen, that is, it denies every four conditions.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mutual Exclusion prevention&lt;br /&gt;
-  It allows processes to use one Resource simultaneously. This circumstance will arise 
-a synchronization problem.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Hold and Wait prevention&lt;br /&gt;
-  A Process requires all Resources simultaneously and waits for until get permission. It 
-bans any waiting for another Resource.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;No Preemption prevention&lt;br /&gt;
-  If no one holds one Resource, it allows the highest priority Process to hold it.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Circular Wait prevention&lt;br /&gt;
-  It allows Processes to require Resources in one way.&lt;br /&gt;&lt;br /&gt;
-This Method will raise some disadvantages, such as lost of system handling and efficiency.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock Avoidance&lt;br /&gt;&lt;br /&gt;
-When CPU can distribute every Resources to Processes without DeadLock, the situation is called 
-“Safe State”.&lt;br /&gt;
-If CPU can find the sequence that does not affect DeadLock, it is called “Safe Sequence”.&lt;br /&gt;
-However, Unsafe State is the opposite to Safe State, that is, can raise DeadLock.&lt;br /&gt;&lt;br /&gt;
-Avoidance allows CPU to keep allocating Reosurces all the time to stay in “Safe State”.&lt;br /&gt;
-We use “Banker’s Algorithm” to avoid DeadLock.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock detection and recovery&lt;br /&gt;&lt;br /&gt;
-Once DeadLock occurs, detect it and recover it.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Detection&lt;br /&gt;
-CPU detects whether DeadLock occurs or not.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Recovery&lt;br /&gt;
-CPU uses recovery method to get out of Circular Wait.&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Seize one or more Processes&lt;br /&gt;
-        &lt;ol&gt;
-          &lt;li&gt;Shut all Processes in DeadLock down&lt;br /&gt;
-  Some normal Processes can be shut down and lost the works.&lt;br /&gt;&lt;/li&gt;
-          &lt;li&gt;one check, one pass&lt;br /&gt;
-  CPU stops Every single Process and detect DeadLock. It is heavy work.&lt;br /&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Preemption&lt;br /&gt;
-CPU preempts the allocated Resource and allocates it to another Process until DeadLock solved.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock Ignorance&lt;br /&gt;&lt;br /&gt;
-If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="front-end" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Operating System</title>
-      <link href="https://lulubeanana17.github.io/OS" rel="alternate" type="text/html" title="Operating System" />
-      <published>2021-09-20T04:50:00+12:00</published>
-      <updated>2021-09-20T04:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/OS</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/OS">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Operating System&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;OS is a program that manages a computer’s hardware.&lt;br /&gt;
-It distributes Hardware and Software Resources effectively.&lt;br /&gt;
-Computer system consists of CPU, Memory, I/O devices, system bus.&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Without OS, user needs to control every components.&lt;br /&gt;
-For example, when user uses a program,&lt;br /&gt; 
-they need to pick the program up from Hard Disk, put it on memory, 
-control I/O device order, synchronize the logic, and 
-do coding with machine language.&lt;br /&gt;&lt;br /&gt;
-However, OS assembles these components to allow users working easily.&lt;br /&gt;
-Every single actions originally acts by programming commands, but OS can make it easy.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Bootstraping&lt;br /&gt;&lt;br /&gt;
-CPU must put every program on memory to operate them.&lt;br /&gt;
-Same as OS, when we turn the computer on, CPU puts OS on memory.&lt;br /&gt;
-It is known as Bootstraping.&lt;br /&gt;&lt;br /&gt;
-Bootstrap program is the first running program when computer is turned on.&lt;br /&gt; 
-The program is stored in ROM, which is called a Bootstrap loader.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Interrupt&lt;br /&gt;&lt;br /&gt;
-OS requests CPU to stop one program and operates another program.&lt;br /&gt;
-It is Interrupt. It creates multi-programming.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Hardware Interrupt&lt;br /&gt;
-Keyboard or mouse requests it. The signal of interrupt delivers through Bus.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Software Interrupt&lt;br /&gt;
-It works with “Syste Call”.&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Interrupt handling is one of the features of CPU.&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;System call requests Interrupt to CPU, CPU uses Interrupt Service Routine.&lt;br /&gt;&lt;br /&gt;
-During running the program, if Interrupt happens, It should store data in Stack.&lt;br /&gt; 
-otherwise, it couldn’t reload it.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Von Neumann architecture&lt;br /&gt;&lt;br /&gt;
-Commands and Data will be stored in the same memory, which has same CPU link.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/neuman.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Secondary Storage&lt;br /&gt;&lt;br /&gt;
-HDD/SSD helps main memory (RAM) for more storage.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Device Controller&lt;br /&gt;&lt;br /&gt;
-Several Device Controllers connects CPU.&lt;br /&gt;
-Each Device Controller manages each components.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DMA (Direct Memory Access)&lt;br /&gt;&lt;br /&gt;
-DMA allows components (hard disk, graphic card, NIC) to access to Memory directly.&lt;br /&gt;
-CPU doesn’t need to participate the data transmission, it improves computer performance.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;When Device Controller controls a lot of data, it is usually heavy work on CPU.&lt;br /&gt;
-So, DMA helps Device Controller to ignore CPU’s work on the data.&lt;br /&gt;
-Because of that, CPU doesn’t need to do that job and become more effective.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;The structure of Computer System&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Single Processor system (=core)&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Multi Processor system&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;p&gt;Additionally, most website owners rent the server for deploying their website, because it costs a lot of money to execute their own server by themselves.&lt;/p&gt;</content>
 
       
       
