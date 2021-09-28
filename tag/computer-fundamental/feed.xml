@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/tag/computer-fundamental/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-28T09:46:46+13:00</updated>
+  <updated>2021-09-28T13:26:51+13:00</updated>
   <id>https://lulubeanana17.github.io/tag/computer-fundamental/feed.xml</id>
 
   
@@ -30,6 +30,77 @@
   
   
 
+  
+    <entry>
+      <title type="html">Scheduling Goals</title>
+      <link href="https://lulubeanana17.github.io/scheduling-goal" rel="alternate" type="text/html" title="Scheduling Goals" />
+      <published>2021-09-28T05:50:00+13:00</published>
+      <updated>2021-09-28T05:50:00+13:00</updated>
+      <id>https://lulubeanana17.github.io/scheduling-goal</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/scheduling-goal">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+&lt;p&gt;Scheduling Goals&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Scheduling in OS has a goal, which is fairness.&lt;br /&gt;
+The goal is that OS want all process to work fairly.&lt;br /&gt;&lt;br /&gt;
+However, some process has different pursue for scheduling.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/schedulinggoal.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Batch system&lt;br /&gt;
+  It is important when we doing background process, usually heavy work.&lt;br /&gt;
+  It’s not matter whether user interacts or not.&lt;br /&gt;
+  Only important how many, how fast, and how useful they work.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Interactive system&lt;br /&gt;
+  It interacts with user.&lt;br /&gt;
+  Really important response time and waiting time for user.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Real time system&lt;br /&gt;
+  It has time limits for each process.&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Hard real time system&lt;br /&gt;
+  The process will have big problem unless it is over time limit.&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;Soft real time system&lt;br /&gt;
+  The process will be removed unless it is over time limit.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;In a nutshell,&lt;br /&gt;
+Batch = time &amp;lt; quantity&lt;br /&gt;
+Interactive = quantity &amp;lt; response time&lt;br /&gt;
+Real time = everything &amp;lt; deadline&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html">Scheduling Goals Scheduling in OS has a goal, which is fairness. The goal is that OS want all process to work fairly. However, some process has different pursue for scheduling.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">multilevel Queue</title>
@@ -867,113 +938,6 @@ Because of that, CPU doesn’t need to do that job and become more effective.&lt
   &lt;li&gt;Single Processor system (=core)&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Multi Processor system&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="computer-fundamental" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Hardware components</title>
-      <link href="https://lulubeanana17.github.io/hardware" rel="alternate" type="text/html" title="Hardware components" />
-      <published>2021-09-19T08:50:00+12:00</published>
-      <updated>2021-09-19T08:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/hardware</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/hardware">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Computer Hardware&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Computer consists of roughly 2 products: hardware and software.&lt;br /&gt;
-Hardware is physical components that manage data. This has I/O devices, CPU, motherboard, etc.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Motherboard is a main hub that can execute all other hardwares. CPU, RAM, Graphic card settled on
-Motherboard. It controls every activities of each hardware by allocating power.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/motherboard.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;CPU (central process unit) retrives and executes every instructions from Input devices and 
-send the results to Output devices.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu.PNG&quot; alt=&quot;runtime2&quot; /&gt;
-CPU’s internal connection helps all three components communicate each other. It is also called
-“BUS”, which is like a tunnel.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Control Unit&lt;br /&gt;
-surveils data transaction in Register, and commands actions to Arithmetic and Logical Unit.&lt;br /&gt; 
-This controls the whole computers operation, 
-retrieves the commands from Input device and push signals to Register or ALU.&lt;br /&gt;
-Also, based on commands from Input, this raises program commands from Register, analyze it, and 
-orders to suitable components.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;ALU (Arithmetic and Logical Unit)&lt;br /&gt; 
-operates microprocesses in order to executes commands. This covers all calculations.&lt;br /&gt;&lt;br /&gt;
-Register is a small volatile memory. It is a memory only for CPU.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/cpu-real.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;RAM&lt;br /&gt;&lt;br /&gt; 
-It is Volatile memory. It is a desk that operates as many programs as possible at the same time.&lt;br /&gt;
-Data can be temporarily stored to operates on computer.&lt;br /&gt; 
-It loses their contents if it is turned off.&lt;br /&gt;
-The bigger storage is the better work efficiency of CPU.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-ROM&lt;br /&gt;&lt;br /&gt;
-It is eternal memory that stores fundamental data, such as BIOS.&lt;br /&gt;
-User cannot change the ROM data.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/ramrom.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Hard Drive&lt;br /&gt;&lt;br /&gt;
-It is storage components that store long and short term data.&lt;br /&gt;
-It has HDD and SSD.&lt;br /&gt;
-HDD (Hard Disk Drive) remembers all data with rapidly rotating disks coated with magnetic material.&lt;br /&gt; 
-SSD (Solid state Storage Drive) remembers in memory chips.&lt;br /&gt;
-So, SSD is faster, less fragile, and less power consumption than HDD.&lt;br /&gt;&lt;br /&gt;
-The difference between memory and Disk is volatility.&lt;br /&gt;
-Memory is volatile, Disk is permanent.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/hddssd.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;GPU (graphic processing Unit) renders massive graphic data.&lt;br /&gt; 
-In modern, newest GPU not only render graphics but also cover CPU.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/gpu.webp&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;PSU (Power Supply Unit) supply power to computers.&lt;br /&gt;
-Motherboard controls the powers from PSU to spread to suitable components in computers.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/psu.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;</content>
 
       
       

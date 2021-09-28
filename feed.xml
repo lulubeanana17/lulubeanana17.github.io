@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-28T09:46:46+13:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">multilevel Queue</title><link href="https://lulubeanana17.github.io/multilevel-queue" rel="alternate" type="text/html" title="multilevel Queue" /><published>2021-09-27T05:50:00+13:00</published><updated>2021-09-27T05:50:00+13:00</updated><id>https://lulubeanana17.github.io/multilevel-queue</id><content type="html" xml:base="https://lulubeanana17.github.io/multilevel-queue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lulubeanana17.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" /><updated>2021-09-28T13:26:51+13:00</updated><id>https://lulubeanana17.github.io/feed.xml</id><title type="html">Siyoon Jung</title><subtitle>Any knowledges about software fundamental &amp; technics</subtitle><entry><title type="html">Scheduling Goals</title><link href="https://lulubeanana17.github.io/scheduling-goal" rel="alternate" type="text/html" title="Scheduling Goals" /><published>2021-09-28T05:50:00+13:00</published><updated>2021-09-28T05:50:00+13:00</updated><id>https://lulubeanana17.github.io/scheduling-goal</id><content type="html" xml:base="https://lulubeanana17.github.io/scheduling-goal">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+&lt;p&gt;Scheduling Goals&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Scheduling in OS has a goal, which is fairness.&lt;br /&gt;
+The goal is that OS want all process to work fairly.&lt;br /&gt;&lt;br /&gt;
+However, some process has different pursue for scheduling.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/schedulinggoal.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Batch system&lt;br /&gt;
+  It is important when we doing background process, usually heavy work.&lt;br /&gt;
+  It’s not matter whether user interacts or not.&lt;br /&gt;
+  Only important how many, how fast, and how useful they work.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Interactive system&lt;br /&gt;
+  It interacts with user.&lt;br /&gt;
+  Really important response time and waiting time for user.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Real time system&lt;br /&gt;
+  It has time limits for each process.&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Hard real time system&lt;br /&gt;
+  The process will have big problem unless it is over time limit.&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;Soft real time system&lt;br /&gt;
+  The process will be removed unless it is over time limit.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;In a nutshell,&lt;br /&gt;
+Batch = time &amp;lt; quantity&lt;br /&gt;
+Interactive = quantity &amp;lt; response time&lt;br /&gt;
+Real time = everything &amp;lt; deadline&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html">Scheduling Goals Scheduling in OS has a goal, which is fairness. The goal is that OS want all process to work fairly. However, some process has different pursue for scheduling.</summary></entry><entry><title type="html">multilevel Queue</title><link href="https://lulubeanana17.github.io/multilevel-queue" rel="alternate" type="text/html" title="multilevel Queue" /><published>2021-09-27T05:50:00+13:00</published><updated>2021-09-27T05:50:00+13:00</updated><id>https://lulubeanana17.github.io/multilevel-queue</id><content type="html" xml:base="https://lulubeanana17.github.io/multilevel-queue">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
@@ -525,82 +562,4 @@ CPU preempts the allocated Resource and allocates it to another Process until De
 &lt;hr /&gt;
 
 &lt;p&gt;DeadLock Ignorance&lt;br /&gt;&lt;br /&gt;
-If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry><entry><title type="html">Operating System</title><link href="https://lulubeanana17.github.io/OS" rel="alternate" type="text/html" title="Operating System" /><published>2021-09-20T04:50:00+12:00</published><updated>2021-09-20T04:50:00+12:00</updated><id>https://lulubeanana17.github.io/OS</id><content type="html" xml:base="https://lulubeanana17.github.io/OS">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;Operating System&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;OS is a program that manages a computer’s hardware.&lt;br /&gt;
-It distributes Hardware and Software Resources effectively.&lt;br /&gt;
-Computer system consists of CPU, Memory, I/O devices, system bus.&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Without OS, user needs to control every components.&lt;br /&gt;
-For example, when user uses a program,&lt;br /&gt; 
-they need to pick the program up from Hard Disk, put it on memory, 
-control I/O device order, synchronize the logic, and 
-do coding with machine language.&lt;br /&gt;&lt;br /&gt;
-However, OS assembles these components to allow users working easily.&lt;br /&gt;
-Every single actions originally acts by programming commands, but OS can make it easy.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Bootstraping&lt;br /&gt;&lt;br /&gt;
-CPU must put every program on memory to operate them.&lt;br /&gt;
-Same as OS, when we turn the computer on, CPU puts OS on memory.&lt;br /&gt;
-It is known as Bootstraping.&lt;br /&gt;&lt;br /&gt;
-Bootstrap program is the first running program when computer is turned on.&lt;br /&gt; 
-The program is stored in ROM, which is called a Bootstrap loader.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Interrupt&lt;br /&gt;&lt;br /&gt;
-OS requests CPU to stop one program and operates another program.&lt;br /&gt;
-It is Interrupt. It creates multi-programming.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Hardware Interrupt&lt;br /&gt;
-Keyboard or mouse requests it. The signal of interrupt delivers through Bus.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Software Interrupt&lt;br /&gt;
-It works with “Syste Call”.&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Interrupt handling is one of the features of CPU.&lt;br /&gt;&lt;/li&gt;
-      &lt;li&gt;System call requests Interrupt to CPU, CPU uses Interrupt Service Routine.&lt;br /&gt;&lt;br /&gt;
-During running the program, if Interrupt happens, It should store data in Stack.&lt;br /&gt; 
-otherwise, it couldn’t reload it.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Von Neumann architecture&lt;br /&gt;&lt;br /&gt;
-Commands and Data will be stored in the same memory, which has same CPU link.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/neuman.jpg&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Secondary Storage&lt;br /&gt;&lt;br /&gt;
-HDD/SSD helps main memory (RAM) for more storage.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Device Controller&lt;br /&gt;&lt;br /&gt;
-Several Device Controllers connects CPU.&lt;br /&gt;
-Each Device Controller manages each components.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DMA (Direct Memory Access)&lt;br /&gt;&lt;br /&gt;
-DMA allows components (hard disk, graphic card, NIC) to access to Memory directly.&lt;br /&gt;
-CPU doesn’t need to participate the data transmission, it improves computer performance.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;When Device Controller controls a lot of data, it is usually heavy work on CPU.&lt;br /&gt;
-So, DMA helps Device Controller to ignore CPU’s work on the data.&lt;br /&gt;
-Because of that, CPU doesn’t need to do that job and become more effective.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;The structure of Computer System&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Single Processor system (=core)&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Multi Processor system&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry></feed>
+If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</content><author><name>Siyoon Jung</name></author><category term="computer-fundamental" /><summary type="html"></summary></entry></feed>

@@ -8,6 +8,32 @@
     
       
       <item>
+        <title>Scheduling Goals</title>
+        
+          <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+&lt;p&gt;Scheduling Goals&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Scheduling in OS has a goal, which is fairness.&lt;br /&gt;
+The goal is that OS want all process to work fairly.&lt;br /&gt;&lt;br /&gt;
+However, some process has different pursue for scheduling.&lt;/p&gt;
+&lt;hr /&gt;
+
+</description>
+        
+        <pubDate>Tue, 28 Sep 2021 05:50:00 +1300</pubDate>
+        <link>
+        https://lulubeanana17.github.io/scheduling-goal</link>
+        <guid isPermaLink="true">https://lulubeanana17.github.io/scheduling-goal</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>multilevel Queue</title>
         
           <description>&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
