@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://lulubeanana17.github.io/author/lulubeanana17/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://lulubeanana17.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-09-28T13:26:51+13:00</updated>
+  <updated>2021-10-08T11:08:59+13:00</updated>
   <id>https://lulubeanana17.github.io/author/lulubeanana17/feed.xml</id>
 
   
@@ -30,6 +30,79 @@
   
   
 
+  
+    <entry>
+      <title type="html">User mode vs Kernel mode</title>
+      <link href="https://lulubeanana17.github.io/user-kernel" rel="alternate" type="text/html" title="User mode vs Kernel mode" />
+      <published>2021-10-08T05:50:00+13:00</published>
+      <updated>2021-10-08T05:50:00+13:00</updated>
+      <id>https://lulubeanana17.github.io/user-kernel</id>
+      <content type="html" xml:base="https://lulubeanana17.github.io/user-kernel">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;--&gt;
+
+&lt;p&gt;I/O protection (Operating System)&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;OS controls CPU, Memory, and I/O.&lt;br /&gt;
+OS needs the modes fro I/O protection.&lt;br /&gt;&lt;br /&gt;
+CPU has two modes (User, Kernel) to protect I/O devices against hackers.&lt;br /&gt;
+As an example, when a hacker made a malicious program that removes all data in a hardDisk.&lt;br /&gt;
+To prevent this, only OS has an authorization to access I/O device as an interface,&lt;br /&gt;
+because it is quite dangerous to approach sensitive data by application itself.&lt;br /&gt;&lt;br /&gt;
+In exceptional cases, when the hacker put machine codes directly into an application,&lt;br /&gt;
+the program could access CPU without OS.&lt;br /&gt;
+because of that, CPU should remember that these commands are restricted.&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/user.PNG&quot; alt=&quot;IPC&quot; /&gt;
+Applications run on User mode.&lt;br /&gt;
+On Kernel mode, Os runs when interrupt requested during program running.&lt;br /&gt;&lt;br /&gt;
+CPU recognizes which mode is on now with mode bit, mode bit 0 is Kernel mode, 1 is User mode.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Example&lt;br /&gt;&lt;br /&gt;
+OS has in/out machine commands to put data in I/O device.&lt;br /&gt;
+Read data command is “in”, write data command is “out”.&lt;br /&gt;
+Write data command put data into a deveice controller register.&lt;br /&gt;&lt;br /&gt;
+The in/out commands shouldn’t operate on User mode.&lt;br /&gt;
+Even though an application program has an assembly program that write 0 in Disk,&lt;br /&gt;
+the assembly program is “out” command, CPU recognizes the commands and call exception.&lt;br /&gt;
+And then, the process is shut down.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/built/images/user-1.PNG&quot; alt=&quot;IPC&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;OS controls every approach to data directly.&lt;br /&gt;
+So, every request is passing through OS.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Siyoon Jung</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="computer-fundamental" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Scheduling Goals</title>
@@ -789,125 +862,6 @@ Banker’s algorithm is not recommened.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Siyoon Jung</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="computer-fundamental" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">DeadLock</title>
-      <link href="https://lulubeanana17.github.io/DeadLock" rel="alternate" type="text/html" title="DeadLock" />
-      <published>2021-09-21T04:50:00+12:00</published>
-      <updated>2021-09-21T04:50:00+12:00</updated>
-      <id>https://lulubeanana17.github.io/DeadLock</id>
-      <content type="html" xml:base="https://lulubeanana17.github.io/DeadLock">&lt;!--&lt;span class=&quot;table-of-contents-list&quot;&gt;This is Python table of contents &lt;/span&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./frontend-basic&quot;&gt;front-end-basic&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;front-end-control-statement&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;--&gt;
-
-&lt;p&gt;DeadLock&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock is a situation where a set of processes are blocked because each process is holding 
-a resource and waiting for another resource acquired by some other process.&lt;br /&gt;&lt;br /&gt;
-As an example, in the below diagram, Process 1 is holding Resource 1 and waiting for Resource 2 
-which is acquired by process 2, and process 2 is waiting for Resource 1.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/built/images/deadlock.PNG&quot; alt=&quot;runtime2&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock can arise if the following four conditions hold simultaneously&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mutual Exclusion: Only one Process can use one Resource at a time&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Hold and Wait : A Process is holding at least one Resource and waiting for Resources&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;No Preemption : A Resource cannot be taken from a process unless the Process releases the Resource&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Circular Wait : A set of Processes are waiting for each other in circular form&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Methods of handling DeadLock&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;DeadLock prevention&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;DeadLock aviodance&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;DeadLock detection and recovery&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;DeadLock ignorance&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock Prevention&lt;br /&gt;&lt;br /&gt;
-This method is not to let the four conditions happen, that is, it denies every four conditions.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mutual Exclusion prevention&lt;br /&gt;
-  It allows processes to use one Resource simultaneously. This circumstance will arise 
-a synchronization problem.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Hold and Wait prevention&lt;br /&gt;
-  A Process requires all Resources simultaneously and waits for until get permission. It 
-bans any waiting for another Resource.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;No Preemption prevention&lt;br /&gt;
-  If no one holds one Resource, it allows the highest priority Process to hold it.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Circular Wait prevention&lt;br /&gt;
-  It allows Processes to require Resources in one way.&lt;br /&gt;&lt;br /&gt;
-This Method will raise some disadvantages, such as lost of system handling and efficiency.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock Avoidance&lt;br /&gt;&lt;br /&gt;
-When CPU can distribute every Resources to Processes without DeadLock, the situation is called 
-“Safe State”.&lt;br /&gt;
-If CPU can find the sequence that does not affect DeadLock, it is called “Safe Sequence”.&lt;br /&gt;
-However, Unsafe State is the opposite to Safe State, that is, can raise DeadLock.&lt;br /&gt;&lt;br /&gt;
-Avoidance allows CPU to keep allocating Reosurces all the time to stay in “Safe State”.&lt;br /&gt;
-We use “Banker’s Algorithm” to avoid DeadLock.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock detection and recovery&lt;br /&gt;&lt;br /&gt;
-Once DeadLock occurs, detect it and recover it.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Detection&lt;br /&gt;
-CPU detects whether DeadLock occurs or not.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Recovery&lt;br /&gt;
-CPU uses recovery method to get out of Circular Wait.&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Seize one or more Processes&lt;br /&gt;
-        &lt;ol&gt;
-          &lt;li&gt;Shut all Processes in DeadLock down&lt;br /&gt;
-  Some normal Processes can be shut down and lost the works.&lt;br /&gt;&lt;/li&gt;
-          &lt;li&gt;one check, one pass&lt;br /&gt;
-  CPU stops Every single Process and detect DeadLock. It is heavy work.&lt;br /&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Preemption&lt;br /&gt;
-CPU preempts the allocated Resource and allocates it to another Process until DeadLock solved.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;DeadLock Ignorance&lt;br /&gt;&lt;br /&gt;
-If DeadLock is very rare, then let it happen and reboot the system.&lt;/p&gt;</content>
 
       
       
