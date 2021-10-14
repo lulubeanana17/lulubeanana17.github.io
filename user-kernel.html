@@ -46,7 +46,7 @@
     <meta property="og:site_name" content="Siyoon Jung" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="User mode vs Kernel mode" />
-    <meta property="og:description" content="I/O protection (Operating System) OS controls CPU, Memory, and I/O. OS needs the modes fro I/O protection. CPU has two modes (User, Kernel) to protect I/O devices against hackers. As an example, when a hacker made a malicious program that removes all data in a hardDisk. To prevent this, only" />
+    <meta property="og:description" content="I/O protection (Operating System) OS controls CPU, Memory, and I/O. OS needs the modes for I/O protection. CPU has two modes (User, Kernel) to protect I/O devices against hackers. User mode is normal mode when OS doesn’t need to manage sensitive codes. Kernal mode is exceptional mode when OS needs" />
     <meta property="og:url" content="https://lulubeanana17.github.io/user-kernel" />
     <meta property="og:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -56,7 +56,7 @@
     <meta property="article:tag" content="Computer-fundamental" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="User mode vs Kernel mode" />
-    <meta name="twitter:description" content="I/O protection (Operating System) OS controls CPU, Memory, and I/O. OS needs the modes fro I/O protection. CPU has two modes (User, Kernel) to protect I/O devices against hackers. As an example, when a hacker made a malicious program that removes all data in a hardDisk. To prevent this, only" />
+    <meta name="twitter:description" content="I/O protection (Operating System) OS controls CPU, Memory, and I/O. OS needs the modes for I/O protection. CPU has two modes (User, Kernel) to protect I/O devices against hackers. User mode is normal mode when OS doesn’t need to manage sensitive codes. Kernal mode is exceptional mode when OS needs" />
     <meta name="twitter:url" content="https://lulubeanana17.github.io/" />
     <meta name="twitter:image" content="https://lulubeanana17.github.io/assets/built/images/jekyll-logo.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": "https://lulubeanana17.github.io/user-kernel"
     },
-    "description": "I/O protection (Operating System) OS controls CPU, Memory, and I/O. OS needs the modes fro I/O protection. CPU has two modes (User, Kernel) to protect I/O devices against hackers. As an example, when a hacker made a malicious program that removes all data in a hardDisk. To prevent this, only"
+    "description": "I/O protection (Operating System) OS controls CPU, Memory, and I/O. OS needs the modes for I/O protection. CPU has two modes (User, Kernel) to protect I/O devices against hackers. User mode is normal mode when OS doesn’t need to manage sensitive codes. Kernal mode is exceptional mode when OS needs"
 }
     </script>
 
@@ -196,20 +196,21 @@ into the {body} of the default.hbs template -->
 <hr />
 
 <p>OS controls CPU, Memory, and I/O.<br />
-OS needs the modes fro I/O protection.<br /><br />
+OS needs the modes for I/O protection.<br /><br />
 CPU has two modes (User, Kernel) to protect I/O devices against hackers.<br />
+User mode is normal mode when OS doesn’t need to manage sensitive codes.<br />
+Kernal mode is exceptional mode when OS needs to manage sensitive codes to I/O device directly.<br />
+Interrupt is happened when OS needs to change from User mode to Kernal mode.<br /><br />
 As an example, when a hacker made a malicious program that removes all data in a hardDisk.<br />
 To prevent this, only OS has an authorization to access I/O device as an interface,<br />
 because it is quite dangerous to approach sensitive data by application itself.<br /><br />
-In exceptional cases, when the hacker put machine codes directly into an application,<br />
+Another example, when the hacker puts machine codes directly into an application,<br />
 the program could access CPU without OS.<br />
-because of that, CPU should remember that these commands are restricted.<br /></p>
+because of that, CPU should remember that these commands are restricted as well.<br /></p>
 <hr />
 
-<p><img src="../assets/built/images/user.PNG" alt="IPC" />
-Applications run on User mode.<br />
-On Kernel mode, Os runs when interrupt requested during program running.<br /><br />
-CPU recognizes which mode is on now with mode bit, mode bit 0 is Kernel mode, 1 is User mode.</p>
+<p><img src="../assets/built/images/user.PNG" alt="IPC" /></p>
+
 <hr />
 
 <p>Example<br /><br />
@@ -315,6 +316,15 @@ So, every request is passing through OS.</p>
                                 
                                   
                                     
+                                        
+                                        
+                                            <li><a href="/types-of-interrupt">Types of Interrupt</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
                                   
                                 
                                   
@@ -338,8 +348,6 @@ So, every request is passing through OS.</p>
                                   
                                     
                                         
-                                        
-                                            <li><a href="/RR">Round Robin Scheduling Algorithm</a></li>
                                         
                                     
                                   
@@ -452,7 +460,7 @@ So, every request is passing through OS.</p>
                         <footer class="read-next-card-footer">
                             <a href="/tag/computer-fundamental/">
                                 
-                                    See all 16 posts  →
+                                    See all 17 posts  →
                                 
                             </a>
                         </footer>
@@ -461,6 +469,50 @@ So, every request is passing through OS.</p>
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/types-of-interrupt">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/types-of-interrupt">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Computer-fundamental</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Types of Interrupt</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
             
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
